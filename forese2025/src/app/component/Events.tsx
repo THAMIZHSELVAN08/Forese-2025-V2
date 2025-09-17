@@ -63,7 +63,7 @@ export default function Event() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % Item.length);
-    }, 5000);
+    }, 100000);
 
     return () => clearInterval(interval);
   }, [Item.length]);
@@ -86,9 +86,9 @@ export default function Event() {
       <AnimatePresence mode="wait">
         <motion.div
           key={currentIndex}
-          initial={{ opacity: 0, scale: 1.1 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0, scale: 0.9 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
           className="absolute inset-0"
         >
@@ -103,7 +103,7 @@ export default function Event() {
       </AnimatePresence>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-[#004aad]/80" />
+      <div className="absolute inset-0 bg-[#004aad]/60" />
 
       {/* Content Overlay */}
       <div className="relative z-10 flex flex-col justify-center items-center h-full px-6 sm:px-8 lg:px-16">
@@ -145,7 +145,7 @@ export default function Event() {
                 transition={{ duration: 0.6, delay: 0.6 }}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-white text-[#004aad] font-semibold rounded-full hover:bg-white/90 transition-all duration-300 text-lg shadow-lg"
+                className="px-8 py-4 bg-white text-[#004aad] font-semibold rounded-md hover:bg-white/60 transition-all duration-300 text-lg shadow-lg"
               >
                 Learn More{" "}
               </motion.button>
@@ -206,19 +206,6 @@ export default function Event() {
             />
           </svg>
         </button>
-
-        {/* Progress Bar */}
-        <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 w-64 h-1 bg-white/20 rounded-full overflow-hidden">
-          <motion.div
-            key={currentIndex}
-            initial={{ width: "0%" }}
-            animate={{ width: "100%" }}
-            transition={{ duration: 5, ease: "linear" }}
-            className="h-full bg-white rounded-full"
-          />
-        </div>
-
-        {/* Item Counter */}
         <div className="absolute top-8 right-8 text-white/80 text-sm font-medium">
           {(currentIndex + 1).toString().padStart(2, "0")} /{" "}
           {Item.length.toString().padStart(2, "0")}

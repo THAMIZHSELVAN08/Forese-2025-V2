@@ -213,7 +213,6 @@ export default function StickyScroll() {
 
   return (
     <>
-      {/* First Section - Enhanced with animations */}
       <motion.div
         ref={section1Ref}
         style={{ y: y1 }}
@@ -332,7 +331,7 @@ export default function StickyScroll() {
         </motion.div>
 
         <motion.div
-          className="flex justify-center items-center font-semibold items-center text-white text-3xl md:text-7xl"
+          className="flex justify-center items-center font-semibold  text-white text-3xl md:text-7xl"
           style={{ fontFamily: "var(--font-poppins)" }}
           variants={itemVariants}
         >

@@ -6,6 +6,7 @@ import {
   FaLinkedin,
   FaTwitter,
   FaInstagram,
+  FaGithub,
   FaFacebook,
 } from "react-icons/fa";
 import Link from "next/link";
@@ -102,7 +103,6 @@ export default function Footer() {
           viewport={{ once: true }}
           variants={containerVariants}
         >
-          {/* FORESE Info */}
           <motion.div variants={itemVariants}>
             <h3 className="text-xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
               FORESE
@@ -124,27 +124,11 @@ export default function Footer() {
               </motion.div>
               <motion.a
                 href="#"
-                className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
-                whileHover={{ scale: 1.2 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <FaTwitter className="h-5 w-5" />
-              </motion.a>
-              <motion.a
-                href="#"
-                className="text-gray-400 hover:text-pink-400 transition-colors duration-300"
-                whileHover={{ scale: 1.2 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <FaInstagram className="h-5 w-5" />
-              </motion.a>
-              <motion.a
-                href="#"
                 className="text-gray-400 hover:text-blue-600 transition-colors duration-300"
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
               >
-                <FaFacebook className="h-5 w-5" />
+                <FaGithub className="h-5 w-5" />
               </motion.a>
             </div>
           </motion.div>
