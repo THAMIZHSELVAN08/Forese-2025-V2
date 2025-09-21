@@ -215,8 +215,13 @@ export default function StickyScroll() {
     <>
       <motion.div
         ref={section1Ref}
-        style={{ y: y1 }}
-        className="h-screen w-full flex-col justify-center items-center bg-blue-900 sticky top-0 z-10 pt-30 gap-7"
+        style={{
+          y: y1,
+          backgroundImage: `linear-gradient(rgba(30, 58, 138, 0.6), rgba(30, 58, 138, 0.6)), url('/aptitude.JPG')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+        className="h-screen w-full flex-col justify-center items-center sticky top-0 z-10 pt-30 gap-7"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.3 }}
@@ -286,8 +291,13 @@ export default function StickyScroll() {
       {/* Second Section - Enhanced with icon carousel */}
       <motion.div
         ref={section2Ref}
-        style={{ y: y2 }}
-        className="flex h-screen w-full flex-col justify-center items-center bg-[#0d5c63] sticky top-0 z-20 pt-30 gap-7"
+        style={{
+          y: y2,
+          backgroundImage: `linear-gradient(rgba(13, 92, 99, 0.6), rgba(13, 92, 99, 0.6)), url('/Seminar.JPG')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+        className="flex h-screen w-full flex-col justify-center items-center sticky top-0 z-20 pt-30 gap-7"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.3 }}
@@ -347,7 +357,7 @@ export default function StickyScroll() {
                   "Group Discussions",
                   "Hackathons",
                 ]}
-                mainClassName="px-2 sm:px-2 md:px-3 bg-[#0d5c63] text-[#fffffa] overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg leading-none"
+                mainClassName="px-2 sm:px-2 md:px-3 bg-transparent text-[#fffffa] overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg leading-none"
                 staggerFrom={"last"}
                 initial={{ y: "100%" }}
                 animate={{ y: 0 }}
@@ -394,8 +404,13 @@ export default function StickyScroll() {
       {/* Third Section - Enhanced statistics */}
       <motion.div
         ref={section3Ref}
-        style={{ y: y3 }}
-        className="h-screen w-full flex flex-col justify-center items-center bg-[#0b3954] sticky top-0 pt-30 z-30 gap-10"
+        style={{
+          y: y3,
+          backgroundImage: `linear-gradient(rgba(11, 57, 84, 0.6), rgba(11, 57, 84, 0.6)), url('/fored.JPG')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+        className="h-screen w-full flex flex-col justify-center items-center sticky top-0 pt-30 z-30 gap-10"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.3 }}
@@ -501,8 +516,13 @@ export default function StickyScroll() {
       {/* Enhanced Contact Section - Keep as is */}
       <motion.div
         ref={section4Ref}
-        style={{ y: y4 }}
-        className="min-h-screen w-full flex flex-col justify-center items-center bg-gradient-to-br from-black via-gray-900 to-black sticky top-0 z-40 px-4 sm:px-6 lg:px-8 py-16 overflow-hidden relative"
+        style={{
+          y: y4,
+          backgroundImage: `linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), rgba(17, 24, 39, 0.6), rgba(0, 0, 0, 0.6)), url('/hackathon.JPG')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+        className="min-h-screen w-full flex flex-col justify-center items-center sticky top-0 z-40 px-4 sm:px-6 lg:px-8 py-16 overflow-hidden relative"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.3 }}
