@@ -156,8 +156,8 @@ export default function Aboutcf() {
       </div>
 
       {/* About Section */}
-      <section className="py-20 px-6">
-        <div className="max-w-6xl mx-auto">
+      <section className="py-20 px-6 h-screen w-full">
+        <div className="max-w-6xl mx-auto mt-30">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -293,6 +293,7 @@ export default function Aboutcf() {
       </section>
 
       {/* Call to Action */}
+      {/*
       <section className="py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
@@ -318,6 +319,7 @@ export default function Aboutcf() {
           </motion.div>
         </div>
       </section>
+      */}
     </div>
   );
 }
