@@ -19,7 +19,7 @@ export default function Event() {
       description:
         "Learn about our annual flagship event, that connects students with HRs.",
       url: "/Forese.JPG",
-      link: "/Event/MockPlacements",
+      link: "/MockPlacement",
     },
     {
       title: "Group Discussion",

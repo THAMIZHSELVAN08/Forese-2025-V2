@@ -170,7 +170,7 @@ const GroupDiscussionPage = () => {
 
   return (
     <>
-      <div className="relative min-h-screen text-gray-800 overflow-hidden">
+      <div className="relative min-h-screen text-gray-800 overflow-hidden pt-10">
         <div className="absolute inset-0 z-[-1] opacity-100">
           <Iridescence
             color={[0, 0, 1]} // Using a lighter blue for a more professional feel
@@ -189,9 +189,9 @@ const GroupDiscussionPage = () => {
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
               {/* Main Hero Content */}
-              <motion.div className="lg:col-span-7" variants={fadeInUp}>
-                <span className="text-sm font-bold text-blue-600 uppercase tracking-wide">
-                  A Guide for Mock Placements
+              <motion.div className="lg:col-span-6" variants={fadeInUp}>
+                <span className="text-sm font-bold text-white uppercase tracking-wide">
+                  Learn the art of strategic communication with this
                 </span>
                 <h1
                   className="text-4xl lg:text-6xl font-black my-4 leading-tight text-gray-900"
@@ -205,14 +205,14 @@ const GroupDiscussionPage = () => {
                     Mastery Guide
                   </span>
                 </h1>
-                <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-2xl">
+                <p className="text-lg text-white mb-8 leading-relaxed max-w-2xl">
                   Transform your communication skills with our proven strategies. This guide is designed to help you excel in the mock group discussions and stand out in your placements.
                 </p>
               </motion.div>
 
               {/* Image Card */}
               <motion.div
-                className="lg:col-span-5 relative overflow-hidden rounded-2xl border border-gray-200 shadow-lg h-80 lg:h-96"
+                className="lg:col-span-6 relative overflow-hidden rounded-2xl border border-gray-200 shadow-lg h-80 lg:h-96"
                 variants={fadeInUp}
               >
                 <Image
@@ -243,12 +243,12 @@ const GroupDiscussionPage = () => {
           <div className="max-w-7xl mx-auto">
             <motion.div className="text-center mb-16" variants={fadeInUp}>
               <h2
-                className="text-4xl lg:text-5xl font-black mb-4 text-gray-900"
+                className="text-4xl lg:text-7xl font-black mb-4 text-gray-900"
                 style={{ fontFamily: "var(--font-poppins)" }}
               >
                 Unlock Your Potential
               </h2>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              <p className="text-lg text-white max-w-2xl mx-auto">
                 Mastering group discussions offers game-changing benefits for your career.
               </p>
             </motion.div>
@@ -342,7 +342,7 @@ const GroupDiscussionPage = () => {
               >
                 Pro Strategies
               </h2>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              <p className="text-lg text-white max-w-2xl mx-auto">
                 Adopt these battle-tested techniques to make a lasting impression.
               </p>
             </motion.div>
