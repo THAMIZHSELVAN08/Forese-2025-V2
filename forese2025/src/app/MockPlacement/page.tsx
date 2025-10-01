@@ -8,19 +8,20 @@ import  CountUp  from "../../components/ui/CountUp";
 import LogoLoop from '../../components/ui/LogoLoop';
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss } from 'react-icons/si';
 
-const techLogos = [
-  { node: <SiReact />, title: "React", href: "https://react.dev" },
-  { node: <SiNextdotjs />, title: "Next.js", href: "https://nextjs.org" },
-  { node: <SiTypescript />, title: "TypeScript", href: "https://www.typescriptlang.org" },
-  { node: <SiTailwindcss />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
+
+
+const imageLogos = [
+  { src: "/tcs.png", alt: "TCS", href: "https://www.tcs.com" },
+  { src: "/wipro.png", alt: "Wipro", href: "https://www.wipro.com" },
+  { src: "/freshworks.png", alt: "Freshworks", href: "https://www.freshworks.com" },
+  { src: "/capgemini.png", alt: "Capgemini", href: "https://www.capgemini.com" },
+  { src: "/accenture.png", alt: "Accenture", href: "https://www.accenture.com" },
+  { src: "/zoho.png", alt: "Zoho", href: "https://www.zoho.com" },
+  { src: "/amazon.png", alt: "Amazon", href: "https://www.amazon.com" },
+  { src: "/lt.png", alt: "Larsen & Toubro", href: "https://www.larsentoubro.com" },
+  { src: "/hcl.png", alt: "HCL", href: "https://www.hcltech.com" },
 ];
 
-// Alternative with image sources
-const imageLogos = [
-  { src: "/logos/company1.png", alt: "Company 1", href: "https://company1.com" },
-  { src: "/logos/company2.png", alt: "Company 2", href: "https://company2.com" },
-  { src: "/logos/company3.png", alt: "Company 3", href: "https://company3.com" },
-];
 
 
 
@@ -80,7 +81,7 @@ const MockPlacementsPage = () => {
         >
           <div className="absolute inset-0 z-0">
             <Image
-              src="/groupdiscussion.JPG"
+              src="/mocks.jpeg"
               alt="FORESE Mock Placements Event"
               layout="fill"
               objectFit="cover"
@@ -133,7 +134,7 @@ const MockPlacementsPage = () => {
         </div>
         <div className="mt-10" style={{ height: '100px', position: 'relative', overflow: 'hidden', width: '80%',justifyContent: 'center', margin: 'auto', marginBottom: '50px' }}>
       <LogoLoop
-        logos={techLogos}
+        logos={imageLogos}
         speed={120}
         direction="left"
         logoHeight={48}

@@ -76,7 +76,7 @@ const AptitudePage = () => {
           <div>
             <div className="relative aspect-[16/11] w-full overflow-hidden rounded-3xl border border-white/10 shadow-2xl">
               <Image
-                src="/aptitude.JPG"
+                src="/aptitude.jpeg"
                 alt="Aptitude Training"
                 fill
                 className="object-cover"
@@ -113,8 +113,8 @@ const AptitudePage = () => {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { src: "/aptitude.JPG", alt: "Aptitude Session" },
-              { src: "/groupdiscussion.JPG", alt: "Group Prep" },
+              { src: "/aptitude.jpeg", alt: "Aptitude Session" },
+              { src: "/gd.jpeg", alt: "Group Prep" },
               { src: "/Forese.JPG", alt: "Training" },
             ].map((img, i) => (
               <motion.div

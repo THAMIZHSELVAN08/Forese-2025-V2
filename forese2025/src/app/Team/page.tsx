@@ -9,13 +9,15 @@ import {
 } from "@/data/team";
 import ChromaGrid from "@/components/ui/ChromaGrid";
 
-// 🔧 Generic Transform for ChromaGrid
+// Transform function
 function transformMembers(members: CoreMember[]) {
   return members.map((m) => ({
     id: m.id,
     title: m.name,
     subtitle: m.role,
     image: m.imageUrl,
+    oneLiner: m.oneLiner,
+    linkedin: m.linkedinUrl,
   }));
 }
 

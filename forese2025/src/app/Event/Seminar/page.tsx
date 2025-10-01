@@ -54,7 +54,7 @@ const SeminarPage = () => {
           <div>
             <div className="relative aspect-[16/11] w-full overflow-hidden rounded-3xl border border-white/10 shadow-2xl">
               <Image
-                src="/Seminar.JPG"
+                src="/seminar.jpg"
                 alt="FORESE Seminar"
                 fill
                 className="object-cover"

@@ -7,9 +7,6 @@ import Image from "next/image";
 export function Something() {
   return (
     <div className="bg-black min-h-screen relative overflow-hidden">
-      {/* LetterGlitch as background - positioned absolutely to cover entire screen */}
-
-      {/* Content layer - positioned above the background */}
       <div className="relative z-10 flex flex-col pt-30 min-h-screen justify-center items-center gap-7">
         <div className="flex justify-center">
           <h1
@@ -24,8 +21,6 @@ export function Something() {
             A place for all the coders to share their knowledge and experiences.
           </p>
         </div>
-
-        {/* Add any other content here that should appear over the background */}
       </div>
     </div>
   );
@@ -39,34 +34,43 @@ export default function Aboutcf() {
       name: "Sanjay",
       quote: "Code with passion, debug with patience",
       role: "Chief Mentor",
+      image: "/images/sm28.jpg",
     },
     {
       name: "Vinaya",
       quote: "Every expert was once a beginner",
       role: "Chief Mentor",
+      image: "/images/sm48.jpg",
     },
   ];
 
   const mentors = [
     {
       name: "Bershay R",
-      quote: "Innovation distinguishes between a leader and a follower",
+      quote:
+        "I’m an aspiring IT professional passionate about building apps, exploring AR/VR, while growing my skills through leadership and collaboration.",
       role: "Mentor",
+      image: "/bershay.jpg",
     },
     {
       name: "Chandrasekar S",
       quote: "The best way to learn is by doing",
       role: "Mentor",
+      image: "/chandrasekar.jpg",
     },
     {
       name: "Karnan S",
-      quote: "Code is poetry written in logic",
+      quote:
+        "An ambitious IT student passionate about technology, creativity, and continuous learning",
       role: "Mentor",
+      image: "/karnan.jpg",
     },
     {
       name: "Thirukumaran",
-      quote: "Success is the sum of small efforts repeated day in and day out",
+      quote:
+        "I enjoy finishing projects early—it’s only professional to make it look like a battle",
       role: "Mentor",
+      image: "/images/sm100.jpg",
     },
   ];
 
@@ -233,13 +237,14 @@ export default function Aboutcf() {
                   viewport={{ once: true }}
                   className="bg-gradient-to-br from-blue-900/30 to-purple-900/30 backdrop-blur-sm border border-blue-500/30 rounded-xl p-8 text-center hover:from-blue-800/40 hover:to-purple-800/40 transition-all duration-300"
                 >
-                  <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-2xl font-bold text-white">
-                      {mentor.name
-                        .split(" ")
-                        .map((n) => n[0])
-                        .join("")}
-                    </span>
+                  <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
+                    <Image
+                      src={mentor.image}
+                      alt={mentor.name}
+                      width={96}
+                      height={96}
+                      className="object-cover w-full h-full"
+                    />
                   </div>
                   <h4 className="text-2xl font-bold mb-2 text-white">
                     {mentor.name}
@@ -268,13 +273,14 @@ export default function Aboutcf() {
                   viewport={{ once: true }}
                   className="bg-gradient-to-br from-cyan-900/30 to-blue-900/30 backdrop-blur-sm border border-cyan-500/30 rounded-xl p-6 text-center hover:from-cyan-800/40 hover:to-blue-800/40 transition-all duration-300"
                 >
-                  <div className="w-20 h-20 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-xl font-bold text-white">
-                      {mentor.name
-                        .split(" ")
-                        .map((n) => n[0])
-                        .join("")}
-                    </span>
+                  <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden">
+                    <Image
+                      src={mentor.image}
+                      alt={mentor.name}
+                      width={80}
+                      height={80}
+                      className="object-cover w-full h-full"
+                    />
                   </div>
                   <h4 className="text-xl font-bold mb-2 text-white">
                     {mentor.name}
@@ -291,35 +297,6 @@ export default function Aboutcf() {
           </div>
         </div>
       </section>
-
-      {/* Call to Action */}
-      {/*
-      <section className="py-20 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-              Ready to Start Your Coding Journey?
-            </h2>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Join our community of passionate coders and take your technical
-              skills to the next level
-            </p>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg"
-            >
-              Join Coders&#39; Forum
-            </motion.button>
-          </motion.div>
-        </div>
-      </section>
-      */}
     </div>
   );
 }
