@@ -33,7 +33,7 @@ export default function Event() {
       title: "Soft Skills Workshops",
       description:
         "Join our workshops and training sessions to enhance your professional capabilities.",
-      url: "/seminar.jpg",
+      url: "/Seminar.JPG",
       link: "/Event/Seminar",
     },
     {
