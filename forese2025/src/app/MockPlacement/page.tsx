@@ -5,9 +5,20 @@ import Image from "next/image";
 import { Users, Briefcase, BarChart, CheckCircle, Award, MessageSquare, UserCheck } from "lucide-react";
 import Footer from "../component/Footer";
 import  CountUp  from "../../components/ui/CountUp";
-
+import LogoLoop from "@/components/ui/LogoLoop";
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss } from 'react-icons/si';
 
+const imageLogos = [
+  { src: "/tcs.png", alt: "TCS", href: "https://www.tcs.com" },
+  { src: "/wipro.png", alt: "Wipro", href: "https://www.wipro.com" },
+  { src: "/freshworks.png", alt: "Freshworks", href: "https://www.freshworks.com" },
+  { src: "/capgemini.png", alt: "Capgemini", href: "https://www.capgemini.com" },
+  { src: "/accenture.png", alt: "Accenture", href: "https://www.accenture.com" },
+  { src: "/zoho.png", alt: "Zoho", href: "https://www.zoho.com" },
+  { src: "/amazon.png", alt: "Amazon", href: "https://www.amazon.com" },
+  { src: "/lt.png", alt: "Larsen & Toubro", href: "https://www.larsentoubro.com" },
+  { src: "/hcl.png", alt: "HCL", href: "https://www.hcltech.com" },
+];
 
 
 
@@ -68,7 +79,7 @@ const MockPlacementsPage = () => {
         >
           <div className="absolute inset-0 z-0">
             <Image
-              src="/groupdiscussion.JPG"
+              src="/mocks.jpeg"
               alt="FORESE Mock Placements Event"
               layout="fill"
               objectFit="cover"
@@ -119,7 +130,20 @@ const MockPlacementsPage = () => {
                 Companies that have participated in our Mock Placements
             </h1>
         </div>
-   
+        <div className="mt-10" style={{ height: '100px', position: 'relative', overflow: 'hidden', width: '80%',justifyContent: 'center', margin: 'auto', marginBottom: '50px' }}>
+      <LogoLoop
+        logos={imageLogos}
+        speed={120}
+        direction="left"
+        logoHeight={48}
+        gap={40}
+        pauseOnHover
+        scaleOnHover
+        fadeOut
+        fadeOutColor="#ffffff"
+        ariaLabel="Technology partners"
+      />
+    </div>
 
         {/* Stats Section */}
         <motion.section

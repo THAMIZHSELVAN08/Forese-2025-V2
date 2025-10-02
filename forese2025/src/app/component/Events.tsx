@@ -25,7 +25,7 @@ export default function Event() {
       title: "Group Discussion",
       description:
         "Group Discussion is a great way to learn and grow your communication skills.",
-      url: "/bentogdimg1.jpg",
+      url: "/gd.jpeg",
       link: "/GroupDiscussion",
     },
 
@@ -47,14 +47,14 @@ export default function Event() {
       title: "Foreign Education Fairs",
       description:
         "Join us at our annual fairs to learn about various universities and their cultures.",
-      url: "/fored.JPG",
+      url: "/foredimg.jpg",
       link: "/Event/ForeignEducationFairs",
     },
     {
       title: "Aptitude tests",
       description:
         "Learn about how we conduct our aptitude tests and how to prepare for them.",
-      url: "/aptitude.JPG",
+      url: "/aptitude.jpeg",
       link: "/Event/Aptitude",
     },
   ];

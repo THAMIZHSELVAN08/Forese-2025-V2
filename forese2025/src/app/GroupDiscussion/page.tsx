@@ -216,7 +216,7 @@ const GroupDiscussionPage = () => {
                 variants={fadeInUp}
               >
                 <Image
-                  src="/groupdiscussion.JPG" // Assumes you have placed an image at public/gd/gd-image-1.jpg
+                  src="/gd.jpeg" 
                   layout="fill"
                   alt="Students participating in a group discussion"
                   className="w-full h-full object-cover"

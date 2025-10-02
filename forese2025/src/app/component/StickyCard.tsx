@@ -217,7 +217,7 @@ export default function StickyScroll() {
         ref={section1Ref}
         style={{
           y: y1,
-          backgroundImage: `linear-gradient(rgba(30, 58, 138, 0.6), rgba(30, 58, 138, 0.6)), url('/aptitude.JPG')`,
+          backgroundImage: `linear-gradient(rgba(30, 58, 138, 0.6), rgba(30, 58, 138, 0.6)), url('/aptitude.jpeg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -406,7 +406,7 @@ export default function StickyScroll() {
         ref={section3Ref}
         style={{
           y: y3,
-          backgroundImage: `linear-gradient(rgba(11, 57, 84, 0.6), rgba(11, 57, 84, 0.6)), url('/fored.JPG')`,
+          backgroundImage: `linear-gradient(rgba(11, 57, 84, 0.6), rgba(11, 57, 84, 0.6)), url('/foredimg.jpg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
