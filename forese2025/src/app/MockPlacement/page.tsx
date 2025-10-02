@@ -5,22 +5,10 @@ import Image from "next/image";
 import { Users, Briefcase, BarChart, CheckCircle, Award, MessageSquare, UserCheck } from "lucide-react";
 import Footer from "../component/Footer";
 import  CountUp  from "../../components/ui/CountUp";
-import LogoLoop from '../../components/ui/LogoLoop';
+
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss } from 'react-icons/si';
 
-const techLogos = [
-  { node: <SiReact />, title: "React", href: "https://react.dev" },
-  { node: <SiNextdotjs />, title: "Next.js", href: "https://nextjs.org" },
-  { node: <SiTypescript />, title: "TypeScript", href: "https://www.typescriptlang.org" },
-  { node: <SiTailwindcss />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
-];
 
-// Alternative with image sources
-const imageLogos = [
-  { src: "/logos/company1.png", alt: "Company 1", href: "https://company1.com" },
-  { src: "/logos/company2.png", alt: "Company 2", href: "https://company2.com" },
-  { src: "/logos/company3.png", alt: "Company 3", href: "https://company3.com" },
-];
 
 
 
@@ -131,20 +119,7 @@ const MockPlacementsPage = () => {
                 Companies that have participated in our Mock Placements
             </h1>
         </div>
-        <div className="mt-10" style={{ height: '100px', position: 'relative', overflow: 'hidden', width: '80%',justifyContent: 'center', margin: 'auto', marginBottom: '50px' }}>
-      <LogoLoop
-        logos={techLogos}
-        speed={120}
-        direction="left"
-        logoHeight={48}
-        gap={40}
-        pauseOnHover
-        scaleOnHover
-        fadeOut
-        fadeOutColor="#ffffff"
-        ariaLabel="Technology partners"
-      />
-    </div>
+   
 
         {/* Stats Section */}
         <motion.section
