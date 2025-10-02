@@ -7,7 +7,7 @@ export type CoreMember = {
   oneLiner: string;
 };
 
-export type seniorMembers= {
+export type seniorMembers = {
   id: number;
   name: string;
   role: string;
@@ -48,7 +48,8 @@ export const coreMembers: CoreMember[] = [
     role: "Vice-President",
     imageUrl: "/images/c3.jpg",
     linkedinUrl: "https://www.linkedin.com/in/srivarshini-s-g-7a9a6a293/",
-    oneLiner: "Why stress about tomorrow? It hasn’t even sent me an invitation yet!",
+    oneLiner:
+      "Why stress about tomorrow? It hasn’t even sent me an invitation yet!",
   },
 
   {
@@ -65,7 +66,8 @@ export const coreMembers: CoreMember[] = [
     role: "General Secretary",
     imageUrl: "/images/c5.jpg",
     linkedinUrl: "https://www.linkedin.com/in/jhalak-vashistha/",
-    oneLiner: "I like getting older. I feel like I’m finally aging into my personality",
+    oneLiner:
+      "I like getting older. I feel like I’m finally aging into my personality",
   },
   {
     id: 6,
@@ -73,7 +75,8 @@ export const coreMembers: CoreMember[] = [
     role: "General Secretary",
     imageUrl: "/images/c6.jpg",
     linkedinUrl: "https://www.linkedin.com/in/karthik-bm-73048a28a/",
-    oneLiner: "How can someone not fall in love with internal combustion engine",
+    oneLiner:
+      "How can someone not fall in love with internal combustion engine",
   },
   {
     id: 7,
@@ -106,7 +109,8 @@ export const coreMembers: CoreMember[] = [
     role: "Executive Director",
     imageUrl: "/images/c10.jpg",
     linkedinUrl: "https://www.linkedin.com/in/kaamesh-kc-5714b029a/",
-    oneLiner: "Power is a lot like real estate. It's all about location, location, location.",
+    oneLiner:
+      "Power is a lot like real estate. It's all about location, location, location.",
   },
   {
     id: 11,
@@ -122,7 +126,7 @@ export const coreMembers: CoreMember[] = [
     role: "Executive Director",
     imageUrl: "/images/c12.jpg",
     linkedinUrl: "https://www.linkedin.com/in/siddharth-naren-baskaran/",
-    oneLiner: "Avid gamer and car enthusiast, always fueled by speed and strategy!",
+    oneLiner: "Life gave me lemons, but forgot the sugar and water",
   },
   {
     id: 13,
@@ -146,7 +150,8 @@ export const coreMembers: CoreMember[] = [
     role: "Tech Head",
     imageUrl: "/images/c15.png",
     linkedinUrl: "https://www.linkedin.com/in/r-mubashir-sheriff/",
-    oneLiner: "Life is very simple, we just want to make it complicated.",
+    oneLiner:
+      "Life is a tragedy for those who feel, and a comedy for those who think.",
   },
   {
     id: 16,
@@ -163,7 +168,8 @@ export const coreMembers: CoreMember[] = [
     role: "Communications Chair",
     imageUrl: "/images/c17.jpg",
     linkedinUrl: "https://www.linkedin.com/in/visvajith-logasuresh-796a4b329/",
-    oneLiner: "Tech enthusiast with a love for watches, cars, and creating cool projects",
+    oneLiner:
+      "Tech enthusiast with a love for watches, cars, and creating cool projects",
   },
 
   {
@@ -191,14 +197,16 @@ export const seniorMembers: seniorMembers[] = [
     role: "Senior Member",
     imageUrl: "/images/sm2.jpg",
     linkedinUrl: "www.linkedin.com/in/aswin-deivanayagam-910b6824a",
-    oneLiner: "It's not the beginning or the end that matters, it's the journey that is important",
+    oneLiner:
+      "It's not the beginning or the end that matters, it's the journey that is important",
   },
   {
     id: 3,
     name: "Bharath KS",
     role: "Senior Member",
     imageUrl: "/images/sm3.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/2022mn0693?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    linkedinUrl:
+      "https://www.linkedin.com/in/2022mn0693?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     oneLiner: "Speaking out is the single weapon in my arsenal!",
   },
   {
@@ -214,7 +222,8 @@ export const seniorMembers: seniorMembers[] = [
     name: "Dheekshitha.R",
     role: "Senior Member",
     imageUrl: "/images/sm5.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/dheekshitha-ramachandran-188690295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedinUrl:
+      "https://www.linkedin.com/in/dheekshitha-ramachandran-188690295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     oneLiner: "Strong and positive",
   },
   {
@@ -262,7 +271,8 @@ export const seniorMembers: seniorMembers[] = [
     name: "N JEEVAN THIRUNAUKARASU",
     role: "Senior Member",
     imageUrl: "/images/sm11.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/hemanth-k-r-448270296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedinUrl:
+      "https://www.linkedin.com/in/hemanth-k-r-448270296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     oneLiner: "Innovation is my driving force",
   },
   {
@@ -270,8 +280,10 @@ export const seniorMembers: seniorMembers[] = [
     name: "Keerthi Lakshmi P",
     role: "Senior Member",
     imageUrl: "/images/sm12.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/keerthi-lakshmi-prabakar-723032290?trk=contact-info",
-    oneLiner: "My ideas are like popcorn—popping up at random, a little messy, but always entertaining!",
+    linkedinUrl:
+      "https://www.linkedin.com/in/keerthi-lakshmi-prabakar-723032290?trk=contact-info",
+    oneLiner:
+      "My ideas are like popcorn—popping up at random, a little messy, but always entertaining!",
   },
   {
     id: 13,
@@ -294,7 +306,8 @@ export const seniorMembers: seniorMembers[] = [
     name: "Leena K",
     role: "Senior Member",
     imageUrl: "/images/sm15.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/leena-kamalanadhan-047922295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedinUrl:
+      "https://www.linkedin.com/in/leena-kamalanadhan-047922295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     oneLiner: "Enjoying the journey, one peaceful moment at a time.",
   },
   {
@@ -302,24 +315,30 @@ export const seniorMembers: seniorMembers[] = [
     name: "S.Logeshwari",
     role: "Senior Member",
     imageUrl: "/images/sm16.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/s-logeshwari-33b154299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    oneLiner: "I am an optimistic person and a self driven individual who look upto learn from new challenges.",
+    linkedinUrl:
+      "https://www.linkedin.com/in/s-logeshwari-33b154299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    oneLiner:
+      "I am an optimistic person and a self driven individual who look upto learn from new challenges.",
   },
   {
     id: 17,
     name: "Maadhangi M",
     role: "Senior Member",
     imageUrl: "/images/sm17.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/maadhangi-m-816951295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    oneLiner: "From dreams to reality, difference is made by pushing past our limits.",
+    linkedinUrl:
+      "https://www.linkedin.com/in/maadhangi-m-816951295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    oneLiner:
+      "From dreams to reality, difference is made by pushing past our limits.",
   },
   {
     id: 18,
     name: "Michelle Sarah David",
     role: "Senior Member",
     imageUrl: "/images/sm18.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/michelle-sarah-a52682261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    oneLiner: "Denial is a river in Egypt, and I’m happily paddling upstream :)",
+    linkedinUrl:
+      "https://www.linkedin.com/in/michelle-sarah-a52682261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    oneLiner:
+      "Denial is a river in Egypt, and I’m happily paddling upstream :)",
   },
   {
     id: 19,
@@ -334,8 +353,10 @@ export const seniorMembers: seniorMembers[] = [
     name: "MOHAMMED KALEEMULLA A R H",
     role: "Senior Member",
     imageUrl: "/images/sm20.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/mohammed-kaleemullah-a-r-573bab296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    oneLiner: "I'm Kaleemullah, a dedicated Computer Science student with a passion for learning and problem-solving.",
+    linkedinUrl:
+      "https://www.linkedin.com/in/mohammed-kaleemullah-a-r-573bab296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    oneLiner:
+      "I'm Kaleemullah, a dedicated Computer Science student with a passion for learning and problem-solving.",
   },
   {
     id: 21,
@@ -350,7 +371,8 @@ export const seniorMembers: seniorMembers[] = [
     name: "Pavithra B",
     role: "Senior Member",
     imageUrl: "/images/sm22.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/pavithra-baskaran-9b59b51a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedinUrl:
+      "https://www.linkedin.com/in/pavithra-baskaran-9b59b51a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     oneLiner: "Oh! I can fly?",
   },
   {
@@ -366,7 +388,8 @@ export const seniorMembers: seniorMembers[] = [
     name: "Pavithraa Jawahar",
     role: "Senior Member",
     imageUrl: "/images/sm24.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/pavithraa-jawahar-1a835a249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedinUrl:
+      "https://www.linkedin.com/in/pavithraa-jawahar-1a835a249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     oneLiner: "Celebrating the little things!!",
   },
   {
@@ -374,7 +397,8 @@ export const seniorMembers: seniorMembers[] = [
     name: "Pratyush Iyer",
     role: "Senior Member",
     imageUrl: "/images/sm25.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/pratyush-iyer-697608234?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    linkedinUrl:
+      "https://www.linkedin.com/in/pratyush-iyer-697608234?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     oneLiner: "Ready to face challenges and a dedicated team worker",
   },
   {
@@ -382,7 +406,8 @@ export const seniorMembers: seniorMembers[] = [
     name: "Prisha",
     role: "Senior Member",
     imageUrl: "/images/sm26.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/prisha-s-0a3805190?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    linkedinUrl:
+      "https://www.linkedin.com/in/prisha-s-0a3805190?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     oneLiner: "To live will be an awfully big adventure",
   },
   {
@@ -391,7 +416,8 @@ export const seniorMembers: seniorMembers[] = [
     role: "Senior Member",
     imageUrl: "/images/sm27.jpg",
     linkedinUrl: "https://www.linkedin.com/in/ramanathan-muthukumar-00329224a",
-    oneLiner: "A beacon of positivity and determination, fueled by an insatiable passion for learning and an unmatched work ethic.",
+    oneLiner:
+      "A beacon of positivity and determination, fueled by an insatiable passion for learning and an unmatched work ethic.",
   },
   {
     id: 28,
@@ -446,7 +472,8 @@ export const seniorMembers: seniorMembers[] = [
     name: "Sowmiya R",
     role: "Senior Member",
     imageUrl: "/images/sm34.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/sowmiya-r-2721b0266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedinUrl:
+      "https://www.linkedin.com/in/sowmiya-r-2721b0266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     oneLiner: "A flower does not compete with others, it just blooms.",
   },
   {
@@ -455,14 +482,16 @@ export const seniorMembers: seniorMembers[] = [
     role: "Senior Member",
     imageUrl: "/images/sm35.png",
     linkedinUrl: "",
-    oneLiner: "A girl who loves to be with people and challenges herself to do the best.",
+    oneLiner:
+      "A girl who loves to be with people and challenges herself to do the best.",
   },
   {
     id: 36,
     name: "Sowndarya S",
     role: "Senior Member",
     imageUrl: "/images/sm36.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/sowndarya-s-815968288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedinUrl:
+      "https://www.linkedin.com/in/sowndarya-s-815968288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     oneLiner: "Life has no remote...just get up and change it yourself ",
   },
   {
@@ -470,7 +499,8 @@ export const seniorMembers: seniorMembers[] = [
     name: "Srimathi R",
     role: "Senior Member",
     imageUrl: "/images/sm37.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/srimathi-r-7774aa287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedinUrl:
+      "https://www.linkedin.com/in/srimathi-r-7774aa287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     oneLiner: "Star gazing and soul searching 🫧",
   },
   {
@@ -478,7 +508,8 @@ export const seniorMembers: seniorMembers[] = [
     name: "S Srinidhi",
     role: "Senior Member",
     imageUrl: "/images/sm38.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/srinidhi-s-8a10b927b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedinUrl:
+      "https://www.linkedin.com/in/srinidhi-s-8a10b927b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     oneLiner: "miracles♡",
   },
   {
@@ -502,7 +533,8 @@ export const seniorMembers: seniorMembers[] = [
     name: "Swaathysri Maheswaran",
     role: "Senior Member",
     imageUrl: "/images/sm41.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/swaathysri-maheswaran-311458288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedinUrl:
+      "https://www.linkedin.com/in/swaathysri-maheswaran-311458288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     oneLiner: "A procrastinator, but not a quitter.",
   },
   {
@@ -518,8 +550,10 @@ export const seniorMembers: seniorMembers[] = [
     name: "VAISHNAVI MADABHUSHI",
     role: "Senior Member",
     imageUrl: "/images/sm43.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/vaishnavi-madabhushi-716072287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    oneLiner: "Just here to drop some casual brilliance and disappear like I wasn’t even trying",
+    linkedinUrl:
+      "https://www.linkedin.com/in/vaishnavi-madabhushi-716072287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    oneLiner:
+      "Just here to drop some casual brilliance and disappear like I wasn’t even trying",
   },
   {
     id: 44,
@@ -542,7 +576,8 @@ export const seniorMembers: seniorMembers[] = [
     name: "VEERA MANIKANDAN A",
     role: "Senior Member",
     imageUrl: "/images/sm46.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/veera-manikandan-6aa8a825a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedinUrl:
+      "https://www.linkedin.com/in/veera-manikandan-6aa8a825a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     oneLiner: "A Life Enthusiast With Better Knowledge About World.",
   },
   {
@@ -559,14 +594,16 @@ export const seniorMembers: seniorMembers[] = [
     role: "Senior Member",
     imageUrl: "/images/sm48.jpg",
     linkedinUrl: "https://www.linkedin.com/in/vinaya-b-96a67a293",
-    oneLiner: "I pick up things quickly, get a bit thrown off, but I always bounce back to claim the next win.",
+    oneLiner:
+      "I pick up things quickly, get a bit thrown off, but I always bounce back to claim the next win.",
   },
   {
     id: 49,
     name: "J Vishnu",
     role: "Senior Member",
     imageUrl: "/images/sm49.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/vishnu-janardhanan-b029aa299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    linkedinUrl:
+      "https://www.linkedin.com/in/vishnu-janardhanan-b029aa299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     oneLiner: "Hamilton is great but Verstappen is just better",
   },
   {
@@ -583,22 +620,25 @@ export const seniorMembers: seniorMembers[] = [
     role: "Senior Member",
     imageUrl: "/images/sm51.jpg",
     linkedinUrl: "https://www.linkedin.com/in/abarna-chawla-a27630297",
-    oneLiner: "Someone who thrives on curiosity and enjoys learning new things.",
+    oneLiner:
+      "Someone who thrives on curiosity and enjoys learning new things.",
   },
   {
     id: 52,
     name: "Abhinaya V",
     role: "Senior Member",
     imageUrl: "/images/sm52.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/abhinaya-vijayakumar-120786312?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedinUrl:
+      "https://www.linkedin.com/in/abhinaya-vijayakumar-120786312?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     oneLiner: "Take the risk or lose the chance",
   },
   {
-    id: 53, 
+    id: 53,
     name: "Abishek M",
     role: "Senior Member",
     imageUrl: "/images/sm53.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/abishek-m-a92903236?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    linkedinUrl:
+      "https://www.linkedin.com/in/abishek-m-a92903236?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     oneLiner: "Live as if you were to die tomorrow.",
   },
   {
@@ -606,7 +646,8 @@ export const seniorMembers: seniorMembers[] = [
     name: "ABU SATHIK AFRIDI S",
     role: "Senior Member",
     imageUrl: "/images/sm54.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/abu-sathik-afridi-s-eee-10781a31a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedinUrl:
+      "https://www.linkedin.com/in/abu-sathik-afridi-s-eee-10781a31a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     oneLiner: "A potential engineer with crazy ideas ",
   },
   {
@@ -614,7 +655,8 @@ export const seniorMembers: seniorMembers[] = [
     name: "Adhitya M",
     role: "Senior Member",
     imageUrl: "/images/sm55.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/adhitya-m-516a5a2a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedinUrl:
+      "https://www.linkedin.com/in/adhitya-m-516a5a2a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     oneLiner: "Escaping Reality !",
   },
   {
@@ -630,8 +672,10 @@ export const seniorMembers: seniorMembers[] = [
     name: "Angeline Jenisha V",
     role: "Senior Member",
     imageUrl: "/images/sm57.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/angeline-jenisha-v-189204321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    oneLiner: "Tech enthusiast dedicated to simplifying complex problems with innovative solutions",
+    linkedinUrl:
+      "https://www.linkedin.com/in/angeline-jenisha-v-189204321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    oneLiner:
+      "Tech enthusiast dedicated to simplifying complex problems with innovative solutions",
   },
   {
     id: 58,
@@ -639,7 +683,8 @@ export const seniorMembers: seniorMembers[] = [
     role: "Senior Member",
     imageUrl: "/images/sm58.jpg",
     linkedinUrl: "https://www.linkedin.com/in/senior-member-58",
-    oneLiner: "An enthusiastic learner, eager to explore new chapters of life with curiosity and passion./",
+    oneLiner:
+      "An enthusiastic learner, eager to explore new chapters of life with curiosity and passion./",
   },
   {
     id: 59,
@@ -654,15 +699,18 @@ export const seniorMembers: seniorMembers[] = [
     name: "Bhagya Shree S",
     role: "Senior Member",
     imageUrl: "/images/sm60.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/s-bhagya-shree-b9079a255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    oneLiner: "Free yourself from the comfort zone and explore all the opportunities, one step at a time ;)",
+    linkedinUrl:
+      "https://www.linkedin.com/in/s-bhagya-shree-b9079a255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    oneLiner:
+      "Free yourself from the comfort zone and explore all the opportunities, one step at a time ;)",
   },
   {
     id: 61,
     name: "Bharathraj",
     role: "Senior Member",
     imageUrl: "/images/sm61.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/bharathraj-ranjith-kumar-aa5162294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedinUrl:
+      "https://www.linkedin.com/in/bharathraj-ranjith-kumar-aa5162294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     oneLiner: "Spins on stage, spirals in Mind",
   },
   {
@@ -686,7 +734,8 @@ export const seniorMembers: seniorMembers[] = [
     name: "Deepthi MG",
     role: "Senior Member",
     imageUrl: "/images/sm64.png",
-    linkedinUrl: "https://www.linkedin.com/in/deepthimg?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedinUrl:
+      "https://www.linkedin.com/in/deepthimg?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     oneLiner: "If I'm told to write even a one liner, I'll sleep",
   },
   {
@@ -694,7 +743,8 @@ export const seniorMembers: seniorMembers[] = [
     name: "Devasena C A S",
     role: "Senior Member",
     imageUrl: "/images/sm65.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/devasena-cas-8570242a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    linkedinUrl:
+      "https://www.linkedin.com/in/devasena-cas-8570242a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     oneLiner: "Agile, enthusiastic, no regrets.",
   },
   {
@@ -702,7 +752,8 @@ export const seniorMembers: seniorMembers[] = [
     name: "K Dhiraj",
     role: "Senior Member",
     imageUrl: "/images/sm66.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/dhiraj-kumaraguru-88b29a299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedinUrl:
+      "https://www.linkedin.com/in/dhiraj-kumaraguru-88b29a299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     oneLiner: "Rejoice in solitude ",
   },
   {
@@ -710,7 +761,8 @@ export const seniorMembers: seniorMembers[] = [
     name: "Harini Chinnasamy",
     role: "Senior Member",
     imageUrl: "/images/sm67.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/harini-chinnasamy-577209291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedinUrl:
+      "https://www.linkedin.com/in/harini-chinnasamy-577209291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     oneLiner: "Fake it till you Make it",
   },
   {
@@ -742,7 +794,8 @@ export const seniorMembers: seniorMembers[] = [
     name: "Harshitha S",
     role: "Senior Member",
     imageUrl: "/images/sm71.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/harshitha-s-b7a01a2a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedinUrl:
+      "https://www.linkedin.com/in/harshitha-s-b7a01a2a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     oneLiner: "Chasing growth, not perfection ",
   },
   {
@@ -759,15 +812,18 @@ export const seniorMembers: seniorMembers[] = [
     role: "Senior Member",
     imageUrl: "/images/sm73.png",
     linkedinUrl: "https://www.linkedin.com/in/senior-member-73",
-    oneLiner: "I am an enthusiastic, resilient , organised and ambitious person",
+    oneLiner:
+      "I am an enthusiastic, resilient , organised and ambitious person",
   },
   {
     id: 74,
     name: "Madhavan S",
     role: "Senior Member",
     imageUrl: "/images/sm74.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/madhavan-s-73581217659710121720?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    oneLiner: "An evolving story of passion, learning, and endless possibilities",
+    linkedinUrl:
+      "https://www.linkedin.com/in/madhavan-s-73581217659710121720?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    oneLiner:
+      "An evolving story of passion, learning, and endless possibilities",
   },
   {
     id: 75,
@@ -775,7 +831,8 @@ export const seniorMembers: seniorMembers[] = [
     role: "Senior Member",
     imageUrl: "/images/sm75.jpg",
     linkedinUrl: "https://www.linkedin.com/in/madhumitha-ravi-36a21732b",
-    oneLiner: "Driven by creativity and strong work ethic, I approach every project with enthusiasm",
+    oneLiner:
+      "Driven by creativity and strong work ethic, I approach every project with enthusiasm",
   },
   {
     id: 76,
@@ -790,8 +847,10 @@ export const seniorMembers: seniorMembers[] = [
     name: "Meenakshi M",
     role: "Senior Member",
     imageUrl: "/images/sm77.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/meenakshi-manivannan-254ab224b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-    oneLiner: "I am an enthusiastic learner, eager to explore and grow across diverse fields",
+    linkedinUrl:
+      "https://www.linkedin.com/in/meenakshi-manivannan-254ab224b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    oneLiner:
+      "I am an enthusiastic learner, eager to explore and grow across diverse fields",
   },
   {
     id: 78,
@@ -799,7 +858,8 @@ export const seniorMembers: seniorMembers[] = [
     role: "Senior Member",
     imageUrl: "/images/sm78.jpg",
     linkedinUrl: "www.linkedin.com/in/megha-rajeevan-b13129330",
-    oneLiner: "A dynamic thinker and enthusiastic collaborator, excited to bring fresh ideas and positive energy to our college community",
+    oneLiner:
+      "A dynamic thinker and enthusiastic collaborator, excited to bring fresh ideas and positive energy to our college community",
   },
   {
     id: 79,
@@ -814,7 +874,8 @@ export const seniorMembers: seniorMembers[] = [
     name: "Nagappan VRA",
     role: "Senior Member",
     imageUrl: "/images/sm80.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/nagappan-veerappan-ab10b2295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedinUrl:
+      "https://www.linkedin.com/in/nagappan-veerappan-ab10b2295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     oneLiner: "It is never too late to be what you might have been:)",
   },
   {
@@ -846,7 +907,8 @@ export const seniorMembers: seniorMembers[] = [
     name: "Pranav AV",
     role: "Senior Member",
     imageUrl: "/images/sm84.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/pranav-a-v-4a0348296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    linkedinUrl:
+      "https://www.linkedin.com/in/pranav-a-v-4a0348296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     oneLiner: "I am a second year IT student who enjoys gaming",
   },
   {
@@ -855,7 +917,8 @@ export const seniorMembers: seniorMembers[] = [
     role: "Senior Member",
     imageUrl: "/images/sm85.jpg",
     linkedinUrl: "https://www.linkedin.com/in/rajalakshmi-a-a5a0532b2/ ",
-    oneLiner: "It is our choices that show what we truly are, far more than our abilities",
+    oneLiner:
+      "It is our choices that show what we truly are, far more than our abilities",
   },
   {
     id: 86,
@@ -870,7 +933,8 @@ export const seniorMembers: seniorMembers[] = [
     name: "Sanjay S",
     role: "Senior Member",
     imageUrl: "/images/sm87.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/sanjay-shanmugam-a7b38432b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedinUrl:
+      "https://www.linkedin.com/in/sanjay-shanmugam-a7b38432b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     oneLiner: "Part time learner, Full time Car-Enthusiast",
   },
   {
@@ -878,7 +942,8 @@ export const seniorMembers: seniorMembers[] = [
     name: "Sanjeth S",
     role: "Senior Member",
     imageUrl: "/images/sm88.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/sanjeth-s-0721ab321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    linkedinUrl:
+      "https://www.linkedin.com/in/sanjeth-s-0721ab321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     oneLiner: "Living life in the fast lane ",
   },
   {
@@ -886,7 +951,8 @@ export const seniorMembers: seniorMembers[] = [
     name: "Shree Kheerthi Agrathaa N",
     role: "Senior Member",
     imageUrl: "/images/sm89.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/shree-kheerthi-agrathaa-napa-201652255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    linkedinUrl:
+      "https://www.linkedin.com/in/shree-kheerthi-agrathaa-napa-201652255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     oneLiner: "This and That...its all about holistic abunDANCE!",
   },
   {
@@ -894,8 +960,10 @@ export const seniorMembers: seniorMembers[] = [
     name: "Shreya V",
     role: "Senior Member",
     imageUrl: "/images/sm90.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/shreya-venkat-516a10304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    oneLiner: "Here to contribute ideas , collab with peers and enjoy the Forese experience! ",
+    linkedinUrl:
+      "https://www.linkedin.com/in/shreya-venkat-516a10304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    oneLiner:
+      "Here to contribute ideas , collab with peers and enjoy the Forese experience! ",
   },
   {
     id: 91,
@@ -926,7 +994,8 @@ export const seniorMembers: seniorMembers[] = [
     name: "Shriram Narasimhan",
     role: "Senior Member",
     imageUrl: "/images/sm94.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/shriram-narasimhan-83bb5529b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedinUrl:
+      "https://www.linkedin.com/in/shriram-narasimhan-83bb5529b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     oneLiner: "Stay orginal and let the world copy you",
   },
   {
@@ -942,7 +1011,8 @@ export const seniorMembers: seniorMembers[] = [
     name: "Sri Ananya I",
     role: "Senior Member",
     imageUrl: "/images/sm96.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/ananya-undefined-0292a7293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedinUrl:
+      "https://www.linkedin.com/in/ananya-undefined-0292a7293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     oneLiner: "Lowkey personality with high key intrusive thoughts",
   },
   {
@@ -974,8 +1044,10 @@ export const seniorMembers: seniorMembers[] = [
     name: "G. Thirukumaran",
     role: "Senior Member",
     imageUrl: "/images/sm100.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/thirukumaran-g-5630792a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    oneLiner: "I enjoy finishing projects early—it’s only professional to make it look like a battle",
+    linkedinUrl:
+      "https://www.linkedin.com/in/thirukumaran-g-5630792a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    oneLiner:
+      "I enjoy finishing projects early—it’s only professional to make it look like a battle",
   },
   {
     id: 101,
@@ -990,7 +1062,8 @@ export const seniorMembers: seniorMembers[] = [
     name: "Varshini M",
     role: "Senior Member",
     imageUrl: "/images/sm102.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/varshini-m-734b122b2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedinUrl:
+      "https://www.linkedin.com/in/varshini-m-734b122b2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     oneLiner: "Tenacious spirits are driven by determination",
   },
   {
@@ -998,7 +1071,8 @@ export const seniorMembers: seniorMembers[] = [
     name: "Varshitha.M",
     role: "Senior Member",
     imageUrl: "/images/sm103.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/varshitha-m-408823319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedinUrl:
+      "https://www.linkedin.com/in/varshitha-m-408823319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     oneLiner: "A blithesome person with a great quest for knowledge",
   },
 ];
@@ -1081,8 +1155,10 @@ export const members: members[] = [
     name: "Barshana Rani T",
     role: "Member",
     imageUrl: "/images/m10.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/barshana-rani-thothathiri-013745321/",
-    oneLiner: "At the intersection of code and cells, I aspire to transform ideas into breakthroughs.",
+    linkedinUrl:
+      "https://www.linkedin.com/in/barshana-rani-thothathiri-013745321/",
+    oneLiner:
+      "At the intersection of code and cells, I aspire to transform ideas into breakthroughs.",
   },
   {
     id: 11,
@@ -1090,22 +1166,25 @@ export const members: members[] = [
     role: "Member",
     imageUrl: "/images/m11.jpg",
     linkedinUrl: "https://www.linkedin.com/in/bhushika-rameshbabu-3791b4341/",
-    oneLiner: "Someone who enjoys bringing ideas to life and quietly making a difference in every team I’m part of.",
+    oneLiner:
+      "Someone who enjoys bringing ideas to life and quietly making a difference in every team I’m part of.",
   },
   {
     id: 12,
     name: "Devadharshini SA",
     role: "Member",
     imageUrl: "/images/m12.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/devadharshini-s-a-6884https://www.linkedin.com/in/devadharshinisa07/",
-    oneLiner: "Designing Today , Defining Tomorrow ", 
+    linkedinUrl:
+      "https://www.linkedin.com/in/devadharshini-s-a-6884https://www.linkedin.com/in/devadharshinisa07/",
+    oneLiner: "Designing Today , Defining Tomorrow ",
   },
   {
     id: 13,
     name: "Dharshika Sampathkumar",
     role: "Member",
     imageUrl: "/images/m13.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/dharshika-sampathkumar-52038a354/",
+    linkedinUrl:
+      "https://www.linkedin.com/in/dharshika-sampathkumar-52038a354/",
     oneLiner: "Driven by curiosity, powered by Passion.",
   },
   {
@@ -1114,7 +1193,8 @@ export const members: members[] = [
     role: "Member",
     imageUrl: "/images/m14.jpg",
     linkedinUrl: "https://www.linkedin.com/in/divya-shree-m-09531631a/",
-    oneLiner: "I’m an optimistic person who loves coding, connecting with people, and making life wonderful.",
+    oneLiner:
+      "I’m an optimistic person who loves coding, connecting with people, and making life wonderful.",
   },
   {
     id: 15,
@@ -1201,7 +1281,8 @@ export const members: members[] = [
     name: "Mayooritha P",
     role: "Member",
     imageUrl: "/images/m25.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/mayooritha-pugazhenthi-8a43b0327/",
+    linkedinUrl:
+      "https://www.linkedin.com/in/mayooritha-pugazhenthi-8a43b0327/",
     oneLiner: "Hustle, but stay human",
   },
   {
@@ -1210,7 +1291,8 @@ export const members: members[] = [
     role: "Member",
     imageUrl: "/images/m26.jpg",
     linkedinUrl: "https://www.linkedin.com/in/mirthun-k-s-858b7a204",
-    oneLiner: "Carving out my path with love, grateful for the self I am becoming",
+    oneLiner:
+      "Carving out my path with love, grateful for the self I am becoming",
   },
   {
     id: 27,
@@ -1249,8 +1331,10 @@ export const members: members[] = [
     name: "Palanichandar Ramalingam",
     role: "Member",
     imageUrl: "/images/m31.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/palanichandar-ramalingam-55243131b/",
-    oneLiner: "Living with confidence , working with purpose and walking with faith",
+    linkedinUrl:
+      "https://www.linkedin.com/in/palanichandar-ramalingam-55243131b/",
+    oneLiner:
+      "Living with confidence , working with purpose and walking with faith",
   },
   {
     id: 32,
@@ -1266,7 +1350,8 @@ export const members: members[] = [
     role: "Member",
     imageUrl: "/images/m33.png",
     linkedinUrl: "https://www.linkedin.com/in/praneet-g-361b22385/",
-    oneLiner: "I am passionate about solving problems in creative ways and love connecting with people to share ideas and inspire each other.",
+    oneLiner:
+      "I am passionate about solving problems in creative ways and love connecting with people to share ideas and inspire each other.",
   },
   {
     id: 34,
@@ -1274,7 +1359,8 @@ export const members: members[] = [
     role: "Member",
     imageUrl: "/images/m34.jpg",
     linkedinUrl: "https://www.linkedin.com/in/m-pranaya-576842383/",
-    oneLiner: "I am a dedicated and hardworking person with good communication skills.",
+    oneLiner:
+      "I am a dedicated and hardworking person with good communication skills.",
   },
   {
     id: 35,
@@ -1289,7 +1375,8 @@ export const members: members[] = [
     name: "Prithivikaa D",
     role: "Member",
     imageUrl: "/images/m36.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/prithivikaa-dharanipathi-b99584384/",
+    linkedinUrl:
+      "https://www.linkedin.com/in/prithivikaa-dharanipathi-b99584384/",
     oneLiner: "Be Obsessed With Your Own Potential",
   },
   {
@@ -1308,14 +1395,15 @@ export const members: members[] = [
     linkedinUrl: "https://www.linkedin.com/in/r-sakthi-rasagnya-41b2b032a/",
     oneLiner: "Fueled by passion, powered by joy.",
   },
-  
+
   {
     id: 39,
     name: "Sam Joshua S",
     role: "Member",
     imageUrl: "/images/m39.jpg",
     linkedinUrl: "https://www.linkedin.com/in/sam-joshua-a0102a289/",
-    oneLiner: "You either die a hero, or you live long enough to see yourself become the villain.",
+    oneLiner:
+      "You either die a hero, or you live long enough to see yourself become the villain.",
   },
   {
     id: 40,
@@ -1339,7 +1427,8 @@ export const members: members[] = [
     role: "Member",
     imageUrl: "/images/m42.jpg",
     linkedinUrl: "https://www.linkedin.com/in/sanjay-srinivasan-b-49a50a361/",
-    oneLiner: "Aspiring ECE student and active Foresce Club member, driven to excel in placements and beyond.",
+    oneLiner:
+      "Aspiring ECE student and active Foresce Club member, driven to excel in placements and beyond.",
   },
   {
     id: 43,
@@ -1349,7 +1438,7 @@ export const members: members[] = [
     linkedinUrl: "https://www.linkedin.com/in/sanjitha-ravishankar-b2143b319/",
     oneLiner: "Half chaos, half chill, half me!",
   },
-  
+
   {
     id: 44,
     name: "Sarabesh Adithya D",
@@ -1382,7 +1471,7 @@ export const members: members[] = [
     linkedinUrl: "hhttps://www.linkedin.com/in/shabreen-shajahan-7084b1327/",
     oneLiner: "The most courageous act is to still think for yourself. Aloud.",
   },
-  
+
   {
     id: 48,
     name: "Shamritha",
@@ -1397,7 +1486,8 @@ export const members: members[] = [
     role: "Member",
     imageUrl: "/images/m49.jpg",
     linkedinUrl: "https://www.linkedin.com/in/shawn-abraham-joseph-3b2417329/",
-    oneLiner: "If you want to win the lottery, you have to make the money to buy the ticket." ,
+    oneLiner:
+      "If you want to win the lottery, you have to make the money to buy the ticket.",
   },
   {
     id: 50,
@@ -1412,16 +1502,20 @@ export const members: members[] = [
     name: "Shree Vidhya S",
     role: "Member",
     imageUrl: "/images/m51.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/shree-vidhya-somasundaram-2033ba327/",
-    oneLiner: "I’m just a curious soul who enjoys figuring things out and having fun along the way.",
+    linkedinUrl:
+      "https://www.linkedin.com/in/shree-vidhya-somasundaram-2033ba327/",
+    oneLiner:
+      "I’m just a curious soul who enjoys figuring things out and having fun along the way.",
   },
   {
     id: 52,
     name: "Shreenidhi C",
     role: "Member",
     imageUrl: "/images/m52.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/shreenidhi-chandrasekaran-829400327/",
-    oneLiner: "Curious and passion-driven individual with a friendly demeanor. ",
+    linkedinUrl:
+      "https://www.linkedin.com/in/shreenidhi-chandrasekaran-829400327/",
+    oneLiner:
+      "Curious and passion-driven individual with a friendly demeanor. ",
   },
   {
     id: 53,
@@ -1436,7 +1530,8 @@ export const members: members[] = [
     name: "Sree Varshini S",
     role: "Member",
     imageUrl: "/images/m54.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/sreevarshini-surendran-83ab56311/",
+    linkedinUrl:
+      "https://www.linkedin.com/in/sreevarshini-surendran-83ab56311/",
     oneLiner: "Low-key. On purpose.",
   },
   {
@@ -1453,7 +1548,8 @@ export const members: members[] = [
     role: "Member",
     imageUrl: "/images/m56.jpg",
     linkedinUrl: "https://www.linkedin.com/in/srinidhi-sarasija-259a61299/",
-    oneLiner: "I no longer dislike Mondays, I'm mature now. I dislike the whole week.",
+    oneLiner:
+      "I no longer dislike Mondays, I'm mature now. I dislike the whole week.",
   },
   {
     id: 57,
@@ -1468,7 +1564,8 @@ export const members: members[] = [
     name: "Sai Srutthe",
     role: "Member",
     imageUrl: "/images/m58.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/sai-srutthe-saravana-kumar-263122359/",
+    linkedinUrl:
+      "https://www.linkedin.com/in/sai-srutthe-saravana-kumar-263122359/",
     oneLiner: "Focused on Progress.",
   },
   {
@@ -1479,8 +1576,7 @@ export const members: members[] = [
     linkedinUrl: "https://www.linkedin.com/in/sowmiya-r-838058327/",
     oneLiner: "Chasing growth, not perfection.",
   },
-  
-  
+
   {
     id: 60,
     name: "Tanish S",
@@ -1495,7 +1591,8 @@ export const members: members[] = [
     role: "Member",
     imageUrl: "/images/m61.jpg",
     linkedinUrl: "https://www.linkedin.com/in/thanya-singh-a07259328/",
-    oneLiner: "I ask questions like a pro , organize the answers like a perfectionist",
+    oneLiner:
+      "I ask questions like a pro , organize the answers like a perfectionist",
   },
   {
     id: 62,
