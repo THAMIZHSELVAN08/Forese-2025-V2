@@ -578,7 +578,7 @@ export default function StickyScroll() {
 
           {/* Contact Info Cards */}
           <motion.div
-            className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 w-full max-w-4xl"
+            className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 w-full max-w-4xl"
             variants={containerVariants}
           >
             <motion.div
@@ -592,27 +592,19 @@ export default function StickyScroll() {
             </motion.div>
 
             <motion.div
-              className="text-center p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300"
+              className="rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300 overflow-hidden"
               variants={itemVariants}
               whileHover={{ scale: 1.05, y: -5 }}
             >
-              <FaPhone className="text-green-400 h-8 w-8 mx-auto mb-4" />
-              <h3 className="text-white text-lg font-semibold mb-2">Phone</h3>
-              <p className="text-gray-300 text-sm">+91 879987969</p>
-            </motion.div>
-
-            <motion.div
-              className="text-center p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300"
-              variants={itemVariants}
-              whileHover={{ scale: 1.05, y: -5 }}
-            >
-              <FaMapMarkerAlt className="text-red-400 h-8 w-8 mx-auto mb-4" />
-              <h3 className="text-white text-lg font-semibold mb-2">
-                Location
-              </h3>
-              <p className="text-gray-300 text-sm">
-                Sri Venkateswara College of Engineering
-              </p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.992220425016!2d79.9691959749153!3d12.98688508729184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a528cd4533f1a09%3A0x118892a610d4a2d4!2sSri%20Venkateswara%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1728202545391!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </motion.div>
           </motion.div>
         </div>

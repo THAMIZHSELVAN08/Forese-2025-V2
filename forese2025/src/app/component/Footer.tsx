@@ -141,7 +141,6 @@ export default function Footer() {
                 { label: "Home", href: "/" },
                 { label: "Events", href: "/Event" },
                 { label: "Team", href: "/Team" },
-                { label: "Gallery", href: "/gallery" },
               ].map((item, index) => (
                 <motion.li key={item.label}>
                   <Link
@@ -182,10 +181,6 @@ export default function Footer() {
                 <FaEnvelope className="text-blue-400 h-4 w-4 flex-shrink-0" />
                 <span className="text-gray-300 text-sm">forese@svce.ac.in</span>
               </div>
-              <div className="flex items-center space-x-3">
-                <FaPhone className="text-green-400 h-4 w-4 flex-shrink-0" />
-                <span className="text-gray-300 text-sm">+91 9876543210</span>
-              </div>
               <div className="flex items-start space-x-3">
                 <FaMapMarkerAlt className="text-red-400 h-4 w-4 flex-shrink-0 mt-1" />
                 <span className="text-gray-300 text-sm">
@@ -207,20 +202,6 @@ export default function Footer() {
         >
           <div className="text-gray-400 text-sm mb-4 sm:mb-0">
             © 2025 FORESE. All rights reserved.
-          </div>
-          <div className="flex space-x-6">
-            <Link
-              href="/privacy"
-              className="text-gray-400 hover:text-white text-sm transition-colors duration-300"
-            >
-              Privacy Policy
-            </Link>
-            <Link
-              href="/terms"
-              className="text-gray-400 hover:text-white text-sm transition-colors duration-300"
-            >
-              Terms of Service
-            </Link>
           </div>
         </motion.div>
       </div>
