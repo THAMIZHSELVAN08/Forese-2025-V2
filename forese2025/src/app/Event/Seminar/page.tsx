@@ -116,7 +116,7 @@ const SeminarPage = () => {
             transition={{ duration: 0.7 }}
           >
             <div className="grid grid-cols-2 gap-4">
-              {["/Seminar.JPG", "/fored.JPG", "/FOR.png"].map((src, i) => (
+              {["/Seminar.JPG"].map((src, i) => (
                 <motion.div
                   key={i}
                   whileHover={{ scale: 1.05 }}

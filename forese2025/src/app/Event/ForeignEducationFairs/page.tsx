@@ -60,7 +60,7 @@ const ForedPage = () => {
         >
           <div className="absolute inset-0 z-0">
             <Image
-              src="/fored.JPG" // Make sure to add your image to the public folder
+              src="/foredimg.jpg" // Make sure to add your image to the public folder
               alt="Foreign Universities Education Fair"
               fill
               className="object-cover brightness-50"

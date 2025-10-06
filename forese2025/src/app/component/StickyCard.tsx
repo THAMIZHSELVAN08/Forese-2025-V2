@@ -406,7 +406,7 @@ export default function StickyScroll() {
         ref={section3Ref}
         style={{
           y: y3,
-          backgroundImage: `linear-gradient(rgba(11, 57, 84, 0.6), rgba(11, 57, 84, 0.6)), url('/foredimg.jpg')`,
+          backgroundImage: `linear-gradient(rgba(11, 57, 84, 0.6), rgba(11, 57, 84, 0.6)), url('/mocks.jpeg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
