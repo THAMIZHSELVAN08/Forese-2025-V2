@@ -137,7 +137,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
             {/* Left side: Name, Role, One-liner */}
             <div className="flex flex-col items-start">
               <h3 className="m-0 text-[1.05rem] font-semibold">{c.title}</h3>
-              <p className="m-0 text-[0.85rem] opacity-85">{c.subtitle}</p>
+              <p className="m-0 text-[0.85rem] opacity-85 text-yellow-300">{c.subtitle}</p>
               {c.oneLiner && (
                 <p className="text-[0.8rem] italic opacity-80 font-handwritten">
                   {c.oneLiner}

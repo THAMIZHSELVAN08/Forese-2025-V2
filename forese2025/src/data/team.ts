@@ -146,7 +146,7 @@ export const coreMembers: CoreMember[] = [
   },
   {
     id: 15,
-    name: "Mubashir",
+    name: "Mubashir Sheriff",
     role: "Tech Head",
     imageUrl: "/images/c15.png",
     linkedinUrl: "https://www.linkedin.com/in/r-mubashir-sheriff/",

@@ -78,14 +78,14 @@ const HackathonPage = () => {
 
       <motion.section
         style={{ y, opacity }}
-        className="relative z-10 min-h-[80vh] flex items-center px-4 sm:px-6 lg:px-8"
+        className="relative z-10 min-h-[100vh] min-w-full flex items-center px-4 sm:px-6 lg:px-8"
       >
         <div
           className="max-w-7xl mx-auto text-center"
           style={{ fontFamily: "var(--font-poppins)" }}
         >
           <ShinyText
-            text="FORESE Hackathon"
+            text="Coder's Forum Hackathon"
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white"
             speed={3}
           />
@@ -101,14 +101,6 @@ const HackathonPage = () => {
             solutions.
           </motion.p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <motion.a
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.96 }}
-              className="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-full text-lg shadow-lg"
-              href="#features"
-            >
-              Explore Features
-            </motion.a>
             <Link href="/Event">
               <motion.button
                 whileHover={{ scale: 1.05 }}

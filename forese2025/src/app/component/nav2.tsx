@@ -78,7 +78,7 @@ export default function Nav() {
           </motion.div>
         </Link>
 
-        <div className="flex gap-6 text-white font-light tracking-tight mr-10 items-center">
+        <div className="flex gap-6 text-green-400 font-light tracking-tight mr-10 items-center">
           {navLinks.map((link, index) => (
             <Link key={index} href={link.href}>
               <motion.p
