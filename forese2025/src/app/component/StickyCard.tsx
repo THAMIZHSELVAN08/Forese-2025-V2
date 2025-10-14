@@ -235,7 +235,7 @@ export default function StickyScroll() {
               transition: { duration: 0.5 },
             }}
           >
-            <Image src="/FOR.png" alt="FOR" width={100} height={85} />
+            <Image src="/FOR_1.png" alt="FOR" width={100} height={85} />
           </motion.div>
         </motion.div>
 

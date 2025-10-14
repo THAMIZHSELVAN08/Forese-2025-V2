@@ -1,27 +1,54 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Squares from "../../components/ui/Squares";
 import Image from "next/image";
-import { Users, Briefcase, BarChart, CheckCircle, Award, MessageSquare, UserCheck } from "lucide-react";
+import {
+  Users,
+  Briefcase,
+  BarChart,
+  CheckCircle,
+  Award,
+  MessageSquare,
+  UserCheck,
+} from "lucide-react";
 import Footer from "../component/Footer";
-import  CountUp  from "../../components/ui/CountUp";
+import CountUp from "../../components/ui/CountUp";
 import LogoLoop from "@/components/ui/LogoLoop";
-import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss } from 'react-icons/si';
+import {
+  SiReact,
+  SiNextdotjs,
+  SiTypescript,
+  SiTailwindcss,
+} from "react-icons/si";
 
 const imageLogos = [
   { src: "/tcs.png", alt: "TCS", href: "https://www.tcs.com" },
   { src: "/wipro.png", alt: "Wipro", href: "https://www.wipro.com" },
-  { src: "/freshworks.png", alt: "Freshworks", href: "https://www.freshworks.com" },
-  { src: "/capgemini.png", alt: "Capgemini", href: "https://www.capgemini.com" },
-  { src: "/accenture.png", alt: "Accenture", href: "https://www.accenture.com" },
+  {
+    src: "/freshworks.png",
+    alt: "Freshworks",
+    href: "https://www.freshworks.com",
+  },
+  {
+    src: "/capgemini.png",
+    alt: "Capgemini",
+    href: "https://www.capgemini.com",
+  },
+  {
+    src: "/accenture.png",
+    alt: "Accenture",
+    href: "https://www.accenture.com",
+  },
   { src: "/zoho.png", alt: "Zoho", href: "https://www.zoho.com" },
   { src: "/amazon.png", alt: "Amazon", href: "https://www.amazon.com" },
-  { src: "/lt.png", alt: "Larsen & Toubro", href: "https://www.larsentoubro.com" },
+  {
+    src: "/lt.png",
+    alt: "Larsen & Toubro",
+    href: "https://www.larsentoubro.com",
+  },
   { src: "/hcl.png", alt: "HCL", href: "https://www.hcltech.com" },
 ];
-
-
-
 
 const MockPlacementsPage = () => {
   const fadeInUp = {
@@ -48,28 +75,47 @@ const MockPlacementsPage = () => {
     {
       icon: CheckCircle,
       title: "Technical Assessments",
-      description: "Students undergo rigorous technical evaluations to assess their domain knowledge and problem-solving skills.",
+      description:
+        "Students undergo rigorous technical evaluations to assess their domain knowledge and problem-solving skills.",
     },
     {
       icon: MessageSquare,
       title: "Group Discussions",
-      description: "Collaborative sessions designed to evaluate communication, leadership, and teamwork abilities in a competitive setting.",
+      description:
+        "Collaborative sessions designed to evaluate communication, leadership, and teamwork abilities in a competitive setting.",
     },
     {
       icon: UserCheck,
       title: "Individual Interviews",
-      description: "One-on-one interviews with industry experts provide a realistic experience of the final placement hurdle.",
+      description:
+        "One-on-one interviews with industry experts provide a realistic experience of the final placement hurdle.",
     },
     {
       icon: Award,
       title: "Personalized Feedback",
-      description: "Participants receive detailed, constructive feedback from HR professionals to identify strengths and areas for improvement.",
+      description:
+        "Participants receive detailed, constructive feedback from HR professionals to identify strengths and areas for improvement.",
     },
   ];
 
   return (
     <>
-      <div className="bg-white text-gray-800">
+      <div className="bg-transparent text-gray-800">
+        <div className="fixed inset-0 -z-10">
+          <div
+            className="bg-blue-50"
+            style={{ width: "100%", height: "100%", position: "relative" }}
+          >
+            <Squares
+              speed={0.3}
+              squareSize={40}
+              direction="up" // up, down, left, right, diagonal
+              borderColor="#004aad"
+              hoverFillColor="#222"
+            />
+          </div>{" "}
+        </div>
+
         {/* Hero Section */}
         <motion.section
           className="relative h-[70vh] min-h-[500px] flex items-center justify-center text-white text-center px-4 sm:px-6 lg:px-8"
@@ -77,7 +123,7 @@ const MockPlacementsPage = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 z-0 shadow-lg border-2 border-gray-200">
             <Image
               src="/mocks.jpeg"
               alt="FORESE Mock Placements Event"
@@ -103,14 +149,16 @@ const MockPlacementsPage = () => {
               className="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-gray-200"
               variants={fadeInUp}
             >
-              Our flagship event dedicated to preparing pre-final year students for the rigors of the professional world through simulated placement drives.
+              Our flagship event dedicated to preparing pre-final year students
+              for the rigors of the professional world through simulated
+              placement drives.
             </motion.p>
           </motion.div>
         </motion.section>
 
         {/* About Section */}
         <motion.section
-          className="py-20 lg:py-28 px-4 sm:px-6 lg:px-8"
+          className="py-20 lg:py-28 px-4 sm:px-6 lg:px-8 bg-white border-2 border-grey-200 shadow-lg"
           initial="initial"
           whileInView="animate"
           viewport={{ once: true, amount: 0.3 }}
@@ -121,33 +169,52 @@ const MockPlacementsPage = () => {
               Bridging Talent with Opportunity
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              FORESE&apos;s Mock Placements event is our premier annual program, exclusively for pre-final year students across all disciplines. This preparatory event fosters a competitive atmosphere, offering invaluable insights into actual placement dynamics. It empowers students with essential skills and exposure, helping them hone their abilities in readiness for upcoming career opportunities. In collaboration with Sri Venkateswara College of Engineering, we are proud of this flagship event and remain committed to delivering enhanced outcomes year after year.
+              FORESE&apos;s Mock Placements event is our premier annual program,
+              exclusively for pre-final year students across all disciplines.
+              This preparatory event fosters a competitive atmosphere, offering
+              invaluable insights into actual placement dynamics. It empowers
+              students with essential skills and exposure, helping them hone
+              their abilities in readiness for upcoming career opportunities. In
+              collaboration with Sri Venkateswara College of Engineering, we are
+              proud of this flagship event and remain committed to delivering
+              enhanced outcomes year after year.
             </p>
           </div>
-        </motion.section>
-        <div className="max-w-5xl mx-auto text-center">
+          <div className="w-full text-center bg-white mt-10">
             <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                Companies that have participated in our Mock Placements
+              Companies that have participated in our Mock Placements
             </h1>
-        </div>
-        <div className="mt-10" style={{ height: '100px', position: 'relative', overflow: 'hidden', width: '80%',justifyContent: 'center', margin: 'auto', marginBottom: '50px' }}>
-      <LogoLoop
-        logos={imageLogos}
-        speed={120}
-        direction="left"
-        logoHeight={48}
-        gap={40}
-        pauseOnHover
-        scaleOnHover
-        fadeOut
-        fadeOutColor="#ffffff"
-        ariaLabel="Technology partners"
-      />
-    </div>
+          </div>
+          <div
+            className="mt-10 bg-white w-full"
+            style={{
+              height: "100px",
+              position: "relative",
+              overflow: "hidden",
+              width: "80%",
+              justifyContent: "center",
+              margin: "auto",
+              marginBottom: "50px",
+            }}
+          >
+            <LogoLoop
+              logos={imageLogos}
+              speed={120}
+              direction="left"
+              logoHeight={48}
+              gap={40}
+              pauseOnHover
+              scaleOnHover
+              fadeOut
+              fadeOutColor="#ffffff"
+              ariaLabel="Technology partners"
+            />
+          </div>
+        </motion.section>
 
         {/* Stats Section */}
         <motion.section
-          className="pb-20 lg:pb-28 px-4 sm:px-6 lg:px-8"
+          className="pb-20 lg:pb-28 px-4 sm:px-6 lg:px-8 mt-20 "
           initial="initial"
           whileInView="animate"
           viewport={{ once: true, amount: 0.3 }}
@@ -178,7 +245,7 @@ const MockPlacementsPage = () => {
 
         {/* Process Section */}
         <motion.section
-          className="py-20 lg:py-28 px-4 sm:px-6 lg:px-8 bg-white"
+          className="py-20 lg:py-28 px-4 sm:px-6 lg:px-8 bg-white border-2 border-b-grey-200 shadow-lg"
           initial="initial"
           whileInView="animate"
           viewport={{ once: true, amount: 0.2 }}
@@ -190,18 +257,25 @@ const MockPlacementsPage = () => {
                 The Path to Placement Success
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Our structured process is designed to simulate every stage of a real campus placement drive.
+                Our structured process is designed to simulate every stage of a
+                real campus placement drive.
               </p>
             </motion.div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {processSteps.map((step, index) => (
-                <motion.div key={index} className="text-center" variants={fadeInUp}>
+                <motion.div
+                  key={index}
+                  className="text-center"
+                  variants={fadeInUp}
+                >
                   <div className="flex justify-center mb-5">
                     <div className="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center border-2 border-gray-200">
                       <step.icon className="w-10 h-10 text-gray-700" />
                     </div>
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{step.title}</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">
+                    {step.title}
+                  </h3>
                   <p className="text-gray-600">{step.description}</p>
                 </motion.div>
               ))}
@@ -215,3 +289,4 @@ const MockPlacementsPage = () => {
 };
 
 export default MockPlacementsPage;
+

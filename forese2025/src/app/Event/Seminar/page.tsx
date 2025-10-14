@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
+import Squares from "../../../components/ui/Squares";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import SpotlightCard from "../../../components/ui/SpotlightCard";
@@ -25,23 +26,32 @@ const SeminarPage = () => {
   return (
     <div ref={containerRef} className="min-h-screen overflow-hidden">
       <div className="fixed inset-0 -z-10">
-        <div style={{ width: "100%", height: "100%", position: "relative" }}>
-          <DarkVeil />
-        </div>
+        <div
+          className="bg-blue-50"
+          style={{ width: "100%", height: "100%", position: "relative" }}
+        >
+          <Squares
+            speed={0.3}
+            squareSize={40}
+            direction="up" // up, down, left, right, diagonal
+            borderColor="#004aad"
+            hoverFillColor="#222"
+          />
+        </div>{" "}
       </div>
 
       <motion.section
         style={{ y }}
-        className="relative z-10 min-h-[70vh] flex items-center px-4 sm:px-6 lg:px-8"
+        className="relative z-10 min-h-[70vh] flex items-center px-4 sm:px-6 lg:px-8 bg-white rounded-md"
       >
         <div className="max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div>
             <ShinyText
               text="FORESE Seminars"
-              className="text-4xl sm:text-5xl md:text-6xl font-bold text-white"
+              className="text-4xl sm:text-5xl md:text-6xl font-bold text-blue-900"
               speed={3}
             />
-            <p className="mt-6 text-white/90 text-lg sm:text-xl leading-relaxed">
+            <p className="mt-6 text-black/90 text-lg sm:text-xl leading-relaxed">
               FORESE conducts numerous seminars throughout the year by inviting
               guest speakers from various industries to provide students with
               essential guidance on topics such as entrance exam preparation,

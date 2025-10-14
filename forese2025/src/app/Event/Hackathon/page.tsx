@@ -63,7 +63,7 @@ const HackathonPage = () => {
     >
       <div className="fixed inset-0 -z-10">
         <div
-          className="bg-black"
+          className="bg-blue-50"
           style={{ width: "100%", height: "100%", position: "relative" }}
         >
           <Squares
@@ -85,8 +85,8 @@ const HackathonPage = () => {
           style={{ fontFamily: "var(--font-poppins)" }}
         >
           <ShinyText
-            text="Coder's Forum Hackathon"
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white"
+            text="Coders' Forum Hackathon"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-blue-900"
             speed={3}
           />
           <motion.p
@@ -94,7 +94,7 @@ const HackathonPage = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="mt-6 text-lg sm:text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto"
+            className="mt-6 text-lg sm:text-xl md:text-2xl text-black max-w-3xl mx-auto"
           >
             A hackathon like no other, where students can showcase their skills
             and collaborate with like‑minded peers to build innovative
@@ -105,7 +105,7 @@ const HackathonPage = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.96 }}
-                className="px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-full text-lg backdrop-blur-sm hover:bg-white/10"
+                className="px-8 py-4 border-2 border-white/30 text-black font-semibold rounded-full text-lg backdrop-blur-sm hover:bg-white/10"
               >
                 Back to Events
               </motion.button>
@@ -119,7 +119,7 @@ const HackathonPage = () => {
         className="relative z-10 py-20 px-4 sm:px-6 lg:px-8"
       >
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white text-center mb-12">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black text-center mb-12">
             Why Join Our Hackathon?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -137,7 +137,7 @@ const HackathonPage = () => {
                   <h3 className="text-white text-xl font-bold mb-2">
                     {f.title}
                   </h3>
-                  <p className="text-white/80">{f.description}</p>
+                  <p className="text-white ">{f.description}</p>
                 </SpotlightCard>
               </motion.div>
             ))}
@@ -147,7 +147,7 @@ const HackathonPage = () => {
 
       <section className="relative z-10 py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white text-center mb-12">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black text-center mb-12">
             Gallery
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

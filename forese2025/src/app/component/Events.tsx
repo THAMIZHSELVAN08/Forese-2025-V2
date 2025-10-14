@@ -37,7 +37,7 @@ export default function Event() {
       link: "/Event/Seminar",
     },
     {
-      title: "Coders' Forum Hakathon",
+      title: "Coders' Forum Hackathon",
       description:
         "A hackathon like no other, where students can showcase their skills and collaborate with like-minded peers.",
       url: "/hackathon.JPG",

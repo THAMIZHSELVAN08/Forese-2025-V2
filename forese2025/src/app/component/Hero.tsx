@@ -9,7 +9,7 @@ export default function Hero() {
     <>
       {/* Scrollable Content Layer */}
       {/* Hero Section */}
-      <div className="h-screen flex flex-col font-hanken text-3xl md:text-6xl lg:text-8xl justify-center items-center">
+      <div className="h-screen flex flex-col font-bold font-hanken text-3xl md:text-6xl lg:text-8xl justify-center items-center">
         <span className="inline-flex">
           <h1
             className="text-white text-center"

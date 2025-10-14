@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Squares from "../../components/ui/Squares";
 import {
   Users,
   MessageCircle,
@@ -159,54 +160,84 @@ const GroupDiscussionPage = () => {
     { text: "Going off-topic frequently", icon: Zap },
   ];
 
-  const colorVariants: { [key: string]: { bg: string; text: string; border: string } } = {
-    blue: { bg: "bg-blue-50", text: "text-blue-600", border: "border-blue-200" },
-    teal: { bg: "bg-teal-50", text: "text-teal-600", border: "border-teal-200" },
-    indigo: { bg: "bg-indigo-50", text: "text-indigo-600", border: "border-indigo-200" },
+  const colorVariants: {
+    [key: string]: { bg: string; text: string; border: string };
+  } = {
+    blue: {
+      bg: "bg-blue-50",
+      text: "text-blue-600",
+      border: "border-blue-300",
+    },
+    teal: {
+      bg: "bg-teal-50",
+      text: "text-teal-600",
+      border: "border-teal-300",
+    },
+    indigo: {
+      bg: "bg-indigo-50",
+      text: "text-indigo-600",
+      border: "border-indigo-300",
+    },
     sky: { bg: "bg-sky-50", text: "text-sky-600", border: "border-sky-200" },
-    emerald: { bg: "bg-emerald-50", text: "text-emerald-600", border: "border-emerald-200" },
-    purple: { bg: "bg-purple-50", text: "text-purple-600", border: "border-purple-200" },
+    emerald: {
+      bg: "bg-emerald-50",
+      text: "text-emerald-600",
+      border: "border-emerald-300",
+    },
+    purple: {
+      bg: "bg-purple-50",
+      text: "text-purple-600",
+      border: "border-purple-300",
+    },
   };
 
   return (
     <>
-      <div className="relative min-h-screen text-gray-800 overflow-hidden pt-10">
-        <div className="absolute inset-0 z-[-1] opacity-100">
-          <Iridescence
-            color={[0, 0, 1]} // Using a lighter blue for a more professional feel
-            mouseReact={false}
-            amplitude={0.1}
-            speed={0.5}
-          />
+      <div className="relative min-h-screen bg-transparent text-black overflow-hidden pt-10">
+        <div className="fixed inset-0 -z-10">
+          <div
+            className="bg-blue-50"
+            style={{ width: "100%", height: "100%", position: "relative" }}
+          >
+            <Squares
+              speed={0.3}
+              squareSize={40}
+              direction="up" // up, down, left, right, diagonal
+              borderColor="#004aad"
+              hoverFillColor="#222"
+            />
+          </div>{" "}
         </div>
         {/* Hero Section */}
         <motion.section
-          className="relative py-20 lg:py-28 px-4 sm:px-6 lg:px-8 overflow-hidden"
+          className="relative py-20 lg:py-28 px-4 sm:px-6 lg:px-8 overflow-hidden bg-white backdrop-blur-sm border-2 border-b-gray-200 shadow-lg"
           initial="initial"
           animate="animate"
           variants={staggerContainer}
         >
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center ">
               {/* Main Hero Content */}
               <motion.div className="lg:col-span-6" variants={fadeInUp}>
-                <span className="text-sm font-bold text-white uppercase tracking-wide">
+                <span className="text-sm font-bold text-blue-900 uppercase tracking-wide">
                   Learn the art of strategic communication with this
                 </span>
                 <h1
-                  className="text-4xl lg:text-6xl font-black my-4 leading-tight text-gray-900"
+                  className="text-4xl lg:text-6xl font-black text-black my-4 leading-tight"
                   style={{ fontFamily: "var(--font-poppins)" }}
                 >
                   Group Discussion
                   <span
-                    className="block bg-gradient-to-r from-white to-teal-100 bg-clip-text text-transparent"
+                    className="block text-black bg-clip-text "
                     style={{ fontFamily: "var(--font-poppins)" }}
                   >
                     Mastery Guide
                   </span>
                 </h1>
-                <p className="text-lg text-white mb-8 leading-relaxed max-w-2xl">
-                  Transform your communication skills with our proven strategies. This guide is designed to help you excel in the mock group discussions and stand out in your placements.
+                <p className="text-lg text-blue-900 mb-8 leading-relaxed max-w-2xl">
+                  Transform your communication skills with our proven
+                  strategies. This guide is designed to help you excel in the
+                  mock group discussions and stand out in your placements.
                 </p>
               </motion.div>
 
@@ -216,7 +247,7 @@ const GroupDiscussionPage = () => {
                 variants={fadeInUp}
               >
                 <Image
-                  src="/gd.jpeg" 
+                  src="/gd.jpeg"
                   layout="fill"
                   alt="Students participating in a group discussion"
                   className="w-full h-full object-cover"
@@ -231,7 +262,6 @@ const GroupDiscussionPage = () => {
             </div>
           </div>
         </motion.section>
-
         {/* Benefits Section */}
         <motion.section
           className="py-20 px-4 sm:px-6 lg:px-8"
@@ -243,13 +273,14 @@ const GroupDiscussionPage = () => {
           <div className="max-w-7xl mx-auto">
             <motion.div className="text-center mb-16" variants={fadeInUp}>
               <h2
-                className="text-4xl lg:text-7xl font-black mb-4 text-gray-900"
+                className="text-4xl lg:text-7xl font-black mb-4 text-black"
                 style={{ fontFamily: "var(--font-poppins)" }}
               >
                 Unlock Your Potential
               </h2>
-              <p className="text-lg text-white max-w-2xl mx-auto">
-                Mastering group discussions offers game-changing benefits for your career.
+              <p className="text-lg text-black max-w-2xl mx-auto p-2 bg-white backdrop-blur-sm rounded-md border-2 border-blue-900">
+                Mastering group discussions offers game-changing benefits for
+                your career.
               </p>
             </motion.div>
 
@@ -260,8 +291,12 @@ const GroupDiscussionPage = () => {
                   className={`p-8 rounded-xl border ${colorVariants[benefit.color].border} ${colorVariants[benefit.color].bg} transition-all duration-300 hover:shadow-lg hover:-translate-y-1`}
                   variants={fadeInUp}
                 >
-                  <div className={`p-3 inline-block rounded-lg mb-4 ${colorVariants[benefit.color].text.replace('text', 'bg')}/10`}>
-                    <benefit.icon className={`w-7 h-7 ${colorVariants[benefit.color].text}`} />
+                  <div
+                    className={`p-3 inline-block rounded-lg mb-4 ${colorVariants[benefit.color].text.replace("text", "bg")}/10`}
+                  >
+                    <benefit.icon
+                      className={`w-7 h-7 ${colorVariants[benefit.color].text}`}
+                    />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">
                     {benefit.title}
@@ -274,10 +309,9 @@ const GroupDiscussionPage = () => {
             </div>
           </div>
         </motion.section>
-
         {/* GD Phases Timeline */}
         <motion.section
-          className="py-20 px-4 sm:px-6 lg:px-8 bg-white"
+          className="py-20 px-4 sm:px-6 lg:px-8 bg-white border-2 border-t-gray-200 border-b-gray-200 shadow-lg"
           initial="initial"
           whileInView="animate"
           viewport={{ once: true, amount: 0.2 }}
@@ -292,7 +326,8 @@ const GroupDiscussionPage = () => {
                 The Winning Playbook
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Master these four phases to navigate any group discussion with confidence.
+                Master these four phases to navigate any group discussion with
+                confidence.
               </p>
             </motion.div>
 
@@ -303,9 +338,13 @@ const GroupDiscussionPage = () => {
                   className="relative bg-gray-50 p-8 rounded-xl border border-gray-200 overflow-hidden transition-all duration-300 hover:shadow-md hover:border-gray-300"
                   variants={fadeInUp}
                 >
-                  <div className={`absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r ${phase.color}`}></div>
+                  <div
+                    className={`absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r ${phase.color}`}
+                  ></div>
                   <div className="flex items-start gap-5">
-                    <div className={`p-3 rounded-lg bg-gradient-to-br ${phase.color} text-white flex-shrink-0`}>
+                    <div
+                      className={`p-3 rounded-lg bg-gradient-to-br ${phase.color} text-white flex-shrink-0`}
+                    >
                       <phase.icon className="w-6 h-6" />
                     </div>
                     <div className="flex-1">
@@ -325,7 +364,6 @@ const GroupDiscussionPage = () => {
             </div>
           </div>
         </motion.section>
-
         {/* Tips Section */}
         <motion.section
           className="py-20 px-4 sm:px-6 lg:px-8"
@@ -342,8 +380,9 @@ const GroupDiscussionPage = () => {
               >
                 Pro Strategies
               </h2>
-              <p className="text-lg text-white max-w-2xl mx-auto">
-                Adopt these battle-tested techniques to make a lasting impression.
+              <p className="text-lg text-black max-w-2xl mx-auto p-2 bg-white backdrop-blur-sm rounded-md border-2 border-blue-900">
+                Adopt these battle-tested techniques to make a lasting
+                impression.
               </p>
             </motion.div>
 
@@ -377,16 +416,15 @@ const GroupDiscussionPage = () => {
             </div>
           </div>
         </motion.section>
-
         {/* Common Mistakes */}
         <motion.section
-          className="py-20 px-4 sm:px-6 lg:px-8 bg-red-50"
+          className="py-20 px-4 sm:px-6 lg:px-8 bg-red-50 border-2 border-t-red-200 shadow-lg "
           initial="initial"
           whileInView="animate"
           viewport={{ once: true, amount: 0.2 }}
           variants={staggerContainer}
         >
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-6xl mx-auto ">
             <motion.div className="text-center mb-12" variants={fadeInUp}>
               <h2
                 className="text-4xl lg:text-5xl font-black mb-4 text-red-900"

@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import Silk from "../../../components/ui/Silk";
+import Squares from "../../../components/ui/Squares";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import SpotlightCard from "../../../components/ui/SpotlightCard";
@@ -47,13 +48,18 @@ const AptitudePage = () => {
       className="min-h-screen bg-transparent  overflow-hidden"
     >
       <div className="fixed inset-0 -z-10">
-        <Silk
-          speed={5}
-          scale={1}
-          color="#004aad"
-          noiseIntensity={1.5}
-          rotation={0}
-        />
+        <div
+          className="bg-blue-50"
+          style={{ width: "100%", height: "100%", position: "relative" }}
+        >
+          <Squares
+            speed={0.3}
+            squareSize={40}
+            direction="up" // up, down, left, right, diagonal
+            borderColor="#004aad"
+            hoverFillColor="#222"
+          />
+        </div>{" "}
       </div>
 
       <motion.section
@@ -64,10 +70,10 @@ const AptitudePage = () => {
           <div>
             <ShinyText
               text="FORESE Aptitude"
-              className="text-4xl sm:text-5xl md:text-6xl font-bold text-white"
+              className="text-4xl sm:text-5xl md:text-6xl font-bold text-blue-900"
               speed={3}
             />
-            <p className="mt-6 text-white/90 text-lg sm:text-xl leading-relaxed">
+            <p className="mt-6 text-black/90 text-lg sm:text-xl leading-relaxed">
               Practice modules, quizzes, and mentorship to strengthen
               Quantitative, Logical, and Verbal skills for placements and exams.
               Join our structured training with mock tests and analytics.
@@ -108,7 +114,7 @@ const AptitudePage = () => {
 
       <section className="relative z-10 py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <h3 className="text-3xl font-bold text-white text-center mb-10">
+          <h3 className="text-3xl font-bold text-black text-center mb-10">
             Aptitude Moments
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
