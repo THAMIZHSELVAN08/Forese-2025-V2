@@ -210,7 +210,7 @@ const GroupDiscussionPage = () => {
         </div>
         {/* Hero Section */}
         <motion.section
-          className="relative py-20 lg:py-28 px-4 sm:px-6 lg:px-8 overflow-hidden bg-white backdrop-blur-sm border-2 border-b-gray-200 shadow-lg"
+          className="relative py-20 lg:py-28 px-4 sm:px-6 lg:px-8 overflow-hidden bg-white backdrop-blur-sm border-2 border-b-gray-200 shadow-lg pt-20"
           initial="initial"
           animate="animate"
           variants={staggerContainer}

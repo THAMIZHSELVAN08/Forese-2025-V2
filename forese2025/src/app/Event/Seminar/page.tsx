@@ -42,7 +42,7 @@ const SeminarPage = () => {
 
       <motion.section
         style={{ y }}
-        className="relative z-10 min-h-[70vh] flex items-center px-4 sm:px-6 lg:px-8 bg-white rounded-md"
+        className="relative z-10 min-h-[70vh] flex items-center px-4 sm:px-6 lg:px-8 bg-white rounded-md pt-20"
       >
         <div className="max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div>

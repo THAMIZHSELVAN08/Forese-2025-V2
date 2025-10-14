@@ -52,7 +52,7 @@ export default function Nav() {
           socialItems={socialItems}
           displaySocials={true}
           displayItemNumbering={true}
-          menuButtonColor="#fff"
+          menuButtonColor="#000"
           openMenuButtonColor="#000"
           changeMenuColorOnOpen={true}
           colors={["#B19EEF", "#5227FF"]}
@@ -71,7 +71,7 @@ export default function Nav() {
             style={{ clipPath: "polygon(0 0, 85% 0, 100% 100%, 0 100%)" }}
             whileTap={{ scale: 0.95 }}
           >
-            <Image src="/FOR_1.png" alt="logo" width={100} height={85} />
+            <Image src="/FOR.png" alt="logo" width={100} height={85} />
           </motion.div>
         </Link>{" "}
         <div className="flex gap-6 text-black font-medium tracking-tight mr-0 items-center">
