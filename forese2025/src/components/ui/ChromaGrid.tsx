@@ -124,13 +124,13 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
           </div>
 
           {/* Footer with left + right */}
-          <footer className="relative z-10 p-3 text-white font-sans flex items-end justify-between w-full">
+          <footer className="relative z-10 p-3 text-black font-sans flex items-end justify-between w-full">
             {/* Left side: Name, Role, One-liner */}
             <div className="flex flex-col items-start">
               <h3 className="m-0 text-[1.05rem] font-semibold text-black">
                 {c.title}
               </h3>
-              <p className="m-0 text-[0.85rem] opacity-85 text-yellow-300">
+              <p className="m-0 text-[0.85rem] opacity-85 text-black">
                 {c.subtitle}
               </p>
               {c.oneLiner && (
@@ -146,7 +146,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
                 href={c.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-blue-400"
+                className="text-black hover:text-blue-400"
               >
                 <FaLinkedin size={18} />
               </a>

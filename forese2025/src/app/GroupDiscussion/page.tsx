@@ -193,7 +193,7 @@ const GroupDiscussionPage = () => {
 
   return (
     <>
-      <div className="relative min-h-screen bg-transparent text-black overflow-hidden pt-10">
+      <div className="relative min-h-screen bg-transparent text-black overflow-hidden ">
         <div className="fixed inset-0 -z-10">
           <div
             className="bg-blue-50"
@@ -210,7 +210,8 @@ const GroupDiscussionPage = () => {
         </div>
         {/* Hero Section */}
         <motion.section
-          className="relative py-20 lg:py-28 px-4 sm:px-6 lg:px-8 overflow-hidden bg-white backdrop-blur-sm border-2 border-b-gray-200 shadow-lg pt-20"
+          className="relative py-20 lg:py-28 px-4 sm:px-6 lg:px-8 overflow-hidden bg-white backdrop-blur-sm border-2 border-b-gray-200 shadow-lg pt-20 flex justify-center items-center"
+          style={{ height: "80vh" }}
           initial="initial"
           animate="animate"
           variants={staggerContainer}

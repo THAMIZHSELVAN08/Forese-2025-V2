@@ -44,16 +44,17 @@ export default function TeamPage() {
             />
           </div>{" "}
         </div>
-
-        <h1 className="text-6xl font-bold mb-8 mt-20 text-blue-900">
-          Meet the Team
-        </h1>
+        <div style={{ fontFamily: "var(--font-poppins)" }}>
+          <h1 className="text-6xl font-bold mb-8 mt-20 text-blue-900 text-center">
+            Meet the Team
+          </h1>
+        </div>
 
         {/* Tabs */}
-        <div className="flex gap-4 mb-10">
+        <div className="flex mb-10 backdrop-blur-sm h-20 border-2 border-grey-50 rounded-full">
           <button
             onClick={() => setActiveTab("core")}
-            className={`px-4 py-2 rounded-lg font-medium ${
+            className={`px-4 py-2 font-medium ${
               activeTab === "core"
                 ? "bg-white text-black"
                 : "bg-zinc-800 text-white"
@@ -63,7 +64,7 @@ export default function TeamPage() {
           </button>
           <button
             onClick={() => setActiveTab("senior")}
-            className={`px-4 py-2 rounded-lg font-medium ${
+            className={`px-4 py-2 font-medium ${
               activeTab === "senior"
                 ? "bg-white text-black"
                 : "bg-zinc-800 text-white"
@@ -73,7 +74,7 @@ export default function TeamPage() {
           </button>
           <button
             onClick={() => setActiveTab("members")}
-            className={`px-4 py-2 rounded-lg font-medium ${
+            className={`px-4 py-2 font-medium ${
               activeTab === "members"
                 ? "bg-white text-black"
                 : "bg-zinc-800 text-white"
@@ -84,7 +85,7 @@ export default function TeamPage() {
         </div>
 
         {/* Tab Content */}
-        <div className="w-full max-w-6xl">
+        <div className="w-full max-w-7xl">
           {activeTab === "core" && (
             <ChromaGrid
               items={transformMembers(coreMembers)}
