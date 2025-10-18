@@ -100,6 +100,17 @@ const HackathonPage = () => {
             and collaborate with like‑minded peers to build innovative
             solutions.
           </motion.p>
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link href="/Event">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.96 }}
+                className="px-8 py-4 border-2 border-white/30 text-black font-semibold rounded-full text-lg backdrop-blur-sm hover:bg-white/10"
+              >
+                Back to Events
+              </motion.button>
+            </Link>
+          </div>
         </div>
       </motion.section>
 
