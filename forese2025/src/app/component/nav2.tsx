@@ -7,6 +7,7 @@ import Button from "../../components/ui/button";
 
 export default function Nav() {
   const navLinks = [
+    { href: "/MockPlacement", label: "MOCK PLACEMENTS" },
     { href: "/Coderforum", label: "CODERS' FORUM" },
     { href: "/Event", label: "EVENTS" },
     { href: "/Team", label: "TEAM" },
@@ -17,6 +18,12 @@ export default function Nav() {
       label: "HOME",
       ariaLabel: "Visit our Home Page",
       link: "/",
+    },
+
+    {
+      label: "MOCK PLACEMENT",
+      ariaLabel: "Go to Mock Placement page",
+      link: "/MockPlacement",
     },
 
     {
@@ -64,44 +71,48 @@ export default function Nav() {
       </div>
 
       {/* Desktop Navigation */}
-      <nav className="hidden md:flex justify-between items-center fixed top-0 left-0 right-0 h-16 z-50 w-full bg-blue-200/50 p-5 pl-0 pr-0 border-b-2 border-black backdrop-blur-sm ">
+      <nav className="hidden md:flex justify-between items-center fixed top-0 left-0 right-0 h-20 z-50 w-full bg-gradient-to-r from-blue-50/90 to-blue-100/90 backdrop-blur-md border-b border-blue-200/50 shadow-lg">
         <Link href="/" className="z-50">
           <motion.div
-            className="bg-black h-16 w-40 pl-5 m-0 flex items-center"
-            style={{ clipPath: "polygon(0 0, 85% 0, 100% 100%, 0 100%)" }}
+            className="bg-gradient-to-r from-blue-900 to-blue-800 h-20 w-44 pl-6 m-0 flex items-center rounded-r-2xl shadow-xl"
+            style={{ clipPath: "polygon(0 0, 90% 0, 100% 100%, 0 100%)" }}
             whileTap={{ scale: 0.95 }}
+            whileHover={{ scale: 1.02 }}
           >
             <Image src="/FOR.png" alt="logo" width={100} height={85} />
           </motion.div>
-        </Link>{" "}
-        <div className="flex gap-6 text-black font-medium tracking-tight mr-0 items-center">
+        </Link>
+        
+        <div className="flex gap-2 text-blue-900 font-semibold tracking-wide mr-0 items-center">
           {navLinks.map((link, index) => (
             <Link key={index} href={link.href}>
-              <motion.p
-                className="relative cursor-pointer transition-colors duration-300"
+              <motion.div
+                className="relative cursor-pointer px-4 py-2 rounded-xl transition-all duration-300 hover:bg-white/60 hover:shadow-md"
                 whileHover={{
                   scale: 1.05,
-                  color: "#60a5fa",
+                  y: -2,
                 }}
                 whileTap={{ scale: 0.95 }}
               >
-                {link.label}
+                <span className="relative z-10">{link.label}</span>
                 <motion.div
-                  className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400"
+                  className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-blue-600/20 rounded-xl opacity-0"
                   whileHover={{
-                    width: "100%",
+                    opacity: 1,
                     transition: { duration: 0.3 },
                   }}
                 />
-              </motion.p>
+              </motion.div>
             </Link>
           ))}
+          
           <Link href="/Resume">
             <motion.button
-              className="bg-black text-white px-4 py-2 font-medium hover:bg-gray-100 transition-all duration-300 h-16"
+              className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 font-semibold rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all duration-300 shadow-lg hover:shadow-xl"
               whileHover={{
                 scale: 1.05,
-                boxShadow: "0 8px 20px rgba(255, 255, 255, 0.2)",
+                y: -2,
+                boxShadow: "0 10px 25px rgba(59, 130, 246, 0.4)",
               }}
               whileTap={{ scale: 0.95 }}
             >

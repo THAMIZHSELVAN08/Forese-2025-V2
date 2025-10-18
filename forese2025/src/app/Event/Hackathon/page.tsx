@@ -100,17 +100,6 @@ const HackathonPage = () => {
             and collaborate with like‑minded peers to build innovative
             solutions.
           </motion.p>
-          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link href="/Event">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.96 }}
-                className="px-8 py-4 border-2 border-white/30 text-black font-semibold rounded-full text-lg backdrop-blur-sm hover:bg-white/10"
-              >
-                Back to Events
-              </motion.button>
-            </Link>
-          </div>
         </div>
       </motion.section>
 
@@ -181,6 +170,19 @@ const HackathonPage = () => {
           </div>
         </div>
       </section>
+
+      {/* Back to Events Button */}
+      <div className="fixed bottom-6 right-6 z-50">
+        <Link href="/Event">
+          <motion.button
+            className="bg-white/90 backdrop-blur-md border border-blue-200 rounded-full px-6 py-3 text-blue-900 font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-white hover:scale-105"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Back to Events
+          </motion.button>
+        </Link>
+      </div>
     </div>
   );
 };

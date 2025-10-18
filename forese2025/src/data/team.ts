@@ -7,7 +7,7 @@ export type CoreMember = {
   oneLiner: string;
 };
 
-export type seniorMembers = {
+export type SeniorMember = {
   id: number;
   name: string;
   role: string;
@@ -16,7 +16,7 @@ export type seniorMembers = {
   oneLiner: string;
 };
 
-export type members = {
+export type Member = {
   id: number;
   name: string;
   role: string;
@@ -25,7 +25,8 @@ export type members = {
   oneLiner: string;
 };
 
-export const coreMembers: CoreMember[] = [
+// Senior Core Members (9 members)
+export const seniorCoreMembers: CoreMember[] = [
   {
     id: 1,
     name: "Manoj Kumar",
@@ -49,16 +50,15 @@ export const coreMembers: CoreMember[] = [
     imageUrl: "/images/c3.jpg",
     linkedinUrl: "https://www.linkedin.com/in/srivarshini-s-g-7a9a6a293/",
     oneLiner:
-      "Why stress about tomorrow? It hasn’t even sent me an invitation yet!",
+      "Why stress about tomorrow? It hasn't even sent me an invitation yet!",
   },
-
   {
     id: 4,
     name: "Arunima",
     role: "General Secretary",
     imageUrl: "/images/c4.jpg",
     linkedinUrl: "https://www.linkedin.com/in/aru04/",
-    oneLiner: "If it is to be said, so it be, so it is",
+    oneLiner: "If it is to be said, so it be, so it is",
   },
   {
     id: 5,
@@ -67,7 +67,15 @@ export const coreMembers: CoreMember[] = [
     imageUrl: "/images/c5.jpg",
     linkedinUrl: "https://www.linkedin.com/in/jhalak-vashistha/",
     oneLiner:
-      "I like getting older. I feel like I’m finally aging into my personality",
+      "I like getting older. I feel like I'm finally aging into my personality",
+  },
+  {
+    id: 9,
+    name: "Kartheesan",
+    role: "General Secretary",
+    imageUrl: "/images/c9.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/kartheesan05/",
+    oneLiner: "Visca Barça",
   },
   {
     id: 6,
@@ -94,24 +102,11 @@ export const coreMembers: CoreMember[] = [
     linkedinUrl: "https://www.linkedin.com/in/sandhya-sadasivam-89bb4126b/",
     oneLiner: "Survivor of mondays",
   },
-  {
-    id: 9,
-    name: "Kartheesan",
-    role: "General Secretary",
-    imageUrl: "/images/c9.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/kartheesan05/",
-    oneLiner: "Visca Barça",
-  },
+  
+];
 
-  {
-    id: 10,
-    name: "Kaamesh KC",
-    role: "Executive Director",
-    imageUrl: "/images/c10.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/kaamesh-kc-5714b029a/",
-    oneLiner:
-      "Power is a lot like real estate. It's all about location, location, location.",
-  },
+// Junior Core Members (9 members)
+export const juniorCoreMembers: CoreMember[] = [
   {
     id: 11,
     name: "Anushri",
@@ -121,20 +116,13 @@ export const coreMembers: CoreMember[] = [
     oneLiner: "Travel more, worry less, spread kindness",
   },
   {
-    id: 12,
-    name: "Siddharth Naren",
+    id: 10,
+    name: "Kaamesh KC",
     role: "Executive Director",
-    imageUrl: "/images/c12.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/siddharth-naren-baskaran/",
-    oneLiner: "Life gave me lemons, but forgot the sugar and water",
-  },
-  {
-    id: 13,
-    name: "Sarvesh Vaidhi",
-    role: "Executive Director",
-    imageUrl: "/images/c13.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/sarvesh-vaidhi-0554972b8/",
-    oneLiner: "Procrastination final boss",
+    imageUrl: "/images/c10.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/kaamesh-kc-5714b029a/",
+    oneLiner:
+      "Power is a lot like real estate. It's all about location, location, location.",
   },
   {
     id: 14,
@@ -143,6 +131,23 @@ export const coreMembers: CoreMember[] = [
     imageUrl: "/images/c14.jpg",
     linkedinUrl: "https://www.linkedin.com/in/salma-siddique-962608320/",
     oneLiner: "I believe I can, and thus I become",
+  },
+  
+  {
+    id: 13,
+    name: "Sarvesh Vaidhi",
+    role: "Executive Director",
+    imageUrl: "/images/c13.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/sarvesh-vaidhi-0554972b8/",
+    oneLiner: "Procrastination final boss",
+  },
+  {
+    id: 12,
+    name: "Siddharth Naren",
+    role: "Executive Director",
+    imageUrl: "/images/c12.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/siddharth-naren-baskaran/",
+    oneLiner: "Life gave me lemons, but forgot the sugar and water",
   },
   {
     id: 15,
@@ -161,7 +166,6 @@ export const coreMembers: CoreMember[] = [
     linkedinUrl: "https://www.linkedin.com/in/thamizhselvan1/",
     oneLiner: "404 Sleep Not Found",
   },
-
   {
     id: 17,
     name: "Visvajith",
@@ -169,9 +173,8 @@ export const coreMembers: CoreMember[] = [
     imageUrl: "/images/c17.jpg",
     linkedinUrl: "https://www.linkedin.com/in/visvajith-logasuresh-796a4b329/",
     oneLiner:
-      "Tech enthusiast with a love for watches, cars, and creating cool projects",
+      "Tech enthusiast with a love for watches, cars, and creating cool projects",
   },
-
   {
     id: 18,
     name: "Shree Kowsik",
@@ -182,7 +185,7 @@ export const coreMembers: CoreMember[] = [
   },
 ];
 
-export const seniorMembers: seniorMembers[] = [
+export const seniorMembers: SeniorMember[] = [
   {
     id: 1,
     name: "Ananyaa P",
@@ -1077,7 +1080,7 @@ export const seniorMembers: seniorMembers[] = [
   },
 ];
 
-export const members: members[] = [
+export const members: Member[] = [
   {
     id: 1,
     name: "Aadhithya Narayanan A",
@@ -1667,3 +1670,6 @@ export const members: members[] = [
     oneLiner: "Focused and resilient Engineer in the making.",
   },
 ];
+
+// Combined Core Members (Senior + Junior)
+export const coreMembers: CoreMember[] = [...seniorCoreMembers, ...juniorCoreMembers];

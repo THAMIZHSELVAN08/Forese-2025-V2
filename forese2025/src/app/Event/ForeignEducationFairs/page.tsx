@@ -12,6 +12,7 @@ import {
   Briefcase,
 } from "lucide-react";
 import Footer from "../../component/Footer";
+import Link from "next/link";
 
 const ForedPage = () => {
   const fadeInUp = {
@@ -206,6 +207,19 @@ const ForedPage = () => {
             </p>
           </div>
         </motion.section>
+
+        {/* Back to Events Button */}
+        <div className="fixed bottom-6 right-6 z-50">
+          <Link href="/Event">
+            <motion.button
+              className="bg-white/90 backdrop-blur-md border border-blue-200 rounded-full px-6 py-3 text-blue-900 font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-white hover:scale-105"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Back to Events
+            </motion.button>
+          </Link>
+        </div>
       </div>
       <Footer />
     </>
