@@ -3,11 +3,22 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Hanken_Grotesk } from "next/font/google";
 import Nav from "./component/nav";
+import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
+import ClientWrapper from "./component/ClientWrapper"; // Adjust path as needed
+import Nav2 from "./component/nav2";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-poppins",
+  display: "swap",
+});
 
 const hankenGrotesk = Hanken_Grotesk({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"], // specify weights you need
-  variable: "--font-hanken-grotesk", // CSS variable name
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-hanken-grotesk",
 });
 
 const geistSans = Geist({
@@ -33,10 +44,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${hankenGrotesk.variable} antialiased overflow-x-hidden`}
+        className={`${geistSans.variable} ${geistMono.variable} ${hankenGrotesk.variable} ${poppins.variable} antialiased overflow-x-hidden`}
       >
-        <Nav />
-        {children}
+        <ClientWrapper>
+          <Nav2 />
+          {children}
+        </ClientWrapper>
       </body>
     </html>
   );
