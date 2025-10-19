@@ -74,7 +74,7 @@ export default function Nav() {
       <nav className="hidden md:flex justify-between items-center fixed top-0 left-0 right-0 h-20 z-50 w-full bg-gradient-to-r from-blue-50/90 to-blue-100/90 backdrop-blur-md border-b border-blue-200/50 shadow-lg">
         <Link href="/" className="z-50">
           <motion.div
-            className="bg-gradient-to-r from-blue-900 to-blue-800 h-20 w-44 pl-6 m-0 flex items-center rounded-r-2xl shadow-xl"
+            className="bg-gradient-to-r from-blue-900 to-blue-800 h-21 w-44 pl-6 m-0 flex items-center rounded-r-2xl shadow-xl"
             style={{ clipPath: "polygon(0 0, 90% 0, 100% 100%, 0 100%)" }}
             whileTap={{ scale: 0.95 }}
             whileHover={{ scale: 1.02 }}
@@ -82,7 +82,7 @@ export default function Nav() {
             <Image src="/FOR.png" alt="logo" width={100} height={85} />
           </motion.div>
         </Link>
-        
+
         <div className="flex gap-2 text-blue-900 font-semibold tracking-wide mr-0 items-center">
           {navLinks.map((link, index) => (
             <Link key={index} href={link.href}>
@@ -105,7 +105,7 @@ export default function Nav() {
               </motion.div>
             </Link>
           ))}
-          
+
           <Link href="/Resume">
             <motion.button
               className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 font-semibold rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all duration-300 shadow-lg hover:shadow-xl"
