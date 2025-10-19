@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Hero from "./component/Hero";
 import About from "./component/About";
-import Gallery from "./component/Gallery";
 
 export default function Home() {
   return (

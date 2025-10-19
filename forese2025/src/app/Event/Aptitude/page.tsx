@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import Silk from "../../../components/ui/Silk";
+import Image from "next/image";
 import Squares from "../../../components/ui/Squares";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";

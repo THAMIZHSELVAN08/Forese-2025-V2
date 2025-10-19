@@ -1,11 +1,11 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import Squares from "../../../components/ui/Squares";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 import SpotlightCard from "../../../components/ui/SpotlightCard";
 import ShinyText from "../../../components/ui/Shinytext";
-import DarkVeil from "../../../components/ui/DarkVeil";
 
 const SeminarPage = () => {
   const containerRef = useRef<HTMLDivElement>(null);

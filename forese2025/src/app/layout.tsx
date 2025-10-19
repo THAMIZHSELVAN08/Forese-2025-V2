@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Hanken_Grotesk } from "next/font/google";
-import Nav from "./component/nav";
-import { Inter } from "next/font/google";
 import { Poppins } from "next/font/google";
 import ClientWrapper from "./component/ClientWrapper"; // Adjust path as needed
 import Nav2 from "./component/nav2";
