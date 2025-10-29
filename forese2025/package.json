@@ -2,12 +2,11 @@
   "name": "forese2025",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
-    "start": "next start",
-    "lint": "eslint"
-  },
+"scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start"
+} ,
   "dependencies": {
     "@radix-ui/react-navigation-menu": "^1.2.14",
     "@react-three/drei": "^10.7.4",
