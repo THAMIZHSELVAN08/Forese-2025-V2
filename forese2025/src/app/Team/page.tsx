@@ -128,7 +128,8 @@ export default function TeamPage() {
                   {seniorCoreMembers.map((member) => (
                     <article
                       key={member.id}
-                      className="group relative flex flex-col w-full max-w-[300px] rounded-[20px] overflow-hidden border border-gray-200 shadow-sm transition-colors duration-300 bg-gray-100"
+                      className="group relative flex flex-col w-full max-w-[280px] h-[340px] sm:h-[360px] lg:h-[380px] bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+
                     >
                   
                       <div className="relative z-10 flex-1 p-[10px] box-border">
@@ -182,7 +183,7 @@ export default function TeamPage() {
                   {juniorCoreMembers.map((member) => (
                     <article
                       key={member.id}
-                      className="group relative flex flex-colw-full max-w-[300px] rounded-[20px] overflow-hidden border border-gray-200 shadow-sm transition-colors duration-300 bg-gray-100"
+                      className="group relative flex flex-col w-full max-w-[280px] h-[340px] sm:h-[360px] lg:h-[380px] bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                     >
                       
                       <div className="relative z-10 flex-1 p-[10px] box-border">
@@ -240,7 +241,7 @@ export default function TeamPage() {
                 {seniorMembers.slice(0, 50).map((member) => (
                   <article
                     key={member.id}
-                    className="group relative flex flex-col w-full max-w-[300px] rounded-[20px] overflow-hidden border border-gray-200 shadow-sm transition-colors duration-300 bg-gray-100"
+                    className="group relative flex flex-col w-full max-w-[280px] h-[340px] sm:h-[360px] lg:h-[380px] bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                   >
                     
                     <div className="relative z-10 flex-1 p-[10px] box-border">
@@ -293,7 +294,7 @@ export default function TeamPage() {
                   {seniorMembers.slice(50).map((member) => (
                     <article
                       key={member.id}
-                      className="group relative flex flex-col w-full max-w-[300px] rounded-[20px] overflow-hidden border border-gray-200 shadow-sm transition-colors duration-300 bg-gray-100"
+                      className="group relative flex flex-col w-full max-w-[280px] h-[340px] sm:h-[360px] lg:h-[380px] bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                     >
                     
                       <div className="relative z-10 flex-1 p-[10px] box-border">
@@ -349,7 +350,7 @@ export default function TeamPage() {
               {members.map((member) => (
                 <article
                   key={member.id}
-                  className="group relative flex flex-col w-full max-w-[300px] rounded-[20px] overflow-hidden border border-gray-200 shadow-sm transition-colors duration-300 bg-gray-100"
+                  className="group relative flex flex-col w-full max-w-[280px] h-[340px] sm:h-[360px] lg:h-[380px] bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                 >
                  
                   <div className="relative z-10 flex-1 p-[10px] box-border">
