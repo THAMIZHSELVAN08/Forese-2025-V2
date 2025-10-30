@@ -14,44 +14,22 @@ export default function Nav() {
   ];
 
   const menuItems = [
-    {
-      label: "HOME",
-      ariaLabel: "Visit our Home Page",
-      link: "/",
-    },
-
-    {
-      label: "MOCK PLACEMENT",
-      ariaLabel: "Go to Mock Placement page",
-      link: "/MockPlacement",
-    },
-
-    {
-      label: "CODERS' FORUM",
-      ariaLabel: "Go to Coders'forum",
-      link: "/Coderforum",
-    },
-
+    { label: "HOME", ariaLabel: "Visit our Home Page", link: "/" },
+    { label: "MOCK PLACEMENT", ariaLabel: "Go to Mock Placement page", link: "/MockPlacement" },
+    { label: "CODERS' FORUM", ariaLabel: "Go to Coders' Forum", link: "/Coderforum" },
     { label: "EVENTS", ariaLabel: "Learn about our Events", link: "/Event" },
-
     { label: "TEAM", ariaLabel: "Get to know the team", link: "/Team" },
-
-    {
-      label: "SUBMIT RESUME",
-      ariaLabel: "Submit your resume for reviewing",
-      link: "/Resume",
-    },
+    { label: "SUBMIT RESUME", ariaLabel: "Submit your resume", link: "/Resume" },
   ];
 
   const socialItems = [
     { label: "GitHub", link: "https://github.com/ForeseTech" },
-
     { label: "LinkedIn", link: "https://www.linkedin.com/company/forese/" },
   ];
 
   return (
     <>
-      {/* Mobile StaggeredMenu - Full screen container */}
+      
       <div className="md:hidden fixed inset-0 z-40 pointer-events-none">
         <StaggeredMenu
           position="right"
@@ -65,33 +43,43 @@ export default function Nav() {
           colors={["#B19EEF", "#5227FF"]}
           logoUrl="/FOR.png"
           accentColor="#004aad"
-          onMenuOpen={() => console.log("Menu opened")}
-          onMenuClose={() => console.log("Menu closed")}
+          onMenuOpen={() => document.body.classList.add("overflow-hidden")}
+          onMenuClose={() => document.body.classList.remove("overflow-hidden")}
         />
       </div>
 
-      {/* Desktop Navigation */}
-      <nav className="hidden md:flex justify-between items-center fixed top-0 left-0 right-0 h-20 z-50 w-full bg-gradient-to-r from-blue-50/90 to-blue-100/90 backdrop-blur-md border-b border-blue-200/50 shadow-lg">
-        <Link href="/" className="z-50">
+      
+      <nav className="hidden md:flex justify-between items-center fixed top-0 left-0 right-0 h-20 z-50 w-full 
+                      bg-gradient-to-r from-blue-50/90 to-blue-100/90 backdrop-blur-md 
+                      border-b border-blue-200/50 shadow-lg px-6 lg:px-12">
+        
+        <Link href="/" className="z-50 flex-shrink-0">
           <motion.div
-            className="bg-gradient-to-r from-blue-900 to-blue-800 h-21 w-44 pl-6 m-0 flex items-center rounded-r-2xl shadow-xl"
+            className="bg-gradient-to-r from-blue-900 to-blue-800 h-16 sm:h-20 w-36 sm:w-44 pl-4 flex items-center 
+                       rounded-r-2xl shadow-xl"
             style={{ clipPath: "polygon(0 0, 90% 0, 100% 100%, 0 100%)" }}
             whileTap={{ scale: 0.95 }}
             whileHover={{ scale: 1.02 }}
           >
-            <Image src="/FOR.png" alt="logo" width={100} height={85} />
+            <Image
+              src="/FOR.png"
+              alt="logo"
+              width={90}
+              height={70}
+              className="object-contain"
+              priority
+            />
           </motion.div>
         </Link>
 
-        <div className="flex gap-2 text-blue-900 font-semibold tracking-wide mr-0 items-center">
+        
+        <div className="flex flex-wrap justify-end gap-3 text-blue-900 font-semibold tracking-wide items-center">
           {navLinks.map((link, index) => (
             <Link key={index} href={link.href}>
               <motion.div
-                className="relative cursor-pointer px-4 py-2 rounded-xl transition-all duration-300 hover:bg-white/60 hover:shadow-md"
-                whileHover={{
-                  scale: 1.05,
-                  y: -2,
-                }}
+                className="relative cursor-pointer px-3 py-2 rounded-xl transition-all duration-300 
+                           hover:bg-white/60 hover:shadow-md text-sm lg:text-base"
+                whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <span className="relative z-10">{link.label}</span>
@@ -106,9 +94,12 @@ export default function Nav() {
             </Link>
           ))}
 
+          
           <Link href="/Resume">
             <motion.button
-              className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 font-semibold rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 sm:px-6 py-2 sm:py-3 
+                         text-sm lg:text-base font-semibold rounded-xl hover:from-blue-700 hover:to-blue-800 
+                         transition-all duration-300 shadow-lg hover:shadow-xl"
               whileHover={{
                 scale: 1.05,
                 y: -2,
