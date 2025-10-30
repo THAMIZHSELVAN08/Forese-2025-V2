@@ -54,7 +54,7 @@ export default function ResumeSubmission() {
 
   return (
     <div className="min-h-screen bg-transparent text-white pt-30">
-      {/* Background Pattern */}
+     
       <div className="fixed inset-0 -z-10">
         <div
           className="bg-blue-50"
@@ -71,7 +71,7 @@ export default function ResumeSubmission() {
       </div>
 
       <div className="relative z-10 container mx-auto px-4 py-12">
-        {/* Header Section */}
+        
         <motion.div
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -97,7 +97,7 @@ export default function ResumeSubmission() {
           </motion.p>
         </motion.div>
 
-        {/* Resume Tips Section */}
+       
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
