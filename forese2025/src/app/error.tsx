@@ -23,7 +23,7 @@ export default function Error({
         transition={{ duration: 0.6 }}
         className="text-center max-w-2xl"
       >
-        {/* Error Icon */}
+       
         <motion.div
           initial={{ scale: 0.8 }}
           animate={{ scale: 1 }}
@@ -47,7 +47,7 @@ export default function Error({
           </div>
         </motion.div>
 
-        {/* Error Title */}
+       
         <motion.h1
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -58,7 +58,7 @@ export default function Error({
           Something went wrong!
         </motion.h1>
 
-        {/* Error Description */}
+       
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -69,7 +69,7 @@ export default function Error({
           notified and were working on it.
         </motion.p>
 
-        {/* Action Buttons */}
+       
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -90,7 +90,6 @@ export default function Error({
           </Link>
         </motion.div>
 
-        {/* Error Details (only in development) */}
         {process.env.NODE_ENV === "development" && (
           <motion.details
             initial={{ opacity: 0 }}
@@ -113,7 +112,7 @@ export default function Error({
           </motion.details>
         )}
 
-        {/* Decorative Elements */}
+      
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.1 }}
