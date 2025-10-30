@@ -41,12 +41,11 @@ export default function TeamPage() {
           </div>
         </div>
         <div style={{ fontFamily: "var(--font-poppins)" }}>
-          <h1 className="text-6xl font-bold mb-8 mt-20 text-blue-900 text-center">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-8 mt-20 text-blue-900 text-center">
             Meet the Team
           </h1>
         </div>
 
-        {/* Tabs with Star Border Animation and Curved Borders */}
         <StarBorder 
           color="#3b82f6" 
           speed="1s" 
@@ -87,11 +86,10 @@ export default function TeamPage() {
         </div>
         </StarBorder>
 
-        {/* Tab Content */}
         <div className="w-full max-w-7xl">
           {activeTab === "core" && (
             <div className="space-y-8">
-              {/* Core Members Sub-tabs with Star Border Animation - Centered */}
+              
               <div className="flex justify-center">
                 <StarBorder 
                   color="#3b82f6" 
@@ -124,15 +122,15 @@ export default function TeamPage() {
                 </StarBorder>
               </div>
 
-              {/* Core Members Content - 3x3 Grid with Original Card Design */}
+              
               {activeCoreTab === "seniorCore" && (
-                <div className="grid grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center">
                   {seniorCoreMembers.map((member) => (
                     <article
                       key={member.id}
-                      className="group relative flex flex-col w-[300px] rounded-[20px] overflow-hidden border border-gray-200 shadow-sm transition-colors duration-300 bg-gray-100"
+                      className="group relative flex flex-col w-full max-w-[300px] rounded-[20px] overflow-hidden border border-gray-200 shadow-sm transition-colors duration-300 bg-gray-100"
                     >
-                      {/* Image */}
+                  
                       <div className="relative z-10 flex-1 p-[10px] box-border">
                         <img
                           src={member.imageUrl}
@@ -142,9 +140,9 @@ export default function TeamPage() {
                         />
                       </div>
 
-                      {/* Footer with left + right */}
+                      
                       <footer className="relative z-10 p-3 text-black font-sans flex items-end justify-between w-full">
-                        {/* Left side: Name, Role, One-liner */}
+                       
                         <div className="flex flex-col items-start">
                           <h3 className="m-0 text-[1.05rem] font-semibold text-black">
                             {member.name}
@@ -159,7 +157,7 @@ export default function TeamPage() {
                           )}
                         </div>
 
-                        {/* Right side: LinkedIn */}
+                        
                         {member.linkedinUrl && (
                           <a
                             href={member.linkedinUrl}
@@ -179,13 +177,14 @@ export default function TeamPage() {
               )}
 
               {activeCoreTab === "juniorCore" && (
-                <div className="grid grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center">
+
                   {juniorCoreMembers.map((member) => (
                     <article
                       key={member.id}
-                      className="group relative flex flex-col w-[300px] rounded-[20px] overflow-hidden border border-gray-200 shadow-sm transition-colors duration-300 bg-gray-100"
+                      className="group relative flex flex-colw-full max-w-[300px] rounded-[20px] overflow-hidden border border-gray-200 shadow-sm transition-colors duration-300 bg-gray-100"
                     >
-                      {/* Image */}
+                      
                       <div className="relative z-10 flex-1 p-[10px] box-border">
                         <img
                           src={member.imageUrl}
@@ -195,9 +194,9 @@ export default function TeamPage() {
                         />
                       </div>
 
-                      {/* Footer with left + right */}
+                      
                       <footer className="relative z-10 p-3 text-black font-sans flex items-end justify-between w-full">
-                        {/* Left side: Name, Role, One-liner */}
+                        
                         <div className="flex flex-col items-start">
                           <h3 className="m-0 text-[1.05rem] font-semibold text-black">
                             {member.name}
@@ -212,7 +211,7 @@ export default function TeamPage() {
                           )}
                         </div>
 
-                        {/* Right side: LinkedIn */}
+                        
                         {member.linkedinUrl && (
                           <a
                             href={member.linkedinUrl}
@@ -235,14 +234,15 @@ export default function TeamPage() {
 
           {activeTab === "senior" && (
             <div className="space-y-8">
-              {/* First 50 Senior Members */}
-              <div className="grid grid-cols-3 gap-6">
+             
+             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center">
+
                 {seniorMembers.slice(0, 50).map((member) => (
                   <article
                     key={member.id}
-                    className="group relative flex flex-col w-[300px] rounded-[20px] overflow-hidden border border-gray-200 shadow-sm transition-colors duration-300 bg-gray-100"
+                    className="group relative flex flex-col w-full max-w-[300px] rounded-[20px] overflow-hidden border border-gray-200 shadow-sm transition-colors duration-300 bg-gray-100"
                   >
-                    {/* Image */}
+                    
                     <div className="relative z-10 flex-1 p-[10px] box-border">
                       <img
                         src={member.imageUrl}
@@ -252,9 +252,9 @@ export default function TeamPage() {
                       />
                     </div>
 
-                    {/* Footer with left + right */}
+                    
                     <footer className="relative z-10 p-3 text-black font-sans flex items-end justify-between w-full">
-                      {/* Left side: Name, Role, One-liner */}
+                      
                       <div className="flex flex-col items-start">
                         <h3 className="m-0 text-[1.05rem] font-semibold text-black">
                           {member.name}
@@ -269,7 +269,7 @@ export default function TeamPage() {
                         )}
                       </div>
 
-                      {/* Right side: LinkedIn */}
+                      
                       {member.linkedinUrl && (
                         <a
                           href={member.linkedinUrl}
@@ -287,15 +287,15 @@ export default function TeamPage() {
                 ))}
               </div>
 
-              {/* Remaining Senior Members in 3x3 Grid */}
+              
               {seniorMembers.length > 50 && (
-                <div className="grid grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center">
                   {seniorMembers.slice(50).map((member) => (
                     <article
                       key={member.id}
-                      className="group relative flex flex-col w-[300px] rounded-[20px] overflow-hidden border border-gray-200 shadow-sm transition-colors duration-300 bg-gray-100"
+                      className="group relative flex flex-col w-full max-w-[300px] rounded-[20px] overflow-hidden border border-gray-200 shadow-sm transition-colors duration-300 bg-gray-100"
                     >
-                      {/* Image */}
+                    
                       <div className="relative z-10 flex-1 p-[10px] box-border">
                         <img
                           src={member.imageUrl}
@@ -305,9 +305,9 @@ export default function TeamPage() {
                         />
                       </div>
 
-                      {/* Footer with left + right */}
+                      
                       <footer className="relative z-10 p-3 text-black font-sans flex items-end justify-between w-full">
-                        {/* Left side: Name, Role, One-liner */}
+                        
                         <div className="flex flex-col items-start">
                           <h3 className="m-0 text-[1.05rem] font-semibold text-black">
                             {member.name}
@@ -322,7 +322,7 @@ export default function TeamPage() {
                           )}
                         </div>
 
-                        {/* Right side: LinkedIn */}
+                       
                         {member.linkedinUrl && (
                           <a
                             href={member.linkedinUrl}
@@ -344,13 +344,14 @@ export default function TeamPage() {
           )}
 
           {activeTab === "members" && (
-            <div className="grid grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center">
+
               {members.map((member) => (
                 <article
                   key={member.id}
-                  className="group relative flex flex-col w-[300px] rounded-[20px] overflow-hidden border border-gray-200 shadow-sm transition-colors duration-300 bg-gray-100"
+                  className="group relative flex flex-col w-full max-w-[300px] rounded-[20px] overflow-hidden border border-gray-200 shadow-sm transition-colors duration-300 bg-gray-100"
                 >
-                  {/* Image */}
+                 
                   <div className="relative z-10 flex-1 p-[10px] box-border">
                     <img
                       src={member.imageUrl}
@@ -360,9 +361,9 @@ export default function TeamPage() {
                     />
                   </div>
 
-                  {/* Footer with left + right */}
+                  
                   <footer className="relative z-10 p-3 text-black font-sans flex items-end justify-between w-full">
-                    {/* Left side: Name, Role, One-liner */}
+                    
                     <div className="flex flex-col items-start">
                       <h3 className="m-0 text-[1.05rem] font-semibold text-black">
                         {member.name}
@@ -377,7 +378,7 @@ export default function TeamPage() {
                       )}
                     </div>
 
-                    {/* Right side: LinkedIn */}
+                    
                     {member.linkedinUrl && (
                       <a
                         href={member.linkedinUrl}
