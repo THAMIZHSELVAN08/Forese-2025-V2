@@ -1491,7 +1491,7 @@ export const members: Member[] = [
     oneLiner: "Do not live someone else’s script. Write your own story",
   },
   {
-    id: 5,0
+    id: 50,
     name: "Shree Vidhya S",
     role: "Member",
     imageUrl: "/images/m51.jpg",
