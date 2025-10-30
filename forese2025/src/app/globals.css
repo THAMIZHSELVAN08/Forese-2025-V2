@@ -162,3 +162,27 @@ body {
 @theme {
   --animate-shine: shine 5s linear infinite;
 }
+
+@media (max-width: 768px) {
+  nav {
+    height: 4rem;
+    padding: 0 1rem;
+  }
+  nav img {
+    width: 70px;
+    height: auto;
+  }
+  .menu-button {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .menu-button {
+    right: 0.75rem !important;
+  }
+  nav {
+    padding: 0 0.5rem;
+  }
+}
