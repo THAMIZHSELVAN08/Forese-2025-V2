@@ -117,7 +117,7 @@ const MockPlacementsPage = () => {
           </div>{" "}
         </div>
 
-        {/* Hero Section */}
+       
         <motion.section
           className="relative h-[70vh] min-h-[500px] flex items-center justify-center text-white text-center px-4 sm:px-6 lg:px-8"
           initial={{ opacity: 0 }}
@@ -157,7 +157,7 @@ const MockPlacementsPage = () => {
           </motion.div>
         </motion.section>
 
-        {/* About Section */}
+       
         <motion.section
           className="py-20 lg:py-28 px-4 sm:px-6 lg:px-8 bg-white border-2 border-grey-200 shadow-lg"
           initial="initial"
@@ -213,7 +213,7 @@ const MockPlacementsPage = () => {
           </div>
         </motion.section>
 
-        {/* Stats Section */}
+       
         <motion.section
           className="pb-20 lg:pb-28 px-4 sm:px-6 lg:px-8 mt-20 "
           initial="initial"
@@ -244,7 +244,7 @@ const MockPlacementsPage = () => {
           </div>
         </motion.section>
 
-        {/* Process Section */}
+      
         <motion.section
           className="py-20 lg:py-28 px-4 sm:px-6 lg:px-8 bg-white border-2 border-b-grey-200 shadow-lg"
           initial="initial"
@@ -284,7 +284,7 @@ const MockPlacementsPage = () => {
           </div>
         </motion.section>
 
-        {/* Back to Events Button */}
+       
         <div className="fixed bottom-6 right-6 z-50">
           <Link href="/Event">
             <motion.button
