@@ -134,6 +134,7 @@ export default function Nav() {
               boxShadow: "0 8px 20px rgba(255, 255, 255, 0.2)",
             }}
             whileTap={{ scale: 0.95 }}
+            
           >
             SUBMIT RESUME
           </motion.button>
