@@ -378,16 +378,17 @@ export default function StickyScroll() {
           </p>
         </motion.div>
 
-        <motion.div
+         <motion.div
   className="flex justify-center mt-5"
   variants={bounceVariant}
 >
-  <Link href="/Event">
-    <motion.button
-      type="button"
-      className="bg-white text-blue-800 font-semibold text-lg px-6 py-2 rounded-xl 
-                 shadow-md hover:bg-blue-100 hover:shadow-lg transition-all duration-300 
-                 cursor-pointer flex items-center justify-center"
+  <Link
+    href="/Event"
+    className="bg-white text-blue-800 font-semibold text-lg px-6 py-2 rounded-xl 
+               shadow-md hover:bg-blue-100 hover:shadow-lg transition-all duration-300 
+               cursor-pointer flex items-center justify-center select-none"
+  >
+    <motion.span
       whileHover={{
         scale: 1.05,
         y: -2,
@@ -395,7 +396,7 @@ export default function StickyScroll() {
       whileTap={{ scale: 0.95 }}
     >
       GO TO EVENTS
-    </motion.button>
+    </motion.span>
   </Link>
 </motion.div>
 
