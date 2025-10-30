@@ -104,7 +104,7 @@ export default function Nav() {
           </motion.div>
         </Link>
 
-        {/* Desktop Navigation */}
+     
         <div className="hidden md:flex gap-6 text-white font-light tracking-tight mr-10 items-center">
           {navLinks.map((link, index) => (
             <Link key={link.href} href={link.href}>
@@ -139,7 +139,6 @@ export default function Nav() {
           </motion.button>
         </div>
 
-        {/* Mobile Hamburger Button */}
         <motion.button
           className="md:hidden text-white z-50 relative"
           onClick={toggleMenu}
@@ -163,7 +162,7 @@ export default function Nav() {
         </motion.button>
       </nav>
 
-      {/* Mobile Menu Overlay */}
+  
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -176,10 +175,8 @@ export default function Nav() {
               transformOrigin: "top right",
             }}
           >
-            {/* Background decoration */}
             <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-transparent to-purple-600/10" />
-
-            {/* Navigation Links */}
+          
             <div className="flex flex-col items-center space-y-8 relative z-10">
               {navLinks.map((link, index) => (
                 <motion.div
@@ -213,7 +210,7 @@ export default function Nav() {
                 </motion.div>
               ))}
 
-              {/* Submit Resume Button */}
+           
               <motion.div
                 variants={buttonVariant}
                 initial="hidden"
@@ -235,7 +232,6 @@ export default function Nav() {
               </motion.div>
             </div>
 
-            {/* Decorative elements */}
             <div className="absolute top-20 left-10 w-20 h-20 border border-white/10 rounded-full" />
             <div className="absolute bottom-20 right-10 w-16 h-16 border border-blue-400/20 rounded-full" />
             <div className="absolute top-1/3 right-20 w-2 h-2 bg-blue-400 rounded-full animate-pulse" />
