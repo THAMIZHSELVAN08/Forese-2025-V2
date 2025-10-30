@@ -102,9 +102,9 @@ export default function Aboutcf() {
 
   return (
     <div className="bg-black min-h-screen text-white">
-      {/* Hero Section */}
+    
       <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background Pattern */}
+     
         <div className="absolute inset-0 z-0">
           <LetterGlitch
             glitchColors={glitchColors}
