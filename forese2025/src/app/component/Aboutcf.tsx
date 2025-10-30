@@ -159,7 +159,7 @@ export default function Aboutcf() {
         </div>
       </div>
 
-      {/* About Section */}
+     
       <section className="py-20 px-6 h-screen w-full">
         <div className="max-w-6xl mx-auto mt-30">
           <motion.div
@@ -183,7 +183,7 @@ export default function Aboutcf() {
             </p>
           </motion.div>
 
-          {/* Features Grid */}
+          
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
             {features.map((feature, index) => (
               <motion.div
@@ -207,7 +207,7 @@ export default function Aboutcf() {
         </div>
       </section>
 
-      {/* Team Section */}
+     
       <section className="py-20 px-6 bg-gray-900/30">
         <div className="max-w-7xl mx-auto">
           <motion.div
@@ -222,7 +222,7 @@ export default function Aboutcf() {
             </h2>
           </motion.div>
 
-          {/* Chief Mentors */}
+         
           <div className="mb-16">
             <h3 className="text-3xl font-bold text-center mb-12 text-blue-400">
               Chief Mentors
@@ -258,7 +258,7 @@ export default function Aboutcf() {
             </div>
           </div>
 
-          {/* Mentors */}
+         
           <div>
             <h3 className="text-3xl font-bold text-center mb-12 text-cyan-400">
               Mentors
