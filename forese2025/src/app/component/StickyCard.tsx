@@ -379,23 +379,26 @@ export default function StickyScroll() {
         </motion.div>
 
         <motion.div
-          className="flex justify-center mt-5"
-          variants={bounceVariant}
-        >
-          <Link href="/Event">
-            <motion.button
-              className="bg-green-950 text-green-400 border border-green-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group"
-              whileHover={{
-                scale: 1.05,
-                y: -2,
-              }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <span className="bg-green-400 shadow-green-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
-              Go to Events
-            </motion.button>
-          </Link>
-        </motion.div>
+  className="flex justify-center mt-5"
+  variants={bounceVariant}
+>
+  <Link href="/Event">
+    <motion.button
+      type="button"
+      className="bg-white text-blue-800 font-semibold text-lg px-6 py-2 rounded-xl 
+                 shadow-md hover:bg-blue-100 hover:shadow-lg transition-all duration-300 
+                 cursor-pointer flex items-center justify-center"
+      whileHover={{
+        scale: 1.05,
+        y: -2,
+      }}
+      whileTap={{ scale: 0.95 }}
+    >
+      GO TO EVENTS
+    </motion.button>
+  </Link>
+</motion.div>
+
       </motion.div>   
       <motion.div
         ref={section3Ref}
@@ -597,3 +600,4 @@ export default function StickyScroll() {
     </>
   );
 }
+
