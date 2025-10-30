@@ -25,7 +25,7 @@ export type Member = {
   oneLiner: string;
 };
 
-// Senior Core Members (9 members)
+
 export const seniorCoreMembers: CoreMember[] = [
   {
     id: 1,
@@ -105,14 +105,14 @@ export const seniorCoreMembers: CoreMember[] = [
   
 ];
 
-// Junior Core Members (9 members)
+
 export const juniorCoreMembers: CoreMember[] = [
   {
     id: 11,
     name: "Anushri",
     role: "Executive Director",
     imageUrl: "/images/c11.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/anushri",
+    linkedinUrl: "linkedin.com/in/anu-shri",
     oneLiner: "Travel more, worry less, spread kindness",
   },
   {
@@ -1331,16 +1331,6 @@ export const members: Member[] = [
   },
   {
     id: 31,
-    name: "Palanichandar Ramalingam",
-    role: "Member",
-    imageUrl: "/images/m31.jpg",
-    linkedinUrl:
-      "https://www.linkedin.com/in/palanichandar-ramalingam-55243131b/",
-    oneLiner:
-      "Living with confidence , working with purpose and walking with faith",
-  },
-  {
-    id: 32,
     name: "Pragadheeswaran",
     role: "Member",
     imageUrl: "/images/m32.jpg",
@@ -1348,7 +1338,7 @@ export const members: Member[] = [
     oneLiner: "On the grind!",
   },
   {
-    id: 33,
+    id: 32,
     name: "Praneet G",
     role: "Member",
     imageUrl: "/images/m33.png",
@@ -1357,7 +1347,7 @@ export const members: Member[] = [
       "I am passionate about solving problems in creative ways and love connecting with people to share ideas and inspire each other.",
   },
   {
-    id: 34,
+    id: 33,
     name: "Pranaya M",
     role: "Member",
     imageUrl: "/images/m34.jpg",
@@ -1366,7 +1356,7 @@ export const members: Member[] = [
       "I am a dedicated and hardworking person with good communication skills.",
   },
   {
-    id: 35,
+    id: 34,
     name: "Pravin Kumaar DS",
     role: "Member",
     imageUrl: "/images/m35.jpg",
@@ -1374,7 +1364,7 @@ export const members: Member[] = [
     oneLiner: "I am an enthusiastic engineer ",
   },
   {
-    id: 36,
+    id: 35,
     name: "Prithivikaa D",
     role: "Member",
     imageUrl: "/images/m36.jpg",
@@ -1383,7 +1373,7 @@ export const members: Member[] = [
     oneLiner: "Be Obsessed With Your Own Potential",
   },
   {
-    id: 37,
+    id: 36,
     name: "Raghav GS",
     role: "Member",
     imageUrl: "/images/m37.jpg",
@@ -1391,7 +1381,7 @@ export const members: Member[] = [
     oneLiner: "First I mine, then I craft",
   },
   {
-    id: 38,
+    id: 37,
     name: "Sakthi Rasagnya R",
     role: "Member",
     imageUrl: "/images/m38.jpg",
@@ -1400,7 +1390,7 @@ export const members: Member[] = [
   },
 
   {
-    id: 39,
+    id: 38,
     name: "Sam Joshua S",
     role: "Member",
     imageUrl: "/images/m39.jpg",
@@ -1409,7 +1399,7 @@ export const members: Member[] = [
       "You either die a hero, or you live long enough to see yourself become the villain.",
   },
   {
-    id: 40,
+    id: 39,
     name: "Sangavai GK",
     role: "Member",
     imageUrl: "/images/m40.jpg",
@@ -1417,7 +1407,7 @@ export const members: Member[] = [
     oneLiner: "Wildcard ",
   },
   {
-    id: 41,
+    id: 40,
     name: "Sanjay Joshua",
     role: "Member",
     imageUrl: "/images/m41.jpg",
@@ -1425,7 +1415,7 @@ export const members: Member[] = [
     oneLiner: "My moto is simple Listen! Learn! Lead! .",
   },
   {
-    id: 42,
+    id: 41,
     name: "Sanjay Srinivasan B",
     role: "Member",
     imageUrl: "/images/m42.jpg",
@@ -1434,7 +1424,7 @@ export const members: Member[] = [
       "Aspiring ECE student and active Foresce Club member, driven to excel in placements and beyond.",
   },
   {
-    id: 43,
+    id: 42,
     name: "Sanjitha",
     role: "Member",
     imageUrl: "/images/m43.jpg",
@@ -1443,7 +1433,7 @@ export const members: Member[] = [
   },
 
   {
-    id: 44,
+    id: 43,
     name: "Sarabesh Adithya D",
     role: "Member",
     imageUrl: "/images/m44.jpg",
@@ -1451,7 +1441,7 @@ export const members: Member[] = [
     oneLiner: "Chasing The apex",
   },
   {
-    id: 45,
+    id: 44,
     name: "Sathyakaman KS",
     role: "Member",
     imageUrl: "/images/m45.jpg",
@@ -1459,7 +1449,7 @@ export const members: Member[] = [
     oneLiner: "I’d agree with you, but then we’d both be wrong.",
   },
   {
-    id: 46,
+    id: 45,
     name: "Shaik Aadhil S",
     role: "Member",
     imageUrl: "/images/m46.jpg",
@@ -1467,7 +1457,7 @@ export const members: Member[] = [
     oneLiner: "Im not a business man. I am the business, man",
   },
   {
-    id: 47,
+    id: 46,
     name: "Shabreen S",
     role: "Member",
     imageUrl: "/images/m47.jpg",
@@ -1476,7 +1466,7 @@ export const members: Member[] = [
   },
 
   {
-    id: 48,
+    id: 47,
     name: "Shamritha",
     role: "Member",
     imageUrl: "/images/m48.jpg",
@@ -1484,7 +1474,7 @@ export const members: Member[] = [
     oneLiner: "Too rare to relate , sarcasm solves all ! ",
   },
   {
-    id: 49,
+    id: 48,
     name: "Shawn Abraham Joseph L",
     role: "Member",
     imageUrl: "/images/m49.jpg",
@@ -1493,7 +1483,7 @@ export const members: Member[] = [
       "If you want to win the lottery, you have to make the money to buy the ticket.",
   },
   {
-    id: 50,
+    id: 49,
     name: "Shobana R",
     role: "Member",
     imageUrl: "/images/m50.jpg",
@@ -1501,7 +1491,7 @@ export const members: Member[] = [
     oneLiner: "Do not live someone else’s script. Write your own story",
   },
   {
-    id: 51,
+    id: 5,0
     name: "Shree Vidhya S",
     role: "Member",
     imageUrl: "/images/m51.jpg",
@@ -1511,8 +1501,8 @@ export const members: Member[] = [
       "I’m just a curious soul who enjoys figuring things out and having fun along the way.",
   },
   {
-    id: 52,
-    name: "Shreenidhi C",
+    id: 51,
+    name: "Shreenidhi1C",
     role: "Member",
     imageUrl: "/images/m52.jpg",
     linkedinUrl:
@@ -1521,7 +1511,7 @@ export const members: Member[] = [
       "Curious and passion-driven individual with a friendly demeanor. ",
   },
   {
-    id: 53,
+    id: 52,
     name: "Shrenik BS",
     role: "Member",
     imageUrl: "/images/m53.jpg",
@@ -1529,7 +1519,7 @@ export const members: Member[] = [
     oneLiner: "My vibe is my signature",
   },
   {
-    id: 54,
+    id: 53,
     name: "Sree Varshini S",
     role: "Member",
     imageUrl: "/images/m54.jpg",
@@ -1538,7 +1528,7 @@ export const members: Member[] = [
     oneLiner: "Low-key. On purpose.",
   },
   {
-    id: 55,
+    id: 54,
     name: "Srikanth T",
     role: "Member",
     imageUrl: "/images/m55.jpg",
@@ -1546,7 +1536,7 @@ export const members: Member[] = [
     oneLiner: "In my defence I was bored.",
   },
   {
-    id: 56,
+    id: 55,
     name: "Srinidhi S",
     role: "Member",
     imageUrl: "/images/m56.jpg",
@@ -1555,7 +1545,7 @@ export const members: Member[] = [
       "I no longer dislike Mondays, I'm mature now. I dislike the whole week.",
   },
   {
-    id: 57,
+    id: 56,
     name: "Sai Harini BS",
     role: "Member",
     imageUrl: "/images/m57.jpg",
@@ -1563,7 +1553,7 @@ export const members: Member[] = [
     oneLiner: "Super poor kids with nothing but cool friends",
   },
   {
-    id: 58,
+    id: 57,
     name: "Sai Srutthe",
     role: "Member",
     imageUrl: "/images/m58.jpg",
@@ -1572,7 +1562,7 @@ export const members: Member[] = [
     oneLiner: "Focused on Progress.",
   },
   {
-    id: 59,
+    id: 58,
     name: "Sowmiya R",
     role: "Member",
     imageUrl: "/images/m59.jpg",
@@ -1581,7 +1571,7 @@ export const members: Member[] = [
   },
 
   {
-    id: 60,
+    id: 59,
     name: "Tanish S",
     role: "Member",
     imageUrl: "/images/m60.jpg",
@@ -1589,7 +1579,7 @@ export const members: Member[] = [
     oneLiner: "Curious, cooperative and everlearning. ",
   },
   {
-    id: 61,
+    id: 60,
     name: "Thanya Singh",
     role: "Member",
     imageUrl: "/images/m61.jpg",
@@ -1598,7 +1588,7 @@ export const members: Member[] = [
       "I ask questions like a pro , organize the answers like a perfectionist",
   },
   {
-    id: 62,
+    id: 61,
     name: "Tharun Vel K",
     role: "Member",
     imageUrl: "/images/m62.jpg",
@@ -1606,7 +1596,7 @@ export const members: Member[] = [
     oneLiner: "Just a curious mind with a relaxed vibe",
   },
   {
-    id: 63,
+    id: 62,
     name: "Thirushan SR",
     role: "Member",
     imageUrl: "/images/m63.jpg",
@@ -1614,7 +1604,7 @@ export const members: Member[] = [
     oneLiner: "Where creativity meets impact.",
   },
   {
-    id: 64,
+    id: 63,
     name: "Vaishnavi Chitraa M",
     role: "Member",
     imageUrl: "/images/m64.jpg",
@@ -1622,7 +1612,7 @@ export const members: Member[] = [
     oneLiner: "Peace in mind, Joy in heart",
   },
   {
-    id: 65,
+    id: 64,
     name: "Vanishri",
     role: "Member",
     imageUrl: "/images/m65.jpg",
@@ -1630,7 +1620,7 @@ export const members: Member[] = [
     oneLiner: "I wonder freely, wander endlessly and shine fearlessly.",
   },
   {
-    id: 66,
+    id: 65,
     name: "Vanthana R",
     role: "Member",
     imageUrl: "/images/m66.jpg",
@@ -1638,7 +1628,7 @@ export const members: Member[] = [
     oneLiner: "Shining among the star's within me ",
   },
   {
-    id: 67,
+    id: 66,
     name: "Vikhashini S",
     role: "Member",
     imageUrl: "/images/m67.jpg",
@@ -1646,7 +1636,7 @@ export const members: Member[] = [
     oneLiner: "Don’t chase the spotlight—be the reason it exists.",
   },
   {
-    id: 68,
+    id: 67,
     name: "Vishwanth CR",
     role: "Member",
     imageUrl: "/images/m68.jpg",
@@ -1654,7 +1644,7 @@ export const members: Member[] = [
     oneLiner: "Just a coder chasing speed, dreams, and greatness ",
   },
   {
-    id: 69,
+    id: 68,
     name: "Viswanathan L",
     role: "Member",
     imageUrl: "/images/m69.jpg",
@@ -1662,7 +1652,7 @@ export const members: Member[] = [
     oneLiner: "Fuelled by curiosity, grounded in effort",
   },
   {
-    id: 70,
+    id: 69,
     name: "Yadhunandhan K",
     role: "Member",
     imageUrl: "/images/m70.jpg",
@@ -1671,5 +1661,4 @@ export const members: Member[] = [
   },
 ];
 
-// Combined Core Members (Senior + Junior)
 export const coreMembers: CoreMember[] = [...seniorCoreMembers, ...juniorCoreMembers];
