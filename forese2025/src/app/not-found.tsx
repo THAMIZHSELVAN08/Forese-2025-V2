@@ -11,7 +11,7 @@ export default function NotFound() {
         transition={{ duration: 0.6 }}
         className="text-center"
       >
-        {/* 404 Text */}
+      
         <motion.h1
           initial={{ scale: 0.8 }}
           animate={{ scale: 1 }}
@@ -22,7 +22,7 @@ export default function NotFound() {
           404
         </motion.h1>
 
-        {/* Error Message */}
+     
         <motion.h2
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -32,7 +32,7 @@ export default function NotFound() {
           Page Not Found
         </motion.h2>
 
-        {/* Description */}
+       
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -43,7 +43,7 @@ export default function NotFound() {
           moved, deleted, or never existed.
         </motion.p>
 
-        {/* Back to Home Button */}
+       
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -57,7 +57,7 @@ export default function NotFound() {
           </Link>
         </motion.div>
 
-        {/* Decorative Elements */}
+        
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.1 }}
