@@ -133,7 +133,7 @@ export default function Footer() {
             </div>
           </motion.div>
 
-          {/* Quick Links */}
+         
           <motion.div variants={itemVariants}>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
@@ -154,7 +154,7 @@ export default function Footer() {
             </ul>
           </motion.div>
 
-          {/* Services */}
+         
           <motion.div variants={itemVariants}>
             <h3 className="text-lg font-semibold mb-4">What We Do</h3>
             <ul className="space-y-2">
@@ -173,7 +173,7 @@ export default function Footer() {
             </ul>
           </motion.div>
 
-          {/* Contact Info */}
+         
           <motion.div variants={itemVariants}>
             <h3 className="text-lg font-semibold mb-4">Get In Touch</h3>
             <div className="space-y-3">
@@ -193,7 +193,7 @@ export default function Footer() {
           </motion.div>
         </motion.div>
 
-        {/* Bottom Bar */}
+       
         <motion.div
           className="border-t border-gray-700 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center"
           initial={{ opacity: 0 }}
