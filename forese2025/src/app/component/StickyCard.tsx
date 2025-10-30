@@ -28,13 +28,13 @@ import Footer from "./Footer";
 export default function StickyScroll() {
   const [currentEventIndex, setCurrentEventIndex] = useState(0);
 
-  // Refs for each section
+
   const section1Ref = useRef<HTMLDivElement>(null);
   const section2Ref = useRef<HTMLDivElement>(null);
   const section3Ref = useRef<HTMLDivElement>(null);
   const section4Ref = useRef<HTMLDivElement>(null);
 
-  // Scroll progress for each section
+
   const { scrollYProgress: scrollYProgress1 } = useScroll({
     target: section1Ref,
     offset: ["start start", "end start"],
@@ -55,7 +55,7 @@ export default function StickyScroll() {
     offset: ["start start", "end start"],
   });
 
-  // Transform scroll progress to Y movement (parallax effect)
+  
   const y1 = useTransform(scrollYProgress1, [0, 1], ["0%", "-50%"]);
   const y2 = useTransform(scrollYProgress2, [0, 1], ["0%", "-50%"]);
   const y3 = useTransform(scrollYProgress3, [0, 1], ["0%", "-50%"]);
@@ -134,7 +134,6 @@ export default function StickyScroll() {
     },
   ];
 
-  // Animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -286,9 +285,7 @@ export default function StickyScroll() {
             />
           </div>
         </motion.div>
-      </motion.div>
-
-      {/* Second Section - Enhanced with icon carousel */}
+      </motion.div>    
       <motion.div
         ref={section2Ref}
         style={{
@@ -318,7 +315,7 @@ export default function StickyScroll() {
           </motion.div>
         </motion.div>
 
-        {/* Animated Icon Carousel */}
+      
         <motion.div
           className="flex justify-center items-center mb-6"
           variants={scaleUpVariant}
@@ -399,9 +396,7 @@ export default function StickyScroll() {
             </motion.button>
           </Link>
         </motion.div>
-      </motion.div>
-
-      {/* Third Section - Enhanced statistics */}
+      </motion.div>   
       <motion.div
         ref={section3Ref}
         style={{
@@ -446,7 +441,6 @@ export default function StickyScroll() {
             Largest HR–student engagement ever
           </motion.h1>
         </motion.div>
-
         <motion.div
           className="flex w-full md:gap-30 items-center justify-center"
           variants={containerVariants}
@@ -472,7 +466,6 @@ export default function StickyScroll() {
             </span>
             <h1 className="text-white text-center">HRs</h1>
           </motion.div>
-
           <motion.div
             className="flex flex-col items-center"
             variants={bounceVariant}
@@ -495,7 +488,6 @@ export default function StickyScroll() {
             <h1 className="text-white text-center">Students interviewed</h1>
           </motion.div>
         </motion.div>
-
         <motion.div
           className="flex justify-center text-center"
           variants={slideInFromRight}
@@ -512,8 +504,6 @@ export default function StickyScroll() {
           </motion.h1>
         </motion.div>
       </motion.div>
-
-      {/* Enhanced Contact Section - Keep as is */}
       <motion.div
         ref={section4Ref}
         style={{
@@ -528,7 +518,6 @@ export default function StickyScroll() {
         viewport={{ once: false, amount: 0.3 }}
         variants={containerVariants}
       >
-        {/* Background decorations */}
         <div
           className="absolute inset-0"
           style={{ width: "100%", height: "100%px", position: "absolute" }}
@@ -546,7 +535,6 @@ export default function StickyScroll() {
         </div>
 
         <div className="w-full max-w-6xl mx-auto flex flex-col items-center space-y-8 sm:space-y-12 lg:space-y-16 relative z-10">
-          {/* Phone Icon */}
           <motion.div className="flex justify-center" variants={scaleUpVariant}>
             <motion.div
               whileHover={{
@@ -559,8 +547,6 @@ export default function StickyScroll() {
               <FaPhoneAlt className="text-white h-8 w-8 sm:h-10 sm:w-10 lg:h-12 lg:w-12 drop-shadow-2xl" />
             </motion.div>
           </motion.div>
-
-          {/* Contact Us Title */}
           <motion.div className="text-center" variants={itemVariants}>
             <h1
               className="text-white text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-semibold tracking-wider drop-shadow-2xl"
@@ -575,8 +561,6 @@ export default function StickyScroll() {
               transition={{ duration: 1, delay: 0.5 }}
             />
           </motion.div>
-
-          {/* Contact Info Cards */}
           <motion.div
             className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 w-full max-w-4xl"
             variants={containerVariants}
@@ -609,8 +593,6 @@ export default function StickyScroll() {
           </motion.div>
         </div>
       </motion.div>
-
-      {/* Enhanced Footer Section - Keep as is */}
       <Footer />
     </>
   );
