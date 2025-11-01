@@ -18,7 +18,7 @@ export default function Event() {
       title: "Mock Placements",
       description:
         "Learn about our annual flagship event, that connects students with HRs.",
-      url: "/Forese.JPG",
+      url: "/DSC_1100.JPG",
       link: "/MockPlacement",
     },
     {
@@ -59,7 +59,6 @@ export default function Event() {
     },
   ];
 
- 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % Item.length);
@@ -82,7 +81,6 @@ export default function Event() {
 
   return (
     <div className="relative w-full h-screen overflow-hidden">
-     
       <AnimatePresence mode="wait">
         <motion.div
           key={currentIndex}
@@ -102,8 +100,7 @@ export default function Event() {
         </motion.div>
       </AnimatePresence>
 
-      
-      <div className="absolute inset-0 bg-[#004aad]/60" />
+      <div className="absolute inset-0 bg-[#004aad]/40" />
 
       <div className="relative z-10 flex flex-col justify-center items-center h-full px-6 sm:px-8 lg:px-16">
         <AnimatePresence mode="wait">
@@ -115,7 +112,6 @@ export default function Event() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="text-center max-w-4xl mx-auto"
           >
-           
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -150,7 +146,6 @@ export default function Event() {
           </motion.div>
         </AnimatePresence>
 
-     
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3">
           {Item.map((_, index) => (
             <button
@@ -165,7 +160,6 @@ export default function Event() {
           ))}
         </div>
 
-       
         <button
           onClick={handlePrevious}
           className="absolute left-6 top-1/2 transform -translate-y-1/2 w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300"
