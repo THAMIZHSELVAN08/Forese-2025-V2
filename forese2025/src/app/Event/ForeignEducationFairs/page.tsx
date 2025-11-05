@@ -80,7 +80,7 @@ const ForedPage = () => {
           </div>
           <div className="fixed inset-0 -z-10">
             <div
-              className="bg-blue-50"
+              className="bg-blue-50 blur-[3px]"
               style={{ width: "100%", height: "100%", position: "relative" }}
             >
               <Squares
@@ -118,7 +118,7 @@ const ForedPage = () => {
 
        
         <motion.section
-          className="py-20 lg:py-28 px-4 sm:px-6 lg:px-8 bg-gray-50"
+          className="py-20 lg:py-28 px-4 sm:px-6 lg:px-8 bg-gray-50 shadow-lg border-2 border-t-gray-200"
           initial="initial"
           whileInView="animate"
           viewport={{ once: true, amount: 0.3 }}
@@ -128,21 +128,35 @@ const ForedPage = () => {
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
               Your Bridge to International Academia
             </h2>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              FORESE&apos;s Foreign Universities Education Fair (FORED) provides
-              a platform for students to connect directly with admission experts
-              and educational consultants, offering personalized insights into
-              diverse international study options. This holistic approach helps
-              students navigate the complexities of pursuing higher education
-              overseas, ensuring they are well-prepared for academic success and
-              life abroad from start to finish.
-            </p>
+            <div className="text-lg text-gray-600 leading-relaxed space-y-6">
+              <p>
+                FORESE’s Foreign Universities Education Fair (FORED) connects
+                students with admission experts and education consultants who
+                provide tailored guidance on international study options. The
+                event enables students to explore academic programs,
+                scholarships, and financial aid, supporting informed decisions
+                about studying abroad. Representatives from leading
+                universities in the US, UK, Australia, and other countries
+                offer advice on applications, post-graduation work
+                opportunities, and insights into academic and cultural
+                environments.
+              </p>
+              <p>
+                The fair also offers essential guidance on standardized tests
+                such as the TOEFL, IELTS, and GRE, which are often required for
+                international study. Experts explain test formats, preparation
+                strategies, and score requirements for different institutions.
+                This comprehensive support helps students navigate the
+                challenges of studying abroad and prepares them for academic
+                and personal success in a new country.
+              </p>
+            </div>
           </div>
         </motion.section>
 
         
         <motion.section
-          className="pb-20 lg:pb-28 px-4 sm:px-6 lg:px-8 mt-20"
+          className="pb-20 lg:pb-28 px-4 sm:px-6 lg:px-8 mt-20 "
           initial="initial"
           whileInView="animate"
           viewport={{ once: true, amount: 0.2 }}

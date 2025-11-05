@@ -104,7 +104,7 @@ const MockPlacementsPage = () => {
       <div className="bg-transparent text-gray-800">
         <div className="fixed inset-0 -z-10">
           <div
-            className="bg-blue-50"
+            className="bg-blue-50 blur-[3px]"
             style={{ width: "100%", height: "100%", position: "relative" }}
           >
             <Squares
@@ -170,16 +170,14 @@ const MockPlacementsPage = () => {
               Bridging Talent with Opportunity
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              FORESE&apos;s Mock Placements event is our premier annual program,
-              exclusively for pre-final year students across all disciplines.
-              This preparatory event fosters a competitive atmosphere, offering
-              invaluable insights into actual placement dynamics. It empowers
-              students with essential skills and exposure, helping them hone
-              their abilities in readiness for upcoming career opportunities. In
-              collaboration with Sri Venkateswara College of Engineering, we are
-              proud of this flagship event and remain committed to delivering
-              enhanced outcomes year after year.
+             FORESE&apos;s Mock Placements, the flagship annual initiative of Sri Venkateswara College of Engineering, is designed to prepare pre-final year students from all disciplines for the challenges of their placement journey. 
+             Conducted in both online and offline modes, the event provides a complete simulation of the recruitment process through aptitude tests, group discussions, and personal interviews, offering students an authentic taste of 
+             real placement dynamics in a competitive yet supportive environment. In 2025, the program reached new heights with the participation of over 130 HR professionals and industry experts from reputed organizations, who not 
+             only assessed students but also mentored them with valuable insights and personalized feedback to refine their skills, boost their confidence, and strengthen their readiness for future opportunities. Over the years, Mock 
+             Placements has evolved into a transformative platform that equips students with the technical expertise, interpersonal skills, and mindset necessary to excel under pressure. FORESE, in collaboration with Sri Venkateswara 
+             College of Engineering, takes immense pride in driving this initiative forward while remaining committed to delivering greater opportunities, stronger outcomes, and lasting impact year after year.
             </p>
+            
           </div>
           <div className="w-full text-center bg-white mt-10">
             <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">

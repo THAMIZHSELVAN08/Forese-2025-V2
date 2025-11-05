@@ -197,7 +197,7 @@ const GroupDiscussionPage = () => {
       <div className="relative min-h-screen bg-transparent text-black overflow-hidden ">
         <div className="fixed inset-0 -z-10">
           <div
-            className="bg-blue-50"
+            className="bg-blue-50 blur-[3px]"
             style={{ width: "100%", height: "100%", position: "relative" }}
           >
             <Squares

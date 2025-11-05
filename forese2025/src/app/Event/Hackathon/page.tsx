@@ -63,13 +63,13 @@ const HackathonPage = () => {
     >
       <div className="fixed inset-0 -z-10">
         <div
-          className="bg-blue-50"
+          className="bg-blue-50 blur-[3px]"
           style={{ width: "100%", height: "100%", position: "relative" }}
         >
           <Squares
-            speed={0.2}
+            speed={0.1}
             squareSize={40}
-            direction="diagonal" // up, down, left, right, diagonal
+            direction="up" // up, down, left, right, diagonal
             borderColor="#004aad"
             hoverFillColor="#222"
           />
@@ -96,9 +96,10 @@ const HackathonPage = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="mt-6 text-lg sm:text-xl md:text-2xl text-black max-w-3xl mx-auto"
           >
-            A hackathon like no other, where students can showcase their skills
-            and collaborate with like‑minded peers to build innovative
-            solutions.
+            FORESE and Coders' Forum hosted their first 24-hour hackathon for pre-final year students on January 28–29, 2023, at Sri Venkateswara College of Engineering, Sriperumbudur, with EDWISE INTERNATIONAL as the sponsor.
+Out of all submissions, twenty teams advanced to the finals, where they developed working prototypes under the guidance of Coders' Forum mentors. After a full day of coding, a panel from Sahaj Software judged the projects and selected the top three teams, awarding cash prizes of ₹5,000, ₹3,000, and ₹1,500.
+The event provided students with valuable industry exposure, and Sahaj Software also shortlisted five participants for internship interviews. The hackathon was a resounding success, providing a platform for innovation and skill development.
+
           </motion.p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link href="/Event">

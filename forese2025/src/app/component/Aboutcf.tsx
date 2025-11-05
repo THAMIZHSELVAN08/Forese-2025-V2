@@ -160,8 +160,8 @@ export default function Aboutcf() {
       </div>
 
      
-      <section className="py-20 px-6 h-screen w-full">
-        <div className="max-w-6xl mx-auto mt-30">
+      <section className="py-20 px-6 w-full">
+        <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -172,18 +172,37 @@ export default function Aboutcf() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               About Coders&#39; Forum
             </h2>
-            <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              The Coders&#39; Forum is a wing of FORESE which believes in the
-              motto of students helping students. It aspires to break the
-              barriers faced by students when learning to code. The club
-              consists of experienced mentors who help their peers enhance their
-              skills and get them to put their best foot forward during the
-              technical rounds in placements by conducting a series of
-              hackathons and teaching sessions.
-            </p>
+            <div className="text-lg md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed space-y-6">
+              <p>
+                The Coders’ Forum, a wing of FORESE, stands by its core belief
+                of STUDENTS EMPOWERING STUDENTS. Our mission is to create a
+                collaborative and future-ready learning ecosystem where coding
+                is not just taught but experienced.
+              </p>
+              <p>
+                We take mentorship to the next level through structured
+                peer-led programs, where pre-final year mentors guide
+                second-year students in mastering coding concepts,
+                problem-solving strategies, and project-building skills.
+              </p>
+              <p>
+                Beyond mentorship, the forum actively hosts hackathons, coding
+                bootcamps, seminars, and technical workshops that encourage
+                creativity, collaboration, and innovation. These initiatives
+                are designed to equip students with both technical expertise
+                and the confidence needed to thrive in placements and industry
+                challenges.
+              </p>
+              <p>
+                At Coders’ Forum, we are committed to bridging the gap between
+                academics and real-world applications—empowering every student
+                to not only code, but also to innovate, network, and lead in
+                the ever-evolving tech landscape.
+              </p>
+            </div>
           </motion.div>
 
-          
+          {/* Features Section */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
             {features.map((feature, index) => (
               <motion.div
@@ -227,7 +246,7 @@ export default function Aboutcf() {
             <h3 className="text-3xl font-bold text-center mb-12 text-blue-400">
               Chief Mentors
             </h3>
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {chiefMentors.map((mentor, index) => (
                 <motion.div
                   key={index}
@@ -263,7 +282,7 @@ export default function Aboutcf() {
             <h3 className="text-3xl font-bold text-center mb-12 text-cyan-400">
               Mentors
             </h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {mentors.map((mentor, index) => (
                 <motion.div
                   key={index}
