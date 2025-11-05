@@ -15,11 +15,23 @@ export default function Nav() {
 
   const menuItems = [
     { label: "HOME", ariaLabel: "Visit our Home Page", link: "/" },
-    { label: "MOCK PLACEMENT", ariaLabel: "Go to Mock Placement page", link: "/MockPlacement" },
-    { label: "CODERS' FORUM", ariaLabel: "Go to Coders' Forum", link: "/Coderforum" },
+    {
+      label: "MOCK PLACEMENT",
+      ariaLabel: "Go to Mock Placement page",
+      link: "/MockPlacement",
+    },
+    {
+      label: "CODERS' FORUM",
+      ariaLabel: "Go to Coders' Forum",
+      link: "/Coderforum",
+    },
     { label: "EVENTS", ariaLabel: "Learn about our Events", link: "/Event" },
     { label: "TEAM", ariaLabel: "Get to know the team", link: "/Team" },
-    { label: "SUBMIT RESUME", ariaLabel: "Submit your resume", link: "/Resume" },
+    {
+      label: "SUBMIT RESUME",
+      ariaLabel: "Submit your resume",
+      link: "/Resume",
+    },
   ];
 
   const socialItems = [
@@ -29,7 +41,6 @@ export default function Nav() {
 
   return (
     <>
-      
       <div className="md:hidden fixed inset-0 z-40 pointer-events-none">
         <StaggeredMenu
           position="right"
@@ -48,12 +59,11 @@ export default function Nav() {
         />
       </div>
 
-      
-      <nav className="hidden md:flex justify-between items-center fixed top-0 left-0 right-0 h-20 z-50 w-full 
+      <nav
+        className="hidden md:flex justify-between items-center fixed top-0 left-0 right-0 h-20 z-50 w-full 
       bg-gradient-to-r from-blue-50/90 to-blue-100/90 backdrop-blur-md 
-      border-b border-blue-200/50 shadow-lg px-0">
-
-        
+      border-b border-blue-200/50 shadow-lg px-0"
+      >
         <Link href="/" className="z-50 flex-shrink-0">
           <motion.div
             className="bg-gradient-to-r from-blue-900 to-blue-800 h-16 sm:h-20 w-36 sm:w-44 pl-4 flex items-center 
@@ -73,7 +83,6 @@ export default function Nav() {
           </motion.div>
         </Link>
 
-        
         <div className="flex flex-wrap justify-end gap-3 text-blue-900 font-semibold tracking-wide items-center pr-4 sm:pr-6 lg:pr-8">
           {navLinks.map((link, index) => (
             <Link key={index} href={link.href}>
@@ -95,23 +104,21 @@ export default function Nav() {
             </Link>
           ))}
 
-            <Link href="/Resume">
-               <motion.div
-                     className="relative cursor-pointer bg-gradient-to-r from-blue-600 to-blue-700 text-white 
+          <Link href="/Resume">
+            <motion.div
+              className="relative cursor-pointer bg-gradient-to-r from-blue-600 to-blue-700 text-white 
                                 px-5 sm:px-6 py-2 sm:py-3 text-sm lg:text-base font-semibold rounded-xl 
                                 shadow-lg hover:shadow-xl transition-all duration-300 select-none"
-      whileHover={{
-                      scale: 1.05,
-                      y: -2,
-                      boxShadow: "0 8px 25px rgba(59,130,246,0.4)",
-                  }}
-                  whileTap={{ scale: 0.95 }}
-               >
-                  SUBMIT RESUME
-               </motion.div>
-             </Link>
-
-          
+              whileHover={{
+                scale: 1.05,
+                y: -2,
+                boxShadow: "0 8px 25px rgba(59,130,246,0.4)",
+              }}
+              whileTap={{ scale: 0.95 }}
+            >
+              SUBMIT RESUME
+            </motion.div>
+          </Link>
         </div>
       </nav>
     </>
