@@ -1,27 +1,13 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import Squares from "../../components/ui/Squares";
 import Image from "next/image";
-import {
-  Users,
-  Briefcase,
-  BarChart,
-  CheckCircle,
-  Award,
-  MessageSquare,
-  UserCheck,
-} from "lucide-react";
+import Squares from "../../components/ui/Squares";
 import Footer from "../component/Footer";
 import Link from "next/link";
+import { CheckCircle, Users, Briefcase, BarChart, MessageSquare, UserCheck, Award } from "lucide-react";
+import LogoLoop from "../../components/ui/LogoLoop";
 import CountUp from "../../components/ui/CountUp";
-import LogoLoop from "@/components/ui/LogoLoop";
-import {
-  SiReact,
-  SiNextdotjs,
-  SiTypescript,
-  SiTailwindcss,
-} from "react-icons/si";
 
 const imageLogos = [
   { src: "/tcs.png", alt: "TCS", href: "https://www.tcs.com" },
@@ -51,7 +37,7 @@ const imageLogos = [
   { src: "/hcl.png", alt: "HCL", href: "https://www.hcltech.com" },
 ];
 
-const MockPlacementsPage = () => {
+const MockPlacementPage = () => {
   const fadeInUp = {
     initial: { opacity: 0, y: 40 },
     animate: { opacity: 1, y: 0, transition: { duration: 0.6 } },
@@ -300,5 +286,5 @@ const MockPlacementsPage = () => {
   );
 };
 
-export default MockPlacementsPage;
+export default MockPlacementPage;
 

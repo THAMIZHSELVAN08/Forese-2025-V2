@@ -6,12 +6,12 @@ import {
   juniorCoreMembers,
   seniorMembers,
   members,
-  type CoreMember,
-  type SeniorMember,
-  type Member,
 } from "@/data/team";
 import Squares from "../../components/ui/Squares";
 import StarBorder from "@/components/ui/StarBorder";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { Github, Linkedin, Twitter } from "lucide-react";
 import Footer from "../component/Footer";
 
 
@@ -133,12 +133,15 @@ export default function TeamPage() {
                     >
                   
                       <div className="relative z-10 flex-1 p-[10px] box-border">
-                        <img
-                          src={member.imageUrl}
-                          alt={member.name}
-                          loading="lazy"
-                          className="w-full h-full object-cover rounded-[10px]"
-                        />
+                        <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden">
+                          <Image
+                            src={member.imageUrl}
+                            alt={member.name}
+                            layout="fill"
+                            objectFit="cover"
+                            className="rounded-lg"
+                          />
+                        </div>
                       </div>
 
                       
@@ -187,12 +190,15 @@ export default function TeamPage() {
                     >
                       
                       <div className="relative z-10 flex-1 p-[10px] box-border">
-                        <img
-                          src={member.imageUrl}
-                          alt={member.name}
-                          loading="lazy"
-                          className="w-full h-full object-cover rounded-[10px]"
-                        />
+                        <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden">
+                          <Image
+                            src={member.imageUrl}
+                            alt={member.name}
+                            layout="fill"
+                            objectFit="cover"
+                            className="rounded-lg"
+                          />
+                        </div>
                       </div>
 
                       
@@ -245,12 +251,15 @@ export default function TeamPage() {
                   >
                     
                     <div className="relative z-10 flex-1 p-[10px] box-border">
-                      <img
-                        src={member.imageUrl}
-                        alt={member.name}
-                        loading="lazy"
-                        className="w-full h-full object-cover rounded-[10px]"
-                      />
+                      <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden">
+                        <Image
+                          src={member.imageUrl}
+                          alt={member.name}
+                          layout="fill"
+                          objectFit="cover"
+                          className="rounded-lg"
+                        />
+                      </div>
                     </div>
 
                     
@@ -298,12 +307,15 @@ export default function TeamPage() {
                     >
                     
                       <div className="relative z-10 flex-1 p-[10px] box-border">
-                        <img
-                          src={member.imageUrl}
-                          alt={member.name}
-                          loading="lazy"
-                          className="w-full h-full object-cover rounded-[10px]"
-                        />
+                        <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden">
+                          <Image
+                            src={member.imageUrl}
+                            alt={member.name}
+                            layout="fill"
+                            objectFit="cover"
+                            className="rounded-lg"
+                          />
+                        </div>
                       </div>
 
                       
@@ -354,12 +366,15 @@ export default function TeamPage() {
                 >
                  
                   <div className="relative z-10 flex-1 p-[10px] box-border">
-                    <img
-                      src={member.imageUrl}
-                      alt={member.name}
-                      loading="lazy"
-                      className="w-full h-full object-cover rounded-[10px]"
-                    />
+                    <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden">
+                      <Image
+                        src={member.imageUrl}
+                        alt={member.name}
+                        layout="fill"
+                        objectFit="cover"
+                        className="rounded-lg"
+                      />
+                    </div>
                   </div>
 
                   

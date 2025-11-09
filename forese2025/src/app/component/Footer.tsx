@@ -1,7 +1,5 @@
 "use client";
 import {
-  FaPhone,
-  FaEnvelope,
   FaMapMarkerAlt,
   FaLinkedin,
   FaTwitter,
@@ -9,202 +7,140 @@ import {
   FaGithub,
   FaFacebook,
 } from "react-icons/fa";
-import Link from "next/link";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
-export default function Footer() {
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-        delayChildren: 0.3,
-      },
-    },
-  };
+const Footer = () => {
+  const year = new Date().getFullYear();
 
-  const itemVariants = {
-    hidden: {
-      opacity: 0,
-      y: 40,
+  const socialLinks = [
+    {
+      name: "LinkedIn",
+      icon: FaLinkedin,
+      url: "https://www.linkedin.com/company/forese-club/",
     },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6,
-        ease: [0.25, 0.46, 0.45, 0.94] as const,
-      },
+    {
+      name: "GitHub",
+      icon: FaGithub,
+      url: "https://github.com/Forese-Club",
     },
-  };
+  ];
 
-  const scaleUpVariant = {
-    hidden: { scale: 0.8, opacity: 0 },
-    visible: {
-      scale: 1,
-      opacity: 1,
-      transition: {
-        duration: 0.7,
-        ease: [0.25, 0.46, 0.45, 0.94] as const,
-      },
-    },
-  };
+  const quickLinks = [
+    { name: "Home", url: "/" },
+    { name: "About Us", url: "/About" },
+    { name: "Events", url: "/Event" },
+    { name: "Team", url: "/Team" },
+  ];
 
-  const slideInFromLeft = {
-    hidden: { x: -100, opacity: 0 },
-    visible: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.8,
-        ease: [0.25, 0.46, 0.45, 0.94] as const,
-      },
-    },
-  };
-
-  const slideInFromRight = {
-    hidden: { x: 100, opacity: 0 },
-    visible: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.8,
-        ease: [0.25, 0.46, 0.45, 0.94] as const,
-      },
-    },
-  };
-
-  const bounceVariant = {
-    hidden: { y: 50, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        type: "spring" as const,
-        damping: 12,
-        stiffness: 200,
-        duration: 0.8,
-      },
-    },
-  };
+  const contactInfo = [
+    { label: "Email", value: "forese.club@gmail.com", type: "email" },
+  ];
 
   return (
-    <footer className="bg-gray-900 text-white relative z-50">
-      <div className="absolute inset-0 opacity-5 pointer-events-none">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-transparent to-purple-600/10" />
-      </div>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={containerVariants}
-        >
-          <motion.div variants={itemVariants}>
-            <h3 className="text-xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              FORESE
-            </h3>
-            <p className="text-gray-300 text-sm leading-relaxed mb-4">
-              Forum for Economic Studies by Engineers - Shaping futures beyond
-              the classroom through practical learning and real-world
-              opportunities.
+    <motion.footer
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+      className="bg-gray-900 text-gray-300 py-12 md:py-16"
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          {/* About Section */}
+          <div className="md:col-span-1">
+            <h3 className="text-xl font-semibold text-white mb-4">FORESE</h3>
+            <p className="text-sm leading-relaxed">
+              Fostering Excellence in Research, Entrepreneurship, and Social
+              Empowerment. We are dedicated to nurturing talent and innovation.
             </p>
-            <div className="flex space-x-4">
-              <motion.div
-                className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
-                whileHover={{ scale: 1.2 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <Link href="https://www.linkedin.com/company/forese/">
-                  <FaLinkedin className="h-5 w-5" />
-                </Link>
-              </motion.div>
-              <motion.a
-                href="#"
-                className="text-gray-400 hover:text-blue-600 transition-colors duration-300"
-                whileHover={{ scale: 1.2 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <FaGithub className="h-5 w-5" />
-              </motion.a>
+            <div className="flex space-x-4 mt-6">
+              {socialLinks.map((link) => (
+                <motion.a
+                  key={link.name}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                  whileHover={{ scale: 1.2 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <link.icon className="w-6 h-6" />
+                </motion.a>
+              ))}
             </div>
-          </motion.div>
+          </div>
 
-         
-          <motion.div variants={itemVariants}>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              {[
-                { label: "Home", href: "/" },
-                { label: "Events", href: "/Event" },
-                { label: "Team", href: "/Team" },
-              ].map((item, index) => (
-                <motion.li key={item.label}>
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-4">
+              Quick Links
+            </h3>
+            <ul className="space-y-3">
+              {quickLinks.map((link) => (
+                <li key={link.name}>
                   <Link
-                    href={item.href}
-                    className="text-gray-300 hover:text-white transition-colors duration-300 text-sm block py-1"
+                    href={link.url}
+                    className="text-sm hover:text-white transition-colors duration-300"
                   >
-                    {item.label}
+                    {link.name}
                   </Link>
-                </motion.li>
-              ))}{" "}
-            </ul>
-          </motion.div>
-
-         
-          <motion.div variants={itemVariants}>
-            <h3 className="text-lg font-semibold mb-4">What We Do</h3>
-            <ul className="space-y-2">
-              {[
-                "Mock Placements",
-                "Workshops",
-                "Career Guidance",
-                "Skill Development",
-              ].map((service, index) => (
-                <motion.li key={service}>
-                  <span className="text-gray-300 text-sm block py-1">
-                    {service}
-                  </span>
-                </motion.li>
+                </li>
               ))}
             </ul>
-          </motion.div>
-
-         
-          <motion.div variants={itemVariants}>
-            <h3 className="text-lg font-semibold mb-4">Get In Touch</h3>
-            <div className="space-y-3">
-              <div className="flex items-center space-x-3">
-                <FaEnvelope className="text-blue-400 h-4 w-4 flex-shrink-0" />
-                <span className="text-gray-300 text-sm">forese@svce.ac.in</span>
-              </div>
-              <div className="flex items-start space-x-3">
-                <FaMapMarkerAlt className="text-red-400 h-4 w-4 flex-shrink-0 mt-1" />
-                <span className="text-gray-300 text-sm">
-                  Sri Venkateswara College of Engineering
-                  <br />
-                  Sriperumbudur, Tamil Nadu, India
-                </span>
-              </div>
-            </div>
-          </motion.div>
-        </motion.div>
-
-       
-        <motion.div
-          className="border-t border-gray-700 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-        >
-          <div className="text-gray-400 text-sm mb-4 sm:mb-0">
-            © 2025 FORESE. All rights reserved.
           </div>
-        </motion.div>
+
+          {/* Contact Info */}
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-4">
+              Contact Us
+            </h3>
+            <ul className="space-y-3">
+              {contactInfo.map((info) => (
+                <li key={info.label} className="flex items-center">
+                  {info.type === "email" && (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-5 w-5 mr-3 text-gray-400"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                      <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                    </svg>
+                  )}
+                  <a
+                    href={
+                      info.type === "email"
+                        ? `mailto:${info.value}`
+                        : info.value
+                    }
+                    className="text-sm hover:text-white transition-colors duration-300"
+                  >
+                    {info.value}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Location/Address (Optional) */}
+          <div className="lg:col-span-1">
+            <h3 className="text-xl font-semibold text-white mb-4">
+              Our Location
+            </h3>
+            <p className="text-sm leading-relaxed">
+              Easwari Engineering College, Ramapuram, Chennai - 600089
+            </p>
+          </div>
+        </div>
+
+        <div className="border-t border-gray-700 mt-10 pt-8 text-center text-sm text-gray-500">
+          &copy; {year} FORESE. All rights reserved.
+        </div>
       </div>
-    </footer>
+    </motion.footer>
   );
-}
+};
+
+export default Footer;

@@ -3,8 +3,8 @@ import React from "react";
 import Link from "next/link";
 import { MdArrowOutward } from "react-icons/md";
 import { motion } from "framer-motion";
-import TextType from "@/components/ui/TextType";
-
+import Image from "next/image";
+import TextType from "../../components/ui/TextType"
 export default function Hero() {
   return (
     <>
@@ -61,20 +61,5 @@ export default function Hero() {
       </div>
 
     </>
-  );
-}
-
-function sections() {
-  return (
-    <div className="min-h-screen bg-gray-100 p-8">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-bold text-gray-800 mb-6">
-          Another Section
-        </h2>
-        <p className="text-lg text-gray-600">
-          More content that scrolls over the fixed background...
-        </p>
-      </div>
-    </div>
   );
 }

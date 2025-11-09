@@ -1,13 +1,11 @@
 "use client";
 import Squares from "../../../components/ui/Squares";
 
-import DarkVeil from "../../../components/ui/DarkVeil";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
-import SpotlightCard from "../../../components/ui/SpotlightCard";
 import ShinyText from "../../../components/ui/Shinytext";
+import Image from "next/image";
 
 const HackathonPage = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -15,16 +13,8 @@ const HackathonPage = () => {
     target: containerRef,
     offset: ["start end", "end start"],
   });
-  const y = useTransform(scrollYProgress, [0, 1], [100, -100]);
-  const opacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0]);
-
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) =>
-      setMousePosition({ x: e.clientX, y: e.clientY });
-    window.addEventListener("mousemove", handleMouseMove);
-    return () => window.removeEventListener("mousemove", handleMouseMove);
-  }, []);
+  const y = useTransform(scrollYProgress, [0, 1], [120, -120]);
+  // const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
   const features = [
     {
@@ -69,15 +59,15 @@ const HackathonPage = () => {
           <Squares
             speed={0.1}
             squareSize={40}
-            direction="up" // up, down, left, right, diagonal
+            direction="up"
             borderColor="#004aad"
             hoverFillColor="#222"
           />
-        </div>{" "}
+        </div>
       </div>
 
       <motion.section
-        style={{ y, opacity }}
+        style={{ y }}
         className="relative z-10 min-h-[100vh] min-w-full flex items-center px-4 sm:px-6 lg:px-8"
       >
         <div
@@ -96,10 +86,18 @@ const HackathonPage = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="mt-6 text-lg sm:text-xl md:text-2xl text-black max-w-3xl mx-auto"
           >
-            FORESE and Coders' Forum hosted their first 24-hour hackathon for pre-final year students on January 28–29, 2023, at Sri Venkateswara College of Engineering, Sriperumbudur, with EDWISE INTERNATIONAL as the sponsor.
-Out of all submissions, twenty teams advanced to the finals, where they developed working prototypes under the guidance of Coders' Forum mentors. After a full day of coding, a panel from Sahaj Software judged the projects and selected the top three teams, awarding cash prizes of ₹5,000, ₹3,000, and ₹1,500.
-The event provided students with valuable industry exposure, and Sahaj Software also shortlisted five participants for internship interviews. The hackathon was a resounding success, providing a platform for innovation and skill development.
-
+            FORESE and Coders&apos; Forum hosted their first 24-hour hackathon for
+            pre-final year students on January 28–29, 2023, at Sri Venkateswara
+            College of Engineering, Sriperumbudur, with EDWISE INTERNATIONAL as
+            the sponsor. Out of all submissions, twenty teams advanced to the
+            finals, where they developed working prototypes under the guidance of
+            Coders&apos; Forum mentors. After a full day of coding, a panel from Sahaj
+            Software judged the projects and selected the top three teams,
+            awarding cash prizes of ₹5,000, ₹3,000, and ₹1,500. The event provided
+            students with valuable industry exposure, and Sahaj Software also
+            shortlisted five participants for internship interviews. The hackathon
+            was a resounding success, providing a platform for innovation and
+            skill development.
           </motion.p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link href="/Event">
@@ -133,13 +131,13 @@ The event provided students with valuable industry exposure, and Sahaj Software 
                 transition={{ duration: 0.6, delay: f.delay }}
                 whileHover={{ y: -8, scale: 1.03 }}
               >
-                <SpotlightCard className="h-full p-6 text-center">
+                <div className="h-full p-6 text-center bg-white rounded-xl shadow-md border border-gray-200">
                   <div className="text-6xl mb-4">{f.icon}</div>
-                  <h3 className="text-white text-xl font-bold mb-2">
+                  <h3 className="text-gray-900 text-xl font-bold mb-2">
                     {f.title}
                   </h3>
-                  <p className="text-white ">{f.description}</p>
-                </SpotlightCard>
+                  <p className="text-gray-600 ">{f.description}</p>
+                </div>
               </motion.div>
             ))}
           </div>
@@ -164,17 +162,17 @@ The event provided students with valuable industry exposure, and Sahaj Software 
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 whileHover={{ scale: 1.04 }}
-                className="group relative overflow-hidden rounded-2xl shadow-2xl"
+                className="relative overflow-hidden rounded-2xl shadow-2xl"
               >
                 <Image
                   src={image.src}
                   alt={image.alt}
-                  width={640}
+                  width={600}
                   height={400}
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-64 object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="absolute bottom-4 left-4 text-white font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                <div className="absolute bottom-4 left-4 text-white font-semibold">
                   {image.alt}
                 </div>
               </motion.div>

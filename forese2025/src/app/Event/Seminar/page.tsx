@@ -1,11 +1,11 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import Squares from "../../../components/ui/Squares";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
-import SpotlightCard from "../../../components/ui/SpotlightCard";
 import ShinyText from "../../../components/ui/Shinytext";
+import Footer from "@/app/component/Footer";
 
 const SeminarPage = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -15,13 +15,12 @@ const SeminarPage = () => {
   });
   const y = useTransform(scrollYProgress, [0, 1], [120, -120]);
 
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) =>
-      setMousePosition({ x: e.clientX, y: e.clientY });
-    window.addEventListener("mousemove", handleMouseMove);
-    return () => window.removeEventListener("mousemove", handleMouseMove);
-  }, []);
+  const fadeInUp = {
+    initial: { opacity: 0, y: 20 },
+    whileInView: { opacity: 1, y: 0 },
+    viewport: { once: true },
+    transition: { duration: 0.7 },
+  };
 
   return (
     <div ref={containerRef} className="min-h-screen overflow-hidden">
@@ -83,7 +82,7 @@ const SeminarPage = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
           >
-            <SpotlightCard className="p-8">
+            <div className="p-8 rounded-3xl border border-white/10 shadow-2xl bg-gradient-to-r from-blue-500 to-purple-500">
               <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">
                 The Role of Soft Skills in Careers
               </h3>
@@ -117,7 +116,7 @@ const SeminarPage = () => {
                   Presenter: Mr. Malolan Lakshminarasimhan
                 </span>
               </div>
-            </SpotlightCard>
+            </div>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: 60 }}
@@ -145,7 +144,7 @@ const SeminarPage = () => {
           </motion.div>
         </div>
       </section>
-      
+
       <div className="fixed bottom-6 right-6 z-50">
         <Link href="/Event">
           <motion.button

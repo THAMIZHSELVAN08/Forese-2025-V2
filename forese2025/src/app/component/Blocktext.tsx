@@ -67,7 +67,7 @@ const Typewrite = ({ examples }: { examples: string[] }) => {
       setExampleIndex((pv) => (pv + 1) % examples.length);
     }, SWAP_DELAY_IN_MS);
     return () => clearInterval(intervalId);
-  }, []);
+  }, [examples.length]); // Added examples.length to dependency array
 
   return (
     <p className="mb-2.5 text-sm font-light uppercase text-white/80">

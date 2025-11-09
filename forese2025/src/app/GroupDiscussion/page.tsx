@@ -19,7 +19,6 @@ import {
 } from "lucide-react";
 import Footer from "../component/Footer";
 import Link from "next/link";
-import Iridescence from "@/components/ui/Iridescence";
 
 const GroupDiscussionPage = () => {
   const fadeInUp = {

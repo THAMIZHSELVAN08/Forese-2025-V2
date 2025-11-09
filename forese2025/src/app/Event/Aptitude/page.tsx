@@ -1,10 +1,9 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import Squares from "../../../components/ui/Squares";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
-import SpotlightCard from "../../../components/ui/SpotlightCard";
 import ShinyText from "../../../components/ui/Shinytext";
 import Footer from "@/app/component/Footer";
 import { Brain, Clock, Target, Briefcase } from "lucide-react";
@@ -16,14 +15,6 @@ const AptitudePage = () => {
     offset: ["start end", "end start"],
   });
   const y = useTransform(scrollYProgress, [0, 1], [120, -120]);
-
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) =>
-      setMousePosition({ x: e.clientX, y: e.clientY });
-    window.addEventListener("mousemove", handleMouseMove);
-    return () => window.removeEventListener("mousemove", handleMouseMove);
-  }, []);
 
   const fadeInUp = {
     initial: { opacity: 0, y: 30 },

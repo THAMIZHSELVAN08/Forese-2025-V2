@@ -1,6 +1,6 @@
 // components/ClientWrapper.tsx
 "use client";
-import { useState, useEffect, ReactNode } from "react";
+import React, { useState, ReactNode } from "react";
 import Loading from "../component/Loading";
 
 interface ClientWrapperProps {
