@@ -102,9 +102,8 @@ export default function Aboutcf() {
 
   return (
     <div className="bg-black min-h-screen text-white">
-    
+      {/* Hero Section */}
       <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
-     
         <div className="absolute inset-0 z-0">
           <LetterGlitch
             glitchColors={glitchColors}
@@ -159,7 +158,7 @@ export default function Aboutcf() {
         </div>
       </div>
 
-     
+      {/* About Section */}
       <section className="py-20 px-6 w-full">
         <div className="max-w-6xl mx-auto">
           <motion.div
@@ -180,24 +179,24 @@ export default function Aboutcf() {
                 is not just taught but experienced.
               </p>
               <p>
-                We take mentorship to the next level through structured
-                peer-led programs, where pre-final year mentors guide
-                second-year students in mastering coding concepts,
-                problem-solving strategies, and project-building skills.
+                We take mentorship to the next level through structured peer-led
+                programs, where pre-final year mentors guide second-year
+                students in mastering coding concepts, problem-solving
+                strategies, and project-building skills.
               </p>
               <p>
                 Beyond mentorship, the forum actively hosts hackathons, coding
                 bootcamps, seminars, and technical workshops that encourage
-                creativity, collaboration, and innovation. These initiatives
-                are designed to equip students with both technical expertise
-                and the confidence needed to thrive in placements and industry
+                creativity, collaboration, and innovation. These initiatives are
+                designed to equip students with both technical expertise and the
+                confidence needed to thrive in placements and industry
                 challenges.
               </p>
               <p>
                 At Coders’ Forum, we are committed to bridging the gap between
                 academics and real-world applications—empowering every student
-                to not only code, but also to innovate, network, and lead in
-                the ever-evolving tech landscape.
+                to not only code, but also to innovate, network, and lead in the
+                ever-evolving tech landscape.
               </p>
             </div>
           </motion.div>
@@ -226,7 +225,7 @@ export default function Aboutcf() {
         </div>
       </section>
 
-     
+      {/* Team Section */}
       <section className="py-20 px-6 bg-gray-900/30">
         <div className="max-w-7xl mx-auto">
           <motion.div
@@ -241,12 +240,12 @@ export default function Aboutcf() {
             </h2>
           </motion.div>
 
-         
-          <div className="mb-16">
+          {/* Chief Mentors Section */}
+          <div className="mb-20">
             <h3 className="text-3xl font-bold text-center mb-12 text-blue-400">
               Chief Mentors
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-4xl mx-auto">
               {chiefMentors.map((mentor, index) => (
                 <motion.div
                   key={index}
@@ -254,35 +253,38 @@ export default function Aboutcf() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.2 }}
                   viewport={{ once: true }}
-                  className="bg-gradient-to-br from-blue-900/30 to-purple-900/30 backdrop-blur-sm border border-blue-500/30 rounded-xl p-8 text-center hover:from-blue-800/40 hover:to-purple-800/40 transition-all duration-300"
+                  className="relative rounded-2xl overflow-hidden bg-gray-900/40 border border-blue-600/30 shadow-lg hover:scale-[1.02] transition-transform duration-300"
                 >
-                  <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
+                  <div className="w-full h-80 relative">
                     <Image
                       src={mentor.image}
                       alt={mentor.name}
-                      width={96}
-                      height={96}
-                      className="object-cover w-full h-full"
+                      fill
+                      className="object-cover"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-6">
+                      <h4 className="text-2xl font-bold text-white mb-1">
+                        {mentor.name}
+                      </h4>
+                      <p className="text-blue-300 text-sm mb-2">
+                        {mentor.role}
+                      </p>
+                      <p className="text-gray-300 italic text-sm">
+                        “{mentor.quote}”
+                      </p>
+                    </div>
                   </div>
-                  <h4 className="text-2xl font-bold mb-2 text-white">
-                    {mentor.name}
-                  </h4>
-                  <p className="text-blue-300 mb-4 font-medium">
-                    {mentor.role}
-                  </p>
-                  <p className="text-gray-300 italic">{`"${mentor.quote}"`}</p>
                 </motion.div>
               ))}
             </div>
           </div>
 
-         
+          {/* Mentors Section */}
           <div>
             <h3 className="text-3xl font-bold text-center mb-12 text-cyan-400">
               Mentors
             </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
               {mentors.map((mentor, index) => (
                 <motion.div
                   key={index}
@@ -290,26 +292,27 @@ export default function Aboutcf() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="bg-gradient-to-br from-cyan-900/30 to-blue-900/30 backdrop-blur-sm border border-cyan-500/30 rounded-xl p-6 text-center hover:from-cyan-800/40 hover:to-blue-800/40 transition-all duration-300"
+                  className="relative rounded-2xl overflow-hidden bg-gray-900/40 border border-cyan-500/30 shadow-lg hover:scale-[1.03] transition-transform duration-300"
                 >
-                  <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden">
+                  <div className="w-full h-80 relative">
                     <Image
                       src={mentor.image}
                       alt={mentor.name}
-                      width={80}
-                      height={80}
-                      className="object-cover w-full h-full"
+                      fill
+                      className="object-cover"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent flex flex-col justify-end p-5">
+                      <h4 className="text-xl font-bold text-white mb-1">
+                        {mentor.name}
+                      </h4>
+                      <p className="text-cyan-300 text-sm mb-2">
+                        {mentor.role}
+                      </p>
+                      <p className="text-gray-300 italic text-sm">
+                        “{mentor.quote}”
+                      </p>
+                    </div>
                   </div>
-                  <h4 className="text-xl font-bold mb-2 text-white">
-                    {mentor.name}
-                  </h4>
-                  <p className="text-cyan-300 mb-3 font-medium text-sm">
-                    {mentor.role}
-                  </p>
-                  <p className="text-gray-300 italic text-sm">
-                    {`"${mentor.quote}"`}
-                  </p>
                 </motion.div>
               ))}
             </div>
