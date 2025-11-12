@@ -208,17 +208,16 @@ const GroupDiscussionPage = () => {
             />
           </div>{" "}
         </div>
-       
+
         <motion.section
           className="relative py-20 lg:py-28 px-4 sm:px-6 lg:px-8 overflow-hidden bg-white backdrop-blur-sm border-2 border-b-gray-200 shadow-lg pt-20 flex justify-center items-center"
-          style={{ height: "80vh" }}
+          style={{ height: "100vh" }}
           initial="initial"
           animate="animate"
           variants={staggerContainer}
         >
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center ">
-             
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mt-25">
               <motion.div className="lg:col-span-6" variants={fadeInUp}>
                 <span className="text-sm font-bold text-blue-900 uppercase tracking-wide">
                   Learn the art of strategic communication with this
@@ -242,7 +241,6 @@ const GroupDiscussionPage = () => {
                 </p>
               </motion.div>
 
-             
               <motion.div
                 className="lg:col-span-6 relative overflow-hidden rounded-2xl border border-gray-200 shadow-lg h-80 lg:h-96"
                 variants={fadeInUp}
@@ -263,7 +261,7 @@ const GroupDiscussionPage = () => {
             </div>
           </div>
         </motion.section>
-        
+
         <motion.section
           className="py-20 px-4 sm:px-6 lg:px-8"
           initial="initial"
@@ -310,7 +308,7 @@ const GroupDiscussionPage = () => {
             </div>
           </div>
         </motion.section>
-        
+
         <motion.section
           className="py-20 px-4 sm:px-6 lg:px-8 bg-white border-2 border-t-gray-200 border-b-gray-200 shadow-lg"
           initial="initial"
@@ -365,7 +363,7 @@ const GroupDiscussionPage = () => {
             </div>
           </div>
         </motion.section>
-        
+
         <motion.section
           className="py-20 px-4 sm:px-6 lg:px-8"
           initial="initial"
@@ -417,7 +415,7 @@ const GroupDiscussionPage = () => {
             </div>
           </div>
         </motion.section>
-       
+
         <motion.section
           className="py-20 px-4 sm:px-6 lg:px-8 bg-red-50 border-2 border-t-red-200 shadow-lg "
           initial="initial"

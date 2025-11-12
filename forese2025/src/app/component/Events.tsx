@@ -126,7 +126,7 @@ export default function Event() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="text-lg sm:text-xl md:text-2xl text-white/90 mb-8 leading-relaxed max-w-2xl mx-auto"
+              className="text-lg sm:text-xl md:text-2xl text-white mb-8 leading-relaxed max-w-2xl mx-auto"
             >
               {Item[currentIndex].description}
             </motion.p>
@@ -162,7 +162,7 @@ export default function Event() {
 
         <button
           onClick={handlePrevious}
-          className="absolute left-6 top-1/2 transform -translate-y-1/2 w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300"
+          className="absolute left-[-1rem] md:left-6 top-1/2 transform -translate-y-1/2 w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300"
         >
           <svg
             className="w-6 h-6"
@@ -181,7 +181,7 @@ export default function Event() {
 
         <button
           onClick={handleNext}
-          className="absolute right-6 top-1/2 transform -translate-y-1/2 w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300"
+          className="absolute right-[-1rem] md:right-6 top-1/2 transform -translate-y-1/2 w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300"
         >
           <svg
             className="w-6 h-6"

@@ -28,12 +28,10 @@ import Footer from "./Footer";
 export default function StickyScroll() {
   const [currentEventIndex, setCurrentEventIndex] = useState(0);
 
-
   const section1Ref = useRef<HTMLDivElement>(null);
   const section2Ref = useRef<HTMLDivElement>(null);
   const section3Ref = useRef<HTMLDivElement>(null);
   const section4Ref = useRef<HTMLDivElement>(null);
-
 
   const { scrollYProgress: scrollYProgress1 } = useScroll({
     target: section1Ref,
@@ -55,7 +53,6 @@ export default function StickyScroll() {
     offset: ["start start", "end start"],
   });
 
-  
   const y1 = useTransform(scrollYProgress1, [0, 1], ["0%", "-50%"]);
   const y2 = useTransform(scrollYProgress2, [0, 1], ["0%", "-50%"]);
   const y3 = useTransform(scrollYProgress3, [0, 1], ["0%", "-50%"]);
@@ -220,26 +217,14 @@ export default function StickyScroll() {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-        className="h-screen w-full flex-col justify-center items-center sticky top-0 z-10 pt-30 gap-7"
+        className="h-screen w-full flex-col justify-center items-center sticky top-0 z-10 pt-20 gap-7"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.3 }}
         variants={containerVariants}
       >
-        <motion.div className="flex justify-center" variants={scaleUpVariant}>
-          <motion.div
-            whileHover={{
-              scale: 1.1,
-              rotate: [0, -5, 5, 0],
-              transition: { duration: 0.5 },
-            }}
-          >
-            <Image src="/FOR.png" alt="FOR" width={100} height={85} />
-          </motion.div>
-        </motion.div>
-
         <motion.div
-          className="flex text-center justify-center items-center mt-3"
+          className="flex text-center justify-center items-center mt-3 md:mt-30"
           variants={itemVariants}
         >
           <motion.h1
@@ -255,7 +240,7 @@ export default function StickyScroll() {
         </motion.div>
 
         <motion.div
-          className="flex text-center text-xl justify-center items-center mt-3 md:px-30"
+          className="flex text-center sm:text-md md:text-xl justify-center items-center mt-3 md:px-30"
           variants={slideInFromLeft}
         >
           <p className="text-white">
@@ -285,7 +270,7 @@ export default function StickyScroll() {
             />
           </div>
         </motion.div>
-      </motion.div>    
+      </motion.div>
       <motion.div
         ref={section2Ref}
         style={{
@@ -315,7 +300,6 @@ export default function StickyScroll() {
           </motion.div>
         </motion.div>
 
-      
         <motion.div
           className="flex justify-center items-center mb-6"
           variants={scaleUpVariant}
@@ -378,29 +362,28 @@ export default function StickyScroll() {
           </p>
         </motion.div>
 
-         <motion.div
-  className="flex justify-center mt-5"
-  variants={bounceVariant}
->
-  <Link
-    href="/Event"
-    className="bg-white text-blue-800 font-semibold text-lg px-6 py-2 rounded-xl 
+        <motion.div
+          className="flex justify-center mt-5"
+          variants={bounceVariant}
+        >
+          <Link
+            href="/Event"
+            className="bg-white text-blue-800 font-semibold text-lg px-6 py-2 rounded-xl 
                shadow-md hover:bg-blue-100 hover:shadow-lg transition-all duration-300 
                cursor-pointer flex items-center justify-center select-none"
-  >
-    <motion.span
-      whileHover={{
-        scale: 1.05,
-        y: -2,
-      }}
-      whileTap={{ scale: 0.95 }}
-    >
-      GO TO EVENTS
-    </motion.span>
-  </Link>
-</motion.div>
-
-      </motion.div>   
+          >
+            <motion.span
+              whileHover={{
+                scale: 1.05,
+                y: -2,
+              }}
+              whileTap={{ scale: 0.95 }}
+            >
+              GO TO EVENTS
+            </motion.span>
+          </Link>
+        </motion.div>
+      </motion.div>
       <motion.div
         ref={section3Ref}
         style={{
@@ -601,4 +584,3 @@ export default function StickyScroll() {
     </>
   );
 }
-
