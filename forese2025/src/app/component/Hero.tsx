@@ -3,6 +3,8 @@ import React from "react";
 import Link from "next/link";
 import { MdArrowOutward } from "react-icons/md";
 import { motion } from "framer-motion";
+import { FaSuitcase } from "react-icons/fa";
+import { RiTeamFill } from "react-icons/ri";
 import Image from "next/image";
 import TextType from "../../components/ui/TextType";
 export default function Hero() {
@@ -49,7 +51,7 @@ export default function Hero() {
               whileTap={{ scale: 0.95 }}
             >
               Know the team
-              <MdArrowOutward className="ml-2" />
+              <RiTeamFill className="ml-2" />
             </motion.button>
           </Link>
           <Link href="/MockPlacement">
@@ -65,7 +67,7 @@ export default function Hero() {
               whileTap={{ scale: 0.95 }}
             >
               Get to know about Mock Placements
-              <MdArrowOutward className="ml-2" />
+              <FaSuitcase className="ml-2" />
             </motion.button>
           </Link>
         </div>
