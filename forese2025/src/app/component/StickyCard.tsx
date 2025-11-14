@@ -52,7 +52,7 @@ export default function StickyScroll() {
     target: section4Ref,
     offset: ["start start", "end start"],
   });
-
+4
   const y1 = useTransform(scrollYProgress1, [0, 1], ["0%", "-50%"]);
   const y2 = useTransform(scrollYProgress2, [0, 1], ["0%", "-50%"]);
   const y3 = useTransform(scrollYProgress3, [0, 1], ["0%", "-50%"]);
@@ -580,7 +580,9 @@ export default function StickyScroll() {
           </motion.div>
         </div>
       </motion.div>
-      <Footer />
+       <div className="relative z-50">
+        <Footer />
+      </div>
     </>
   );
 }

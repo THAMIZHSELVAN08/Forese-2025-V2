@@ -17,12 +17,12 @@ const Footer = () => {
     {
       name: "LinkedIn",
       icon: FaLinkedin,
-      url: "https://www.linkedin.com/company/forese-club/",
+      url: "https://www.linkedin.com/company/forese/posts/?feedView=all",
     },
     {
       name: "GitHub",
       icon: FaGithub,
-      url: "https://github.com/Forese-Club",
+      url: "https://github.com/ForeseTech",
     },
   ];
 
@@ -34,7 +34,7 @@ const Footer = () => {
   ];
 
   const contactInfo = [
-    { label: "Email", value: "forese.club@gmail.com", type: "email" },
+    { label: "Email", value: "forese@svce.ac.in", type: "email" },
   ];
 
   return (
@@ -130,7 +130,8 @@ const Footer = () => {
               Our Location
             </h3>
             <p className="text-sm leading-relaxed">
-              Easwari Engineering College, Ramapuram, Chennai - 600089
+              Post Bag No.1,Pennalur Village Chennai - Bangaluru High Road
+              Sriperumbudur Tk, Tamil Nadu 602117{" "}
             </p>
           </div>
         </div>
