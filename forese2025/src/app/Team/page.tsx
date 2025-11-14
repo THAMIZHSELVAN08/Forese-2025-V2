@@ -13,7 +13,18 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Footer from "../component/Footer";
 
-function MemberCard({ member, index }: { member: any; index: number }) {
+// Define a type for the member object to resolve the 'any' issue
+interface Member {
+  id: number;
+  name: string;
+  role: string;
+  imageUrl: string;
+  oneLiner?: string; // Optional property
+  linkedinUrl?: string; // Optional property
+  // Add other properties if they exist in your member data
+}
+
+function MemberCard({ member, index }: { member: Member; index: number }) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -63,7 +74,8 @@ function MemberCard({ member, index }: { member: any; index: number }) {
                 transition={{ duration: 0.3, delay: 0.1 }}
                 className="text-white text-center text-sm md:text-base font-medium italic px-2"
               >
-                "{member.oneLiner}"
+                {/* FIX: Replaced " with ` to allow apostrophes (unescaped entities) */}
+                &quot;{member.oneLiner}&quot;
               </motion.p>
             </motion.div>
           )}
@@ -264,7 +276,7 @@ export default function TeamPage() {
                       {seniorCoreMembers.map((member, index) => (
                         <MemberCard
                           key={member.id}
-                          member={member}
+                          member={member as Member}
                           index={index}
                         />
                       ))}
@@ -283,7 +295,7 @@ export default function TeamPage() {
                       {juniorCoreMembers.map((member, index) => (
                         <MemberCard
                           key={member.id}
-                          member={member}
+                          member={member as Member}
                           index={index}
                         />
                       ))}
@@ -304,7 +316,11 @@ export default function TeamPage() {
               >
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center">
                   {seniorMembers.slice(0, 50).map((member, index) => (
-                    <MemberCard key={member.id} member={member} index={index} />
+                    <MemberCard
+                      key={member.id}
+                      member={member as Member}
+                      index={index}
+                    />
                   ))}
                 </div>
 
@@ -313,7 +329,7 @@ export default function TeamPage() {
                     {seniorMembers.slice(50).map((member, index) => (
                       <MemberCard
                         key={member.id}
-                        member={member}
+                        member={member as Member}
                         index={index + 50}
                       />
                     ))}
@@ -332,7 +348,11 @@ export default function TeamPage() {
                 className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center"
               >
                 {members.map((member, index) => (
-                  <MemberCard key={member.id} member={member} index={index} />
+                  <MemberCard
+                    key={member.id}
+                    member={member as Member}
+                    index={index}
+                  />
                 ))}
               </motion.div>
             )}

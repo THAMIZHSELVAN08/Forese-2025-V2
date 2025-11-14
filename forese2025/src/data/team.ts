@@ -25,7 +25,6 @@ export type Member = {
   oneLiner: string;
 };
 
-
 export const seniorCoreMembers: CoreMember[] = [
   {
     id: 1,
@@ -102,9 +101,7 @@ export const seniorCoreMembers: CoreMember[] = [
     linkedinUrl: "https://www.linkedin.com/in/sandhya-sadasivam-89bb4126b/",
     oneLiner: "Survivor of mondays",
   },
-  
 ];
-
 
 export const juniorCoreMembers: CoreMember[] = [
   {
@@ -132,7 +129,7 @@ export const juniorCoreMembers: CoreMember[] = [
     linkedinUrl: "https://www.linkedin.com/in/salma-siddique-962608320/",
     oneLiner: "I believe I can, and thus I become",
   },
-  
+
   {
     id: 13,
     name: "Sarvesh Vaidhi",
@@ -155,8 +152,7 @@ export const juniorCoreMembers: CoreMember[] = [
     role: "Tech Head",
     imageUrl: "/images/c15.png",
     linkedinUrl: "https://www.linkedin.com/in/r-mubashir-sheriff/",
-    oneLiner:
-      "Life is a tragedy for those who feel, and a comedy for those who think.",
+    oneLiner: "What matters lies neither in the beginning nor in the end",
   },
   {
     id: 16,
@@ -1661,4 +1657,7 @@ export const members: Member[] = [
   },
 ];
 
-export const coreMembers: CoreMember[] = [...seniorCoreMembers, ...juniorCoreMembers];
+export const coreMembers: CoreMember[] = [
+  ...seniorCoreMembers,
+  ...juniorCoreMembers,
+];
