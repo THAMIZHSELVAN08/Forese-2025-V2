@@ -146,13 +146,13 @@ export default function Aboutcf() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="inline-block"
             >
-              <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-1 rounded-full">
-                <div className="bg-black px-8 py-3 rounded-full">
-                  <span className="text-lg font-semibold">
+              <div className="p-1 rounded-full">
+                <div className="bg-white/10 backdrop-blur-[2px] border border-white/20 px-8 py-3 rounded-full">
+                  <span className="text-lg font-semibold text-white drop-shadow-lg">
                     Students Helping Students
                   </span>
                 </div>
-              </div>
+              </div>{" "}
             </motion.div>
           </motion.div>
         </div>

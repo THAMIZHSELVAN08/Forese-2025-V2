@@ -58,19 +58,21 @@ export default function Nav() {
           onMenuClose={() => document.body.classList.remove("overflow-hidden")}
         />
       </div>
-
       <nav
         className="hidden md:flex justify-between items-center fixed top-0 left-0 right-0 h-20 z-50 w-full 
-      bg-gradient-to-r from-blue-50/90 to-blue-100/90 backdrop-blur-md 
-      border-b border-blue-200/50 shadow-lg px-0"
+  bg-blue-50/40 backdrop-blur-sm
+  border-b border-blue-200/50 shadow-lg px-0"
       >
-        <Link href="/" className="z-50 flex-shrink-0">
+        <Link href="/" className="z-50 flex-shrink-0 ml-6">
           <motion.div
-            className="bg-gradient-to-r from-blue-900 to-blue-800 h-16 sm:h-20 w-36 sm:w-44 pl-4 flex items-center 
-                       rounded-r-2xl shadow-xl"
-            style={{ clipPath: "polygon(0 0, 90% 0, 100% 100%, 0 100%)" }}
-            whileTap={{ scale: 0.95 }}
-            whileHover={{ scale: 1.02 }}
+            className="bg-blue-800 h-20 sm:h-18 px-6 flex items-center gap-3
+                 rounded-xl shadow-md border border-blue-100/50"
+            whileTap={{ scale: 0.98 }}
+            whileHover={{
+              scale: 1.02,
+              boxShadow: "0 4px 20px rgba(59,130,246,0.15)",
+            }}
+            transition={{ duration: 0.2 }}
           >
             <Image
               src="/FOR.png"
@@ -82,13 +84,12 @@ export default function Nav() {
             />
           </motion.div>
         </Link>
-
         <div className="flex flex-wrap justify-end gap-3 text-blue-900 font-semibold tracking-wide items-center pr-4 sm:pr-6 lg:pr-8">
           {navLinks.map((link, index) => (
             <Link key={index} href={link.href}>
               <motion.div
                 className="relative cursor-pointer px-3 py-2 rounded-xl transition-all duration-300 
-                           hover:bg-white/60 hover:shadow-md text-sm lg:text-base"
+                     hover:bg-white/60 hover:shadow-md text-sm lg:text-base"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -103,12 +104,11 @@ export default function Nav() {
               </motion.div>
             </Link>
           ))}
-
           <Link href="/Resume">
             <motion.div
-              className="relative cursor-pointer bg-gradient-to-r from-blue-600 to-blue-700 text-white 
-                                px-5 sm:px-6 py-2 sm:py-3 text-sm lg:text-base font-semibold rounded-xl 
-                                shadow-lg hover:shadow-xl transition-all duration-300 select-none"
+              className="relative cursor-pointer bg-blue-800 text-white 
+                          px-5 sm:px-6 py-2 sm:py-3 text-sm lg:text-base font-semibold rounded-xl 
+                          shadow-lg hover:shadow-xl transition-all duration-300 select-none"
               whileHover={{
                 scale: 1.05,
                 y: -2,
@@ -120,7 +120,7 @@ export default function Nav() {
             </motion.div>
           </Link>
         </div>
-      </nav>
+      </nav>{" "}
     </>
   );
 }
