@@ -2,11 +2,11 @@
   "name": "forese2025",
   "version": "0.1.0",
   "private": true,
-"scripts": {
-  "dev": "next dev",
-  "build": "next build",
-  "start": "next start"
-} ,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
   "dependencies": {
     "@radix-ui/react-navigation-menu": "^1.2.14",
     "@react-three/drei": "^10.7.4",
@@ -17,7 +17,7 @@
     "gsap": "^3.13.0",
     "lucide-react": "^0.542.0",
     "motion": "^12.23.12",
-    "next": "^15.5.6",
+    "next": "15.5.9",
     "ogl": "^1.0.11",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
@@ -26,11 +26,6 @@
     "tailwindcss-animate": "^1.0.7",
     "three": "^0.180.0",
     "tw-animate-css": "^1.3.7"
-  },
-    "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
